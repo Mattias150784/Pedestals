@@ -20,7 +20,6 @@ public class PedestalScreen extends AbstractContainerScreen<PedestalMenu> {
     @Override
     protected void init() {
         super.init();
-        // Hides the title and inventory labels
         this.inventoryLabelY = -1000;
         this.titleLabelY = -1000;
     }
@@ -38,7 +37,7 @@ public class PedestalScreen extends AbstractContainerScreen<PedestalMenu> {
 
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
-        this.renderBackground(guiGraphics);  // Updated to match 1.20.1 method signature
+        this.renderBackground(guiGraphics);
         super.render(guiGraphics, mouseX, mouseY, delta);
         renderTooltip(guiGraphics, mouseX, mouseY);
     }

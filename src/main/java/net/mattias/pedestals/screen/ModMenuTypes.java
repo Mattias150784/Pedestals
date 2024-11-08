@@ -18,7 +18,7 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<PedestalMenu>> PEDESTAL_MENU =
             registerMenuType("pedestal_menu", (pContainerId, inventory, extraData) -> {
-                // Extract the block entity from the position in extraData
+
                 PedestalBlockEntity pedestalBlockEntity = (PedestalBlockEntity) inventory.player.level()
                         .getBlockEntity(extraData.readBlockPos());
                 return new PedestalMenu(pContainerId, inventory, pedestalBlockEntity);

@@ -3,13 +3,10 @@ package net.mattias.pedestals.block;
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.PedestalBlock;
 import net.mattias.pedestals.item.ModItems;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,9 +21,10 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
-            () -> new PedestalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new PedestalBlock(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
 
-
+    public static final RegistryObject<Block> OAK_LOG_PEDESTAL = registerBlock("oak_log_pedestal",
+            () -> new PedestalBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

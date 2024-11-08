@@ -33,7 +33,7 @@ public class PedestalBlockEntityRenderer implements BlockEntityRenderer<Pedestal
         float yOffset = 0.1f * (float) Math.sin(time * 0.1f);
 
         poseStack.pushPose();
-        poseStack.translate(0.5f, 1.5f + yOffset, 0.5f); // Add the sine wave offset to the Y translation
+        poseStack.translate(0.5f, 1.5f + yOffset, 0.5f);
         poseStack.scale(0.5f, 0.5f, 0.5f);
         poseStack.mulPose(Axis.YP.rotationDegrees(pedestalBlockEntity.getRenderingRotation()));
 

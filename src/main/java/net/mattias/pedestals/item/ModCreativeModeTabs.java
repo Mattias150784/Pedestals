@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.pedestals"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.PEDESTAL.get());
+                        output.accept(ModBlocks.OAK_LOG_PEDESTAL.get());
 
                     }).build());
 
