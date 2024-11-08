@@ -1,6 +1,7 @@
 package net.mattias.pedestals.screen;
 
 import net.mattias.pedestals.Pedestals;
+import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -16,7 +17,12 @@ public class ModMenuTypes {
             DeferredRegister.create(ForgeRegistries.MENU_TYPES, Pedestals.MOD_ID);
 
     public static final RegistryObject<MenuType<PedestalMenu>> PEDESTAL_MENU =
-            registerMenuType("pedestal_menu", PedestalMenu::new);
+            registerMenuType("pedestal_menu", (pContainerId, inventory, extraData) -> {
+                // Extract the block entity from the position in extraData
+                PedestalBlockEntity pedestalBlockEntity = (PedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PedestalMenu(pContainerId, inventory, pedestalBlockEntity);
+            });
 
 
 

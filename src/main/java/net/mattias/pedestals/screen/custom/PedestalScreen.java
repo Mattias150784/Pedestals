@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class PedestalScreen extends AbstractContainerScreen<PedestalMenu> {
     private static final ResourceLocation GUI_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(Pedestals.MOD_ID, "textures/gui/pedestal/pedestal_gui.png");
+            new ResourceLocation(Pedestals.MOD_ID, "textures/gui/pedestal/pedestal_gui.png");
 
     public PedestalScreen(PedestalMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
@@ -20,9 +20,9 @@ public class PedestalScreen extends AbstractContainerScreen<PedestalMenu> {
     @Override
     protected void init() {
         super.init();
-        // Gets rid of Title and Inventory
-        this.inventoryLabelY = 1000;
-        this.titleLabelY = 1000;
+        // Hides the title and inventory labels
+        this.inventoryLabelY = -1000;
+        this.titleLabelY = -1000;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class PedestalScreen extends AbstractContainerScreen<PedestalMenu> {
 
     @Override
     public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
-        renderBackground(guiGraphics, mouseX, mouseY, delta);
+        this.renderBackground(guiGraphics);  // Updated to match 1.20.1 method signature
         super.render(guiGraphics, mouseX, mouseY, delta);
         renderTooltip(guiGraphics, mouseX, mouseY);
     }

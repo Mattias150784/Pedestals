@@ -4,8 +4,6 @@ import net.mattias.pedestals.block.entity.ModBlockEntities;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
@@ -28,6 +26,8 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
 public class PedestalBlockEntity extends BlockEntity implements Container, MenuProvider {
     private final ItemStackHandler inventory = new ItemStackHandler(1) {
         @Override
@@ -38,11 +38,12 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
-            if(!level.isClientSide()) {
+            if (level != null && !level.isClientSide()) {
                 level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
             }
         }
     };
+
     private float rotation = 0;
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
@@ -57,9 +58,8 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
 
     @Override
     public boolean isEmpty() {
-        for(int i = 0; i < getContainerSize(); i++) {
-            ItemStack stack = getItem(i);
-            if(!stack.isEmpty()) {
+        for (int i = 0; i < getContainerSize(); i++) {
+            if (!inventory.getStackInSlot(i).isEmpty()) {
                 return false;
             }
         }
@@ -68,28 +68,22 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
 
     @Override
     public ItemStack getItem(int i) {
-        setChanged();
         return inventory.getStackInSlot(i);
     }
 
     @Override
     public ItemStack removeItem(int i, int amount) {
-        setChanged();
-        ItemStack stack = inventory.getStackInSlot(i);
-        stack.shrink(amount);
-        return inventory.insertItem(i, stack, false);
+        return ContainerHelper.removeItem((List<ItemStack>) this, i, amount);
     }
 
     @Override
     public ItemStack removeItemNoUpdate(int i) {
-        setChanged();
-        return i >= 0 && i < getContainerSize() ? inventory.insertItem(i, ItemStack.EMPTY, false) : ItemStack.EMPTY;
+        return ContainerHelper.takeItem((List<ItemStack>) this, i);
     }
 
     @Override
     public void setItem(int i, ItemStack itemStack) {
-        setChanged();
-        inventory.insertItem(i, itemStack.copyWithCount(1), false);
+        inventory.setStackInSlot(i, itemStack);
     }
 
     @Override
@@ -99,26 +93,26 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
 
     @Override
     public void clearContent() {
-        for(int i = 0; i < getContainerSize(); i++) {
-            inventory.extractItem(i, 64, false);
+        for (int i = 0; i < getContainerSize(); i++) {
+            inventory.setStackInSlot(i, ItemStack.EMPTY);
         }
     }
 
     @Override
-    protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
-        super.saveAdditional(pTag, pRegistries);
-        pTag.put("inventory", inventory.serializeNBT(pRegistries));
+    protected void saveAdditional(CompoundTag pTag) {
+        super.saveAdditional(pTag);
+        pTag.put("inventory", inventory.serializeNBT());
     }
 
     @Override
-    protected void loadAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
-        super.loadAdditional(pTag, pRegistries);
-        inventory.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
+    public void load(CompoundTag pTag) {
+        super.load(pTag);
+        inventory.deserializeNBT(pTag.getCompound("inventory"));
     }
 
     public float getRenderingRotation() {
         rotation += 0.5f;
-        if(rotation >= 360) {
+        if (rotation >= 360) {
             rotation = 0;
         }
         return rotation;
@@ -131,8 +125,8 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
     }
 
     @Override
-    public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
-        return saveWithoutMetadata(pRegistries);
+    public CompoundTag getUpdateTag() {
+        return saveWithoutMetadata();
     }
 
     @Override
@@ -149,12 +143,9 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if(cap == ForgeCapabilities.ITEM_HANDLER) {
-            if(side == null) {
-                return lazyItemHandler.cast();
-            }
+        if (cap == ForgeCapabilities.ITEM_HANDLER) {
+            return lazyItemHandler.cast();
         }
-
         return super.getCapability(cap, side);
     }
 
@@ -165,7 +156,7 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
 
     @Nullable
     @Override
-    public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return new PedestalMenu(i, inventory, this);
+    public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+        return new PedestalMenu(id, inventory, this);
     }
 }

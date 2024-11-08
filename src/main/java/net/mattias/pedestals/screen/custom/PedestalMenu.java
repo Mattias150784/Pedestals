@@ -15,13 +15,9 @@ import net.minecraftforge.items.SlotItemHandler;
 public class PedestalMenu extends AbstractContainerMenu {
     public final PedestalBlockEntity pedestalBlockEntity;
 
-    public PedestalMenu(int pContainerId, Inventory inventory, FriendlyByteBuf extraData) {
-        this(pContainerId, inventory, inventory.player.level().getBlockEntity(extraData.readBlockPos()));
-    }
-
-    public PedestalMenu(int pContainerId, Inventory inv, BlockEntity blockEntity) {
+    public PedestalMenu(int pContainerId, Inventory inv, PedestalBlockEntity pedestalBlockEntity) {
         super(ModMenuTypes.PEDESTAL_MENU.get(), pContainerId);
-        pedestalBlockEntity = ((PedestalBlockEntity) blockEntity);
+        this.pedestalBlockEntity = pedestalBlockEntity;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
@@ -30,6 +26,8 @@ public class PedestalMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(itemHandler, 0, 80, 35));
         });
     }
+
+
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
     // must assign a slot number to each of the slots used by the GUI.
