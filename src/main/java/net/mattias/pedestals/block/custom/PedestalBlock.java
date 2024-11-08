@@ -23,6 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public class PedestalBlock extends BaseEntityBlock {
@@ -65,10 +66,12 @@ public class PedestalBlock extends BaseEntityBlock {
             ItemStack stackInHand = pPlayer.getItemInHand(pHand);
 
             if (pPlayer.isCrouching() && !pLevel.isClientSide()) {
-                ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(
-                        (id, inventory, player) -> new PedestalMenu(id, inventory, pedestalBlockEntity),
-                        Component.literal("Pedestal")
-                ));
+                if (pPlayer instanceof ServerPlayer serverPlayer) {
+                    NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
+                            (id, inventory, player) -> new PedestalMenu(id, inventory, pedestalBlockEntity),
+                            Component.literal("Pedestal")
+                    ), pPos);
+                }
                 return InteractionResult.SUCCESS;
             }
 
@@ -85,4 +88,5 @@ public class PedestalBlock extends BaseEntityBlock {
         }
         return InteractionResult.PASS;
     }
+
 }
