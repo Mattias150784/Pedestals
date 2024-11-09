@@ -1,0 +1,22 @@
+{
+  "values": [
+    "pedestals:oak_log_pedestal",
+    "pedestals:birch_log_pedestal",
+    "pedestals:spruce_log_pedestal",
+    "pedestals:dark_oak_log_pedestal",
+    "pedestals:jungle_log_pedestal",
+    "pedestals:acacia_log_pedestal",
+    "pedestals:chery_log_pedestal",
+    "pedestals:mangrove_log_pedestal",
+
+    "pedestals:oak_planks_pedestal",
+    "pedestals:birch_planks_pedestal",
+    "pedestals:spruce_planks_pedestal",
+    "pedestals:dark_oak_planks_pedestal",
+    "pedestals:jungle_planks_pedestal",
+    "pedestals:acacia_planks_pedestal",
+    "pedestals:chery_planks_pedestal",
+    "pedestals:mangrove_planks_pedestal",
+    "pedestals:bamboo_planks_pedestal"
+  ]
+}
