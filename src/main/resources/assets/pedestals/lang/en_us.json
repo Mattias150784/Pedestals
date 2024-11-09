@@ -3,6 +3,25 @@
   "name.pedestals.pedestal_be": "Pedestal",
 
  "block.pedestals.oak_log_pedestal": "Oak Log Pedestal",
+  "block.pedestals.birch_log_pedestal": "Birch Log Pedestal",
+  "block.pedestals.acacia_log_pedestal": "Acacia Log Pedestal",
+  "block.pedestals.cherry_log_pedestal": "Cherry Log Pedestal",
+  "block.pedestals.dark_oak_log_pedestal": "Dark Oak Log Pedestal",
+  "block.pedestals.jungle_log_pedestal": "Jungle Log Pedestal",
+  "block.pedestals.mangrove_log_pedestal": "Mangrove Log Pedestal",
+  "block.pedestals.spruce_log_pedestal": "Spruce Log Pedestal",
+
+ "block.pedestals.bamboo_planks_pedestal": "Bamboo Planks Pedestal",
+ "block.pedestals.oak_planks_pedestal": "Oak Planks Pedestal",
+ "block.pedestals.birch_planks_pedestal": "Birch Planks Pedestal",
+ "block.pedestals.acacia_planks_pedestal": "Acacia Planks Pedestal",
+ "block.pedestals.cherry_planks_pedestal": "Cherry Planks Pedestal",
+ "block.pedestals.dark_oak_planks_pedestal": "Dark Oak Planks Pedestal",
+ "block.pedestals.jungle_planks_pedestal": "Jungle Planks Pedestal",
+ "block.pedestals.mangrove_planks_pedestal": "Mangrove Planks Pedestal",
+ "block.pedestals.spruce_planks_pedestal": "Spruce Planks Pedestal",
+ 
+
 
   "creativetab.pedestals": "Pedestals"
 }

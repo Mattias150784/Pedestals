@@ -1,5 +1,8 @@
 package net.mattias.pedestals.block.custom;
 
+import net.mattias.pedestals.block.ModBlocks;
+import net.mattias.pedestals.block.entity.ModBlockEntities;
+import net.mattias.pedestals.block.entity.custom.logs.OakLogPedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.minecraft.core.BlockPos;
@@ -24,7 +27,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
-import org.jetbrains.annotations.Nullable;
 
 public class PedestalBlock extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 13, 14);
@@ -38,11 +40,14 @@ public class PedestalBlock extends BaseEntityBlock {
         return SHAPE;
     }
 
-    @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new PedestalBlockEntity(blockPos, blockState);
+        if (blockState.getBlock() == ModBlocks.OAK_LOG_PEDESTAL.get()) {
+            return new OakLogPedestalBlockEntity(blockPos, blockState);
+        }
+        return new PedestalBlockEntity(ModBlockEntities.OAK_LOG_PEDESTAL_BE.get(), blockPos, blockState);
     }
+
 
     @Override
     public RenderShape getRenderShape(BlockState pState) {
