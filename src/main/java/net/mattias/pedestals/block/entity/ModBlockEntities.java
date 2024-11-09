@@ -3,6 +3,7 @@ package net.mattias.pedestals.block.entity;
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.custom.planks.CherryPlanksPedestalBlock;
+import net.mattias.pedestals.block.custom.planks.OakPlanksPedestalBlock;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.planks.*;
@@ -75,6 +76,18 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<CherryPlanksPedestalBlockEntity>> CHERRY_PLANKS_PEDESTAL_BE =
             BLOCK_ENTITIES.register("cherry_planks_pedestal", () -> BlockEntityType.Builder.of(
                     CherryPlanksPedestalBlockEntity::new, ModBlocks.CHERRY_PLANKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<OakPlanksPedestalBlockEntity>> OAK_PLANKS_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("oak_planks_pedestal", () -> BlockEntityType.Builder.of(
+                    OakPlanksPedestalBlockEntity::new, ModBlocks.OAK_PLANKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<MangrovePlanksPedestalBlockEntity>> MANGROVE_PLANKS_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("mangrove_planks_pedestal", () -> BlockEntityType.Builder.of(
+                    MangrovePlanksPedestalBlockEntity::new, ModBlocks.MANGROVE_PLANKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<SprucePlanksPedestalBlockEntity>> SPRUCE_PLANKS_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("spruce_planks_pedestal", () -> BlockEntityType.Builder.of(
+                    SprucePlanksPedestalBlockEntity::new, ModBlocks.SPRUCE_PLANKS_PEDESTAL.get()).build(null));
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

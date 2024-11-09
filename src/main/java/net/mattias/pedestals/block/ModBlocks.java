@@ -67,11 +67,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUNGLE_PLANKS_PEDESTAL = registerBlock("jungle_planks_pedestal",
             () -> new JunglePlanksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
 
-
-    /* public static final RegistryObject<Block> OAK_PLANKS_PEDESTAL = registerBlock("oak_planks_pedestal",
+     public static final RegistryObject<Block> OAK_PLANKS_PEDESTAL = registerBlock("oak_planks_pedestal",
             () -> new OakPlanksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-
-
 
     public static final RegistryObject<Block> MANGROVE_PLANKS_PEDESTAL = registerBlock("mangrove_planks_pedestal",
             () -> new MangrovePlanksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
@@ -79,7 +76,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPRUCE_PLANKS_PEDESTAL = registerBlock("spruce_planks_pedestal",
             () -> new SprucePlanksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
 
-    */
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

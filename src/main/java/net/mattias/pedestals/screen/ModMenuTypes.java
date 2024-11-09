@@ -125,6 +125,28 @@ public class ModMenuTypes {
                 return new CherryPlanksPedestalMenu(pContainerId, inventory, cherryPlanksPedestalBlockEntity);
             });
 
+    public static final RegistryObject<MenuType<MangrovePlanksPedestalMenu>> MANGROVE_PLANKS_PEDESTAL_MENU =
+            registerMenuType("mangrove_planks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                MangrovePlanksPedestalBlockEntity mangrovePlanksPedestalBlockEntity = (MangrovePlanksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new MangrovePlanksPedestalMenu(pContainerId, inventory, mangrovePlanksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<OakPlanksPedestalMenu>> OAK_PLANKS_PEDESTAL_MENU =
+            registerMenuType("oak_planks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                OakPlanksPedestalBlockEntity OakPlanksPedestalBlockEntity = (OakPlanksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new OakPlanksPedestalMenu(pContainerId, inventory, OakPlanksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<SprucePlanksPedestalMenu>> SPRUCE_PLANKS_PEDESTAL_MENU =
+            registerMenuType("spruce_planks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                SprucePlanksPedestalBlockEntity sprucePlanksPedestalBlockEntity = (SprucePlanksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new SprucePlanksPedestalMenu(pContainerId, inventory, sprucePlanksPedestalBlockEntity);
+            });
+
+
 
 
 

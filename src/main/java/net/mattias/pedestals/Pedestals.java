@@ -11,6 +11,7 @@ import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
 import net.mattias.pedestals.screen.custom.logs.screen.*;
 import net.mattias.pedestals.screen.custom.PedestalScreen;
+import net.mattias.pedestals.screen.custom.planks.menu.SprucePlanksPedestalMenu;
 import net.mattias.pedestals.screen.custom.planks.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
@@ -86,6 +87,9 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.JUNGLE_PLANKS_PEDESTAL_MENU.get(), JunglePlanksPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.DARK_OAK_PLANKS_PEDESTAL_MENU.get(), DarkOakPlanksPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.CHERRY_PLANKS_PEDESTAL_MENU.get(), CherryPlanksPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.MANGROVE_PLANKS_PEDESTAL_MENU.get(), MangrovePlanksPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.OAK_PLANKS_PEDESTAL_MENU.get(), OakPlanksPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.SPRUCE_PLANKS_PEDESTAL_MENU.get(), SprucePlanksPedestalScreen::new);
         }
 
         @SubscribeEvent
@@ -106,6 +110,9 @@ public class Pedestals
             event.registerBlockEntityRenderer(ModBlockEntities.JUNGLE_PLANKS_PEDESTAL_BE.get(), JunglePlanksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.DARK_OAK_PLANKS_PEDESTAL_BE.get(), DarkOakPlanksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.CHERRY_PLANKS_PEDESTAL_BE.get(), CherryPlanksPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MANGROVE_PLANKS_PEDESTAL_BE.get(), MangrovePlanksPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.OAK_PLANKS_PEDESTAL_BE.get(), OakPlanksPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.SPRUCE_PLANKS_PEDESTAL_BE.get(), SprucePlanksPedestalBlockEntityRenderer::new);
 
         }
 
