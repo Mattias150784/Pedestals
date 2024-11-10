@@ -1,11 +1,10 @@
 {
   "values": [
     "pedestals:pedestal",
+    "pedestals:smooth_stone_pedestal",
+    "pedestals:stone_bricks_pedestal",
     "pedestals:stone_pedestal",
     "pedestals:cobblestone_pedestal",
-    "pedestals:stone_bricks_pedestal",
-    "pedestals:smooth_stone_pedestal",
-
     "pedestals:polished_andesite_pedestal",
     "pedestals:polished_diorite_pedestal",
     "pedestals:polished_granite_pedestal",
@@ -13,8 +12,6 @@
     "pedestals:polished_deepslate_pedestal",
     "pedestals:andesite_pedestal",
     "pedestals:diorite_pedestal",
-    "pedestals:granite_pedestal",
-
-    "pedestals:gold_pedestal"
+    "pedestals:granite_pedestal"
   ]
 }
