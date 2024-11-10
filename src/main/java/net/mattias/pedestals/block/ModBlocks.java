@@ -2,7 +2,6 @@ package net.mattias.pedestals.block;
 
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.*;
-import net.mattias.pedestals.block.custom.CobblestonePedestalBlock;
 import net.mattias.pedestals.block.custom.StonePedestalBlock;
 import net.mattias.pedestals.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -83,6 +82,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COBBLESTONE_PEDESTAL = registerBlock("cobblestone_pedestal",
             () -> new CobblestonePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
+
+    public static final RegistryObject<Block> STONE_BRICKS_PEDESTAL = registerBlock("stone_bricks_pedestal",
+            () -> new StoneBricksPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
+
+    public static final RegistryObject<Block> SMOOTH_STONE_PEDESTAL = registerBlock("smooth_stone_pedestal",
+            () -> new SmoothStonePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE)));
+
+    public static final RegistryObject<Block> GOLD_PEDESTAL = registerBlock("gold_pedestal",
+            () -> new GoldPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

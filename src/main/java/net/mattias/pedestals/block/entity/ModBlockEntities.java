@@ -3,7 +3,6 @@ package net.mattias.pedestals.block.entity;
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.custom.*;
-import net.mattias.pedestals.block.entity.custom.CobblestonePedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.StonePedestalBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -94,6 +93,18 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<CobblestonePedestalBlockEntity>> COBBLESTONE_PEDESTAL_BE =
             BLOCK_ENTITIES.register("cobblestone_pedestal", () -> BlockEntityType.Builder.of(
                     CobblestonePedestalBlockEntity::new, ModBlocks.COBBLESTONE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<StoneBricksPedestalBlockEntity>> STONE_BRICKS_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("stone_bricks_pedestal", () -> BlockEntityType.Builder.of(
+                    StoneBricksPedestalBlockEntity::new, ModBlocks.STONE_BRICKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<SmoothStonePedestalBlockEntity>> SMOOTH_STONE_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("smooth_stone_pedestal", () -> BlockEntityType.Builder.of(
+                    SmoothStonePedestalBlockEntity::new, ModBlocks.SMOOTH_STONE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<GoldPedestalBlockEntity>> GOLD_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("gold_pedestal", () -> BlockEntityType.Builder.of(
+                    GoldPedestalBlockEntity::new, ModBlocks.GOLD_PEDESTAL.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

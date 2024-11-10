@@ -1,7 +1,7 @@
 package net.mattias.pedestals.screen.custom;
 
 
-import net.mattias.pedestals.block.entity.custom.CobblestonePedestalBlockEntity;
+import net.mattias.pedestals.block.entity.custom.GoldPedestalBlockEntity;
 import net.mattias.pedestals.screen.ModMenuTypes;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -11,17 +11,17 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class CobblestonePedestalMenu extends AbstractContainerMenu {
-    public final CobblestonePedestalBlockEntity cobblestonegPedestalBlockEntity;
+public class GoldPedestalMenu extends AbstractContainerMenu {
+    public final GoldPedestalBlockEntity goldPedestalBlockEntity;
 
-    public CobblestonePedestalMenu(int pContainerId, Inventory inv, CobblestonePedestalBlockEntity cobblestonegPedestalBlockEntity ) {
-        super(ModMenuTypes.COBBLESTONE_PEDESTAL_MENU.get(), pContainerId);
-        this.cobblestonegPedestalBlockEntity = cobblestonegPedestalBlockEntity;
+    public GoldPedestalMenu(int pContainerId, Inventory inv, GoldPedestalBlockEntity goldPedestalBlockEntity ) {
+        super(ModMenuTypes.GOLD_PEDESTAL_MENU.get(), pContainerId);
+        this.goldPedestalBlockEntity = goldPedestalBlockEntity;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.cobblestonegPedestalBlockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
+        this.goldPedestalBlockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
             this.addSlot(new SlotItemHandler(itemHandler, 0, 80, 35));
         });
     }
@@ -80,7 +80,7 @@ public class CobblestonePedestalMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return cobblestonegPedestalBlockEntity.stillValid(player);
+        return goldPedestalBlockEntity.stillValid(player);
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

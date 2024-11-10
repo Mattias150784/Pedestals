@@ -4,13 +4,11 @@ import com.mojang.logging.LogUtils;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.ModBlockEntities;
 import net.mattias.pedestals.block.entity.renderer.*;
-import net.mattias.pedestals.block.entity.renderer.CobblestonePedestalBlockEntityRenderer;
 import net.mattias.pedestals.block.entity.renderer.StonePedestalBlockEntityRenderer;
 import net.mattias.pedestals.item.ModCreativeModeTabs;
 import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
 import net.mattias.pedestals.screen.custom.*;
-import net.mattias.pedestals.screen.custom.CobblestonePedestalScreen;
 import net.mattias.pedestals.screen.custom.StonePedestalScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
@@ -92,6 +90,10 @@ public class Pedestals
 
             MenuScreens.register(ModMenuTypes.COBBLESTONE_PEDESTAL_MENU.get(), CobblestonePedestalScreen::new);
             MenuScreens.register(ModMenuTypes.STONE_PEDESTAL_MENU.get(), StonePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.SMOOTH_STONE_PEDESTAL_MENU.get(), SmoothStonePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.STONE_BRICKS_PEDESTAL_MENU.get(), StoneBricksPedestalScreen::new);
+
+            MenuScreens.register(ModMenuTypes.GOLD_PEDESTAL_MENU.get(), GoldPedestalScreen::new);
         }
         @SubscribeEvent
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
@@ -117,6 +119,10 @@ public class Pedestals
 
             event.registerBlockEntityRenderer(ModBlockEntities.COBBLESTONE_PEDESTAL_BE.get(), CobblestonePedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.STONE_PEDESTAL_BE.get(), StonePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.SMOOTH_STONE_PEDESTAL_BE.get(), SmoothStonePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.STONE_BRICKS_PEDESTAL_BE.get(), StoneBricksPedestalBlockEntityRenderer::new);
+
+            event.registerBlockEntityRenderer(ModBlockEntities.GOLD_PEDESTAL_BE.get(), GoldPedestalBlockEntityRenderer::new);
         }
     }
 }

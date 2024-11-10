@@ -20,6 +20,10 @@
     "pedestals:bamboo_planks_pedestal",
 
     "pedestals:stone_pedestal",
-    "pedestals:cobblestone_pedestal"
+    "pedestals:cobblestone_pedestal",
+    "pedestals:stone_bricks_pedestal",
+    "pedestals:smooth_stone_pedestal",
+    "pedestals:pedestal"
+
   ]
 }

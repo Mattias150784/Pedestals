@@ -1,7 +1,7 @@
 package net.mattias.pedestals.block.entity.custom;
 
 import net.mattias.pedestals.block.entity.ModBlockEntities;
-import net.mattias.pedestals.screen.custom.CobblestonePedestalMenu;
+import net.mattias.pedestals.screen.custom.SmoothStonePedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -26,7 +26,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class CobblestonePedestalBlockEntity extends BlockEntity implements Container, MenuProvider {
+public class SmoothStonePedestalBlockEntity extends BlockEntity implements Container, MenuProvider {
     private final ItemStackHandler inventory = new ItemStackHandler(1) {
         @Override
         protected int getStackLimit(int slot, @NotNull ItemStack stack) {
@@ -44,8 +44,8 @@ public class CobblestonePedestalBlockEntity extends BlockEntity implements Conta
     private float rotation = 0;
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
-    public CobblestonePedestalBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.COBBLESTONE_PEDESTAL_BE.get(), pPos, pBlockState);
+    public SmoothStonePedestalBlockEntity(BlockPos pPos, BlockState pBlockState) {
+        super(ModBlockEntities.SMOOTH_STONE_PEDESTAL_BE.get(), pPos, pBlockState);
     }
 
     @Override
@@ -164,6 +164,6 @@ public class CobblestonePedestalBlockEntity extends BlockEntity implements Conta
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return new CobblestonePedestalMenu(i, inventory, this);
+        return new SmoothStonePedestalMenu(i, inventory, this);
     }
 }
