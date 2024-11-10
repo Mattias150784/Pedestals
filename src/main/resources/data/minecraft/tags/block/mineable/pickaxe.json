@@ -1,6 +1,10 @@
 {
   "values": [
-    "pedestals:pedestal"
+    "pedestals:pedestal",
 
+    "pedestals:cobblestone_pedestal",
+    "pedestals:stone_pedestal",
+    "pedestals:stone_bricks_pedestal",
+    "pedestals:smooth_stone_pedestal"
   ]
 }

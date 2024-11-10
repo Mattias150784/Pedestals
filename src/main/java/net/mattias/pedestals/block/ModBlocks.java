@@ -4,6 +4,10 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.logs.*;
 import net.mattias.pedestals.block.custom.PedestalBlock;
 import net.mattias.pedestals.block.custom.planks.*;
+import net.mattias.pedestals.block.custom.stones.CobblestonePedestalBlock;
+import net.mattias.pedestals.block.custom.stones.SmoothStonePedestalBlock;
+import net.mattias.pedestals.block.custom.stones.StonePedestalBlock;
+import net.mattias.pedestals.block.custom.stones.StonebricksPedestalBlock;
 import net.mattias.pedestals.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -76,6 +80,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPRUCE_PLANKS_PEDESTAL = registerBlock("spruce_planks_pedestal",
             () -> new SprucePlanksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
 
+    public static final RegistryObject<Block> STONE_PEDESTAL = registerBlock("stone_pedestal",
+            () -> new StonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+    public static final RegistryObject<Block> SMOOTH_STONE_PEDESTAL = registerBlock("smooth_stone_pedestal",
+            () -> new SmoothStonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
+
+    public static final RegistryObject<Block> COBBLESTONE_PEDESTAL = registerBlock("cobblestone_pedestal",
+            () -> new CobblestonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+
+    public static final RegistryObject<Block> STONE_BRICKS_PEDESTAL = registerBlock("stone_bricks_pedestal",
+            () -> new StonebricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

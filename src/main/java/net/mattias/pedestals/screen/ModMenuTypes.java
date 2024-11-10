@@ -4,9 +4,17 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.planks.*;
+import net.mattias.pedestals.block.entity.custom.stones.CobblestonePedestalBlockEntity;
+import net.mattias.pedestals.block.entity.custom.stones.SmoothStonePedestalBlockEntity;
+import net.mattias.pedestals.block.entity.custom.stones.StoneBricksPedestalBlockEntity;
+import net.mattias.pedestals.block.entity.custom.stones.StonePedestalBlockEntity;
 import net.mattias.pedestals.screen.custom.logs.menu.*;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.mattias.pedestals.screen.custom.planks.menu.*;
+import net.mattias.pedestals.screen.custom.stone.menu.CobblestonePedestalMenu;
+import net.mattias.pedestals.screen.custom.stone.menu.SmoothStonePedestalMenu;
+import net.mattias.pedestals.screen.custom.stone.menu.StoneBricksPedestalMenu;
+import net.mattias.pedestals.screen.custom.stone.menu.StonePedestalMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -144,6 +152,34 @@ public class ModMenuTypes {
                 SprucePlanksPedestalBlockEntity sprucePlanksPedestalBlockEntity = (SprucePlanksPedestalBlockEntity) inventory.player.level()
                         .getBlockEntity(extraData.readBlockPos());
                 return new SprucePlanksPedestalMenu(pContainerId, inventory, sprucePlanksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<StonePedestalMenu>> STONE_PEDESTAL_MENU =
+            registerMenuType("stone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                StonePedestalBlockEntity stonePedestalBlockEntity = (StonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new StonePedestalMenu(pContainerId, inventory, stonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<StoneBricksPedestalMenu>> STONE_BRICKS_PEDESTAL_MENU =
+            registerMenuType("stone_bricks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                StoneBricksPedestalBlockEntity stonebricksPedestalBlockEntity = (StoneBricksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new StoneBricksPedestalMenu(pContainerId, inventory, stonebricksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<SmoothStonePedestalMenu>> SMOOTH_STONE_PEDESTAL_MENU =
+            registerMenuType("smooth_stone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                SmoothStonePedestalBlockEntity smoothstonePedestalBlockEntity = (SmoothStonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new SmoothStonePedestalMenu(pContainerId, inventory, smoothstonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<CobblestonePedestalMenu>> COBBLESTONE_PEDESTAL_MENU =
+            registerMenuType("cobblestone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                CobblestonePedestalBlockEntity cobblestonePedestalBlockEntity = (CobblestonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new CobblestonePedestalMenu(pContainerId, inventory, cobblestonePedestalBlockEntity);
             });
 
 
