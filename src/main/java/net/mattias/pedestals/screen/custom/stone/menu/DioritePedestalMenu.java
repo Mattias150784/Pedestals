@@ -15,7 +15,7 @@ public class DioritePedestalMenu extends AbstractContainerMenu {
     public final DioritePedestalBlockEntity DioritePedestalBlockEntity;
 
     public DioritePedestalMenu(int pContainerId, Inventory inv, DioritePedestalBlockEntity stonePedestalBlockEntity ) {
-        super(ModMenuTypes.PEDESTAL_MENU.get(), pContainerId);
+        super(ModMenuTypes.DIORITE_PEDESTAL_MENU.get(), pContainerId);
         this.DioritePedestalBlockEntity = stonePedestalBlockEntity;
 
         addPlayerInventory(inv);
