@@ -3,15 +3,15 @@ package net.mattias.pedestals;
 import com.mojang.logging.LogUtils;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.ModBlockEntities;
-import net.mattias.pedestals.block.entity.renderer.PedestalBlockEntityRenderer;
-import net.mattias.pedestals.block.entity.renderer.logs.*;
-import net.mattias.pedestals.block.entity.renderer.planks.*;
+import net.mattias.pedestals.block.entity.renderer.*;
+import net.mattias.pedestals.block.entity.renderer.CobblestonePedestalBlockEntityRenderer;
+import net.mattias.pedestals.block.entity.renderer.StonePedestalBlockEntityRenderer;
 import net.mattias.pedestals.item.ModCreativeModeTabs;
 import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
-import net.mattias.pedestals.screen.custom.PedestalScreen;
-import net.mattias.pedestals.screen.custom.logs.screen.*;
-import net.mattias.pedestals.screen.custom.planks.screen.*;
+import net.mattias.pedestals.screen.custom.*;
+import net.mattias.pedestals.screen.custom.CobblestonePedestalScreen;
+import net.mattias.pedestals.screen.custom.StonePedestalScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -89,6 +89,9 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.MANGROVE_PLANKS_PEDESTAL_MENU.get(), MangrovePlanksPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.OAK_PLANKS_PEDESTAL_MENU.get(), OakPlanksPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.SPRUCE_PLANKS_PEDESTAL_MENU.get(), SprucePlanksPedestalScreen::new);
+
+            MenuScreens.register(ModMenuTypes.COBBLESTONE_PEDESTAL_MENU.get(), CobblestonePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.STONE_PEDESTAL_MENU.get(), StonePedestalScreen::new);
         }
         @SubscribeEvent
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
@@ -111,6 +114,9 @@ public class Pedestals
             event.registerBlockEntityRenderer(ModBlockEntities.MANGROVE_PLANKS_PEDESTAL_BE.get(), MangrovePlanksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.OAK_PLANKS_PEDESTAL_BE.get(), OakPlanksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.SPRUCE_PLANKS_PEDESTAL_BE.get(), SprucePlanksPedestalBlockEntityRenderer::new);
+
+            event.registerBlockEntityRenderer(ModBlockEntities.COBBLESTONE_PEDESTAL_BE.get(), CobblestonePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.STONE_PEDESTAL_BE.get(), StonePedestalBlockEntityRenderer::new);
         }
     }
 }

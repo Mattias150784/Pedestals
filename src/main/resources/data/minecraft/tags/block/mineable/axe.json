@@ -17,6 +17,9 @@
     "pedestals:acacia_planks_pedestal",
     "pedestals:cherry_planks_pedestal",
     "pedestals:mangrove_planks_pedestal",
-    "pedestals:bamboo_planks_pedestal"
+    "pedestals:bamboo_planks_pedestal",
+
+    "pedestals:stone_pedestal",
+    "pedestals:cobblestone_pedestal"
   ]
 }

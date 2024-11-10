@@ -20,7 +20,9 @@
  "block.pedestals.jungle_planks_pedestal": "Jungle Planks Pedestal",
  "block.pedestals.mangrove_planks_pedestal": "Mangrove Planks Pedestal",
  "block.pedestals.spruce_planks_pedestal": "Spruce Planks Pedestal",
- 
+
+ "block.pedestals.cobblestone_pedestal": "Cobblestone Pedestal",
+ "block.pedestals.stone_pedestal": "Stone Pedestal",
 
 
   "creativetab.pedestals": "Pedestals"

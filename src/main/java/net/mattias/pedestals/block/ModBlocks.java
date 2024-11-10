@@ -1,17 +1,14 @@
 package net.mattias.pedestals.block;
 
 import net.mattias.pedestals.Pedestals;
-import net.mattias.pedestals.block.custom.PedestalBlock;
-import net.mattias.pedestals.block.custom.logs.*;
-import net.mattias.pedestals.block.custom.planks.*;
+import net.mattias.pedestals.block.custom.*;
+import net.mattias.pedestals.block.custom.CobblestonePedestalBlock;
+import net.mattias.pedestals.block.custom.StonePedestalBlock;
 import net.mattias.pedestals.item.ModItems;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -80,6 +77,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SPRUCE_PLANKS_PEDESTAL = registerBlock("spruce_planks_pedestal",
             () -> new SprucePlanksPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS)));
+
+    public static final RegistryObject<Block> STONE_PEDESTAL = registerBlock("stone_pedestal",
+            () -> new StonePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    public static final RegistryObject<Block> COBBLESTONE_PEDESTAL = registerBlock("cobblestone_pedestal",
+            () -> new CobblestonePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
