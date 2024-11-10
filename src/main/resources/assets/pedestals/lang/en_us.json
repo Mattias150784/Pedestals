@@ -26,6 +26,16 @@
  "block.pedestals.stone_bricks_pedestal": "Stone Bricks Pedestal",
  "block.pedestals.smooth_stone_pedestal": "Smooth Stone Pedestal",
 
+ "block.pedestals.polished_andesite_pedestal": "Polished Andesite Pedestal",
+ "block.pedestals.polished_granite_pedestal": "Polished Granite Pedestal",
+ "block.pedestals.polished_diorite_pedestal": "Polished Diorite Pedestal",
+ "block.pedestals.polished_tuff_pedestal": "Polished Tuff Pedestal",
+ "block.pedestals.polished_deepslate_pedestal": "Polished Deepslate Pedestal",
+
+ "block.pedestals.andesite_pedestal": "Andesite Pedestal",
+ "block.pedestals.granite_pedestal": "Granite Pedestal",
+ "block.pedestals.diorite_pedestal": "Diorite Pedestal",
+
  "block.pedestals.gold_pedestal": "Gold Pedestal",
 
 

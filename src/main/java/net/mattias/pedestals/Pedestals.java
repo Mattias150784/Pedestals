@@ -93,6 +93,16 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.SMOOTH_STONE_PEDESTAL_MENU.get(), SmoothStonePedestalScreen::new);
             MenuScreens.register(ModMenuTypes.STONE_BRICKS_PEDESTAL_MENU.get(), StoneBricksPedestalScreen::new);
 
+            MenuScreens.register(ModMenuTypes.POLISHED_ANDESITE_PEDESTAL_MENU.get(), PolishedAndesitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_GRANITE_PEDESTAL_MENU.get(), PolishedGranitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_DIORITE_PEDESTAL_MENU.get(), PolishedDioritePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_DEEPSLATE_PEDESTAL_MENU.get(), PolishedDeepslatePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_TUFF_PEDESTAL_MENU.get(), PolishedTuffPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.ANDESITE_PEDESTAL_MENU.get(), AndesitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.GRANITE_PEDESTAL_MENU.get(), GranitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.DIORITE_PEDESTAL_MENU.get(), DioritePedestalScreen::new);
+            
+            
             MenuScreens.register(ModMenuTypes.GOLD_PEDESTAL_MENU.get(), GoldPedestalScreen::new);
         }
         @SubscribeEvent
@@ -121,6 +131,15 @@ public class Pedestals
             event.registerBlockEntityRenderer(ModBlockEntities.STONE_PEDESTAL_BE.get(), StonePedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.SMOOTH_STONE_PEDESTAL_BE.get(), SmoothStonePedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.STONE_BRICKS_PEDESTAL_BE.get(), StoneBricksPedestalBlockEntityRenderer::new);
+
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_ANDESITE_PEDESTAL_BE.get(), PolishedAndesitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_GRANITE_PEDESTAL_BE.get(), PolishedGranitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_DIORITE_PEDESTAL_BE.get(), PolishedDioritePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_DEEPSLATE_PEDESTAL_BE.get(), PolishedDeepslatePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_TUFF_PEDESTAL_BE.get(), PolishedTuffPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.ANDESITE_PEDESTAL_BE.get(), AndesitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GRANITE_PEDESTAL_BE.get(), GranitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.DIORITE_PEDESTAL_BE.get(), DioritePedestalBlockEntityRenderer::new);
 
             event.registerBlockEntityRenderer(ModBlockEntities.GOLD_PEDESTAL_BE.get(), GoldPedestalBlockEntityRenderer::new);
         }

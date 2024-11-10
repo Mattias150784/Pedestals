@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:polished_granite"
+    }
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pedestals:polished_granite_pedestal"
+  },
+  "show_notification": true
+}

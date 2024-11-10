@@ -92,6 +92,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> GOLD_PEDESTAL = registerBlock("gold_pedestal",
             () -> new GoldPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK)));
 
+    public static final RegistryObject<Block> POLISHED_GRANITE_PEDESTAL = registerBlock("polished_granite_pedestal",
+            () -> new PolishedGranitePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_GRANITE)));
+
+    public static final RegistryObject<Block> POLISHED_DIORITE_PEDESTAL = registerBlock("polished_diorite_pedestal",
+            () -> new PolishedDioritePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DIORITE)));
+
+    public static final RegistryObject<Block> POLISHED_ANDESITE_PEDESTAL = registerBlock("polished_andesite_pedestal",
+            () -> new PolishedAndesitePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE)));
+    
+    public static final RegistryObject<Block> GRANITE_PEDESTAL = registerBlock("granite_pedestal",
+            () -> new GranitePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE)));
+
+    public static final RegistryObject<Block> DIORITE_PEDESTAL = registerBlock("diorite_pedestal",
+            () -> new DioritePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE)));
+
+    public static final RegistryObject<Block> ANDESITE_PEDESTAL = registerBlock("andesite_pedestal",
+            () -> new AndesitePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE)));
+
+    public static final RegistryObject<Block> POLISHED_TUFF_PEDESTAL = registerBlock("polished_tuff_pedestal",
+            () -> new PolishedTuffPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_TUFF)));
+
+    public static final RegistryObject<Block> POLISHED_DEEPSLATE_PEDESTAL = registerBlock("polished_deepslate_pedestal",
+            () -> new PolishedDeepslatePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DEEPSLATE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

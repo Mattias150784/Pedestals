@@ -65,16 +65,11 @@ minecraft {
         configureEach {
             workingDirectory project.file('run')
 
-            // Recommended logging data for a userdev environment
-            // The markers can be added/remove as needed separated by commas.
-            // "SCAN": For mods scan.
-            // "REGISTRIES": For firing of registry events.
-            // "REGISTRYDUMP": For getting the contents of all registries.
+            args '--uuid', 'e2213f33-fec1-4c06-9215-8417667b45a1' // MY SKIN
+            args '--username=Mattias1509' // MY USERNAME
             property 'forge.logging.markers', 'REGISTRIES'
 
-            // Recommended logging level for the console
-            // You can set various levels here.
-            // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
+
             property 'forge.logging.console.level', 'debug'
         }
 
