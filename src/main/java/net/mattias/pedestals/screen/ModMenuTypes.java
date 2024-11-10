@@ -4,17 +4,11 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.planks.*;
-import net.mattias.pedestals.block.entity.custom.stones.CobblestonePedestalBlockEntity;
-import net.mattias.pedestals.block.entity.custom.stones.SmoothStonePedestalBlockEntity;
-import net.mattias.pedestals.block.entity.custom.stones.StoneBricksPedestalBlockEntity;
-import net.mattias.pedestals.block.entity.custom.stones.StonePedestalBlockEntity;
+import net.mattias.pedestals.block.entity.custom.stones.*;
 import net.mattias.pedestals.screen.custom.logs.menu.*;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.mattias.pedestals.screen.custom.planks.menu.*;
-import net.mattias.pedestals.screen.custom.stone.menu.CobblestonePedestalMenu;
-import net.mattias.pedestals.screen.custom.stone.menu.SmoothStonePedestalMenu;
-import net.mattias.pedestals.screen.custom.stone.menu.StoneBricksPedestalMenu;
-import net.mattias.pedestals.screen.custom.stone.menu.StonePedestalMenu;
+import net.mattias.pedestals.screen.custom.stone.menu.*;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -180,6 +174,55 @@ public class ModMenuTypes {
                 CobblestonePedestalBlockEntity cobblestonePedestalBlockEntity = (CobblestonePedestalBlockEntity) inventory.player.level()
                         .getBlockEntity(extraData.readBlockPos());
                 return new CobblestonePedestalMenu(pContainerId, inventory, cobblestonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PolishedAndesitePedestalMenu>> POLISHED_ANDESITE_PEDESTAL_MENU =
+            registerMenuType("polished_andesite_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PolishedAndesitePedestalBlockEntity polishedAndesitePedestalBlockEntity = (PolishedAndesitePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PolishedAndesitePedestalMenu(pContainerId, inventory, polishedAndesitePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PolishedDioritePedestalMenu>> POLISHED_DIORITE_PEDESTAL_MENU =
+            registerMenuType("polished_diorite_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PolishedDioritePedestalBlockEntity polishedDioritePedestalBlockEntity = (PolishedDioritePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PolishedDioritePedestalMenu(pContainerId, inventory, polishedDioritePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PolishedGranitePedestalMenu>> POLISHED_GRANITE_PEDESTAL_MENU =
+            registerMenuType("polished_granite_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PolishedGranitePedestalBlockEntity polishedGranitePedestalBlockEntity = (PolishedGranitePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PolishedGranitePedestalMenu(pContainerId, inventory, polishedGranitePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<AndesitePedestalMenu>> ANDESITE_PEDESTAL_MENU =
+            registerMenuType("andesite_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                AndesitePedestalBlockEntity AndesitePedestalBlockEntity = (AndesitePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new AndesitePedestalMenu(pContainerId, inventory, AndesitePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<DioritePedestalMenu>> DIORITE_PEDESTAL_MENU =
+            registerMenuType("diorite_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                DioritePedestalBlockEntity DioritePedestalBlockEntity = (DioritePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new DioritePedestalMenu(pContainerId, inventory, DioritePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<GranitePedestalMenu>> GRANITE_PEDESTAL_MENU =
+            registerMenuType("granite_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                GranitePedestalBlockEntity GranitePedestalBlockEntity = (GranitePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new GranitePedestalMenu(pContainerId, inventory, GranitePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PolishedDeepslatePedestalMenu>> POLISHED_DEEPSLATE_PEDESTAL_MENU =
+            registerMenuType("polished_deepslate_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PolishedDeepslatePedestalBlockEntity polishedDeepslatePedestalBlockEntity = (PolishedDeepslatePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PolishedDeepslatePedestalMenu(pContainerId, inventory, polishedDeepslatePedestalBlockEntity);
             });
 
 

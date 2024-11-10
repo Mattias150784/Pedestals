@@ -7,10 +7,7 @@ import net.mattias.pedestals.block.entity.custom.stones.SmoothStonePedestalBlock
 import net.mattias.pedestals.block.entity.renderer.logs.*;
 import net.mattias.pedestals.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.mattias.pedestals.block.entity.renderer.planks.*;
-import net.mattias.pedestals.block.entity.renderer.stone.CobblestonePedestalBlockEntityRenderer;
-import net.mattias.pedestals.block.entity.renderer.stone.SmoothStonePedestalBlockEntityRenderer;
-import net.mattias.pedestals.block.entity.renderer.stone.StoneBricksPedestalBlockEntityRenderer;
-import net.mattias.pedestals.block.entity.renderer.stone.StonePedestalBlockEntityRenderer;
+import net.mattias.pedestals.block.entity.renderer.stone.*;
 import net.mattias.pedestals.item.ModCreativeModeTabs;
 import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
@@ -18,10 +15,7 @@ import net.mattias.pedestals.screen.custom.logs.screen.*;
 import net.mattias.pedestals.screen.custom.PedestalScreen;
 import net.mattias.pedestals.screen.custom.planks.menu.SprucePlanksPedestalMenu;
 import net.mattias.pedestals.screen.custom.planks.screen.*;
-import net.mattias.pedestals.screen.custom.stone.screen.CobblestonePedestalScreen;
-import net.mattias.pedestals.screen.custom.stone.screen.SmoothStonePedestalScreen;
-import net.mattias.pedestals.screen.custom.stone.screen.StoneBricksPedestalScreen;
-import net.mattias.pedestals.screen.custom.stone.screen.StonePedestalScreen;
+import net.mattias.pedestals.screen.custom.stone.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -104,6 +98,16 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.COBBLESTONE_PEDESTAL_MENU.get(), CobblestonePedestalScreen::new);
             MenuScreens.register(ModMenuTypes.STONE_BRICKS_PEDESTAL_MENU.get(), StoneBricksPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.SMOOTH_STONE_PEDESTAL_MENU.get(), SmoothStonePedestalScreen::new);
+
+            MenuScreens.register(ModMenuTypes.POLISHED_ANDESITE_PEDESTAL_MENU.get(), PolishedAndesitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_GRANITE_PEDESTAL_MENU.get(), PolishedGranitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_DIORITE_PEDESTAL_MENU.get(), PolishedDioritePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.POLISHED_DEEPSLATE_PEDESTAL_MENU.get(), PolishedDeepslatePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.ANDESITE_PEDESTAL_MENU.get(), AndesitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.GRANITE_PEDESTAL_MENU.get(), GranitePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.DIORITE_PEDESTAL_MENU.get(), DioritePedestalScreen::new);
+            
+            
         }
 
         @SubscribeEvent
@@ -132,6 +136,14 @@ public class Pedestals
             event.registerBlockEntityRenderer(ModBlockEntities.STONE_BRICKS_PEDESTAL_BE.get(), StoneBricksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.COBBLESTONE_PEDESTAL_BE.get(), CobblestonePedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.SMOOTH_STONE_PEDESTAL_BE.get(), SmoothStonePedestalBlockEntityRenderer::new);
+
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_ANDESITE_PEDESTAL_BE.get(), PolishedAndesitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_DIORITE_PEDESTAL_BE.get(), PolishedDioritePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_GRANITE_PEDESTAL_BE.get(), PolishedGranitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.POLISHED_DEEPSLATE_PEDESTAL_BE.get(), PolishedDeepslatePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.ANDESITE_PEDESTAL_BE.get(), AndesitePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.DIORITE_PEDESTAL_BE.get(), DioritePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GRANITE_PEDESTAL_BE.get(), GranitePedestalBlockEntityRenderer::new);
 
         }
 

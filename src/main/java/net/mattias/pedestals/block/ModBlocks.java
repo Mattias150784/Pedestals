@@ -4,10 +4,7 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.logs.*;
 import net.mattias.pedestals.block.custom.PedestalBlock;
 import net.mattias.pedestals.block.custom.planks.*;
-import net.mattias.pedestals.block.custom.stones.CobblestonePedestalBlock;
-import net.mattias.pedestals.block.custom.stones.SmoothStonePedestalBlock;
-import net.mattias.pedestals.block.custom.stones.StonePedestalBlock;
-import net.mattias.pedestals.block.custom.stones.StonebricksPedestalBlock;
+import net.mattias.pedestals.block.custom.stones.*;
 import net.mattias.pedestals.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -91,6 +88,27 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STONE_BRICKS_PEDESTAL = registerBlock("stone_bricks_pedestal",
             () -> new StonebricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+    public static final RegistryObject<Block> POLISHED_ANDESITE_PEDESTAL = registerBlock("polished_andesite_pedestal",
+            () -> new PolishedAndesitePedestalBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_ANDESITE)));
+
+    public static final RegistryObject<Block> POLISHED_DIORITE_PEDESTAL = registerBlock("polished_diorite_pedestal",
+            () -> new PolishedDioritePedestalBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_DIORITE)));
+
+    public static final RegistryObject<Block> POLISHED_GRANITE_PEDESTAL = registerBlock("polished_granite_pedestal",
+            () -> new PolishedGranitePedestalBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_GRANITE)));
+
+    public static final RegistryObject<Block> POLISHED_DEEPSLATE_PEDESTAL = registerBlock("polished_deepslate_pedestal",
+            () -> new PolishedDeepslatePedestalBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_DEEPSLATE)));
+
+    public static final RegistryObject<Block> ANDESITE_PEDESTAL = registerBlock("andesite_pedestal",
+            () -> new AndesitePedestalBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)));
+
+    public static final RegistryObject<Block> DIORITE_PEDESTAL = registerBlock("diorite_pedestal",
+            () -> new DioritePedestalBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)));
+
+    public static final RegistryObject<Block> GRANITE_PEDESTAL = registerBlock("granite_pedestal",
+            () -> new GranitePedestalBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
