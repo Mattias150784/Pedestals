@@ -32,6 +32,14 @@
     "pedestals:polished_deepslate_pedestal",
     "pedestals:andesite_pedestal",
     "pedestals:diorite_pedestal",
-    "pedestals:granite_pedestal"
+    "pedestals:granite_pedestal",
+
+    "pedestals:bricks_pedestal",
+    "pedestals:mossy_stone_bricks_pedestal",
+    "pedestals:mossy_cobblestone_pedestal",
+    "pedestals:quartz_pedestal",
+    "pedestals:quartz_pillar_pedestal",
+    "pedestals:sandstone_pedestal",
+    "pedestals:red_sandstone_pedestal"
   ]
 }

@@ -232,6 +232,55 @@ public class ModMenuTypes {
                 return new GranitePedestalMenu(pContainerId, inventory, GranitePedestalBlockEntity);
             });
 
+    public static final RegistryObject<MenuType<BricksPedestalMenu>> BRICKS_PEDESTAL_MENU =
+            registerMenuType("bricks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BricksPedestalBlockEntity BricksPedestalBlockEntity = (BricksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BricksPedestalMenu(pContainerId, inventory, BricksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<MossyCobblestonePedestalMenu>> MOSSY_COBBLESTONE_PEDESTAL_MENU =
+            registerMenuType("mossy_cobblestone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                MossyCobblestonePedestalBlockEntity MossyCobblestonePedestalBlockEntity = (MossyCobblestonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new MossyCobblestonePedestalMenu(pContainerId, inventory, MossyCobblestonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<MossyStoneBricksPedestalMenu>> MOSSY_STONE_BRICKS_PEDESTAL_MENU =
+            registerMenuType("mossy_stone_bricks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                MossyStoneBricksPedestalBlockEntity MossyStoneBricksPedestalBlockEntity = (MossyStoneBricksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new MossyStoneBricksPedestalMenu(pContainerId, inventory, MossyStoneBricksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<QuartzPedestalMenu>> QUARTZ_PEDESTAL_MENU =
+            registerMenuType("quartz_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                QuartzPedestalBlockEntity QuartzPedestalBlockEntity = (QuartzPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new QuartzPedestalMenu(pContainerId, inventory, QuartzPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<QuartzPillarPedestalMenu>> QUARTZ_PILLAR_PEDESTAL_MENU =
+            registerMenuType("quartz_pillar_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                QuartzPillarPedestalBlockEntity QuartzPillarPedestalBlockEntity = (QuartzPillarPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new QuartzPillarPedestalMenu(pContainerId, inventory, QuartzPillarPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<RedSandstonePedestalMenu>> RED_SANDSTONE_PEDESTAL_MENU =
+            registerMenuType("red_sandstone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                RedSandstonePedestalBlockEntity RedSandstonePedestalBlockEntity = (RedSandstonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new RedSandstonePedestalMenu(pContainerId, inventory, RedSandstonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<SandstonePedestalMenu>> SANDSTONE_PEDESTAL_MENU =
+            registerMenuType("sandstone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                SandstonePedestalBlockEntity SandstonePedestalBlockEntity = (SandstonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new SandstonePedestalMenu(pContainerId, inventory, SandstonePedestalBlockEntity);
+            });
+
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name,
                                                                                                  IContainerFactory<T> factory) {
