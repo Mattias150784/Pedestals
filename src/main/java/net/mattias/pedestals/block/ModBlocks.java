@@ -110,6 +110,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> GRANITE_PEDESTAL = registerBlock("granite_pedestal",
             () -> new GranitePedestalBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)));
 
+    public static final RegistryObject<Block> BRICKS_PEDESTAL = registerBlock("bricks_pedestal",
+            () -> new BricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS)));
+
+    public static final RegistryObject<Block> MOSSY_COBBLESTONE_PEDESTAL = registerBlock("mossy_cobblestone_pedestal",
+            () -> new MossyCobblestonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_COBBLESTONE)));
+
+    public static final RegistryObject<Block> MOSSY_STONE_BRICKS_PEDESTAL = registerBlock("mossy_stone_bricks_pedestal",
+            () -> new MossyStoneBricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> QUARTZ_PEDESTAL = registerBlock("quartz_pedestal",
+            () -> new QuartzPedestalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)));
+
+    public static final RegistryObject<Block> QUARTZ_PILLAR_PEDESTAL = registerBlock("quartz_pillar_pedestal",
+            () -> new QuartzPillarPedestalBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> RED_SANDSTONE_PEDESTAL = registerBlock("red_sandstone_pedestal",
+            () -> new RedSandstonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE)));
+
+    public static final RegistryObject<Block> SANDSTONE_PEDESTAL = registerBlock("sandstone_pedestal",
+            () -> new SandstonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "pedestals:block/polished_tuff_pedestal",
-		"particle": "pedestals:block/polished_tuff_pedestal"
+		"0": "pedestals:block/quartz_pedestal",
+		"particle": "pedestals:block/quartz_pedestal"
 	},
 	"elements": [
 		{

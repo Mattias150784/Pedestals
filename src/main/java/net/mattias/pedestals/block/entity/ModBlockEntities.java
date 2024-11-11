@@ -133,8 +133,37 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<GranitePedestalBlockEntity>> GRANITE_PEDESTAL_BE =
             BLOCK_ENTITIES.register("granite_pedestal", () -> BlockEntityType.Builder.of(
                     GranitePedestalBlockEntity::new, ModBlocks.GRANITE_PEDESTAL.get()).build(null));
-    
-    
+
+    public static final RegistryObject<BlockEntityType<BricksPedestalBlockEntity>> BRICKS_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("bricks_pedestal", () -> BlockEntityType.Builder.of(
+                    BricksPedestalBlockEntity::new, ModBlocks.BRICKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<MossyCobblestonePedestalBlockEntity>> MOSSY_COBBLESTONE_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("mossy_cobblestone_pedestal", () -> BlockEntityType.Builder.of(
+                    MossyCobblestonePedestalBlockEntity::new, ModBlocks.MOSSY_COBBLESTONE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<MossyStoneBricksPedestalBlockEntity>> MOSSY_STONE_BRICKS_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("mossy_stone_bricks_pedestal", () -> BlockEntityType.Builder.of(
+                    MossyStoneBricksPedestalBlockEntity::new, ModBlocks.MOSSY_STONE_BRICKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<QuartzPedestalBlockEntity>> QUARTZ_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("quartz_pedestal", () -> BlockEntityType.Builder.of(
+                    QuartzPedestalBlockEntity::new, ModBlocks.QUARTZ_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<QuartzPillarPedestalBlockEntity>> QUARTZ_PILLAR_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("quartz_pillar_pedestal", () -> BlockEntityType.Builder.of(
+                    QuartzPillarPedestalBlockEntity::new, ModBlocks.QUARTZ_PILLAR_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<SandstonePedestalBlockEntity>> SANDSTONE_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("sandstone_pedestal", () -> BlockEntityType.Builder.of(
+                    SandstonePedestalBlockEntity::new, ModBlocks.SANDSTONE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<RedSandstonePedestalBlockEntity>> RED_SANDSTONE_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("red_sandstone_pedestal", () -> BlockEntityType.Builder.of(
+                    RedSandstonePedestalBlockEntity::new, ModBlocks.RED_SANDSTONE_PEDESTAL.get()).build(null));
+
+
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }
