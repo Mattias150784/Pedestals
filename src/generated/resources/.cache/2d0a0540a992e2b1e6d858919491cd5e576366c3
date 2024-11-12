@@ -1,0 +1,4 @@
+// 1.20.1	2024-11-11T17:38:19.7817356	Tags for minecraft:block mod id pedestals
+617f07534be3b451fe3a6a67dcb97d6d233b112f data/forge/tags/blocks/needs_wood_tool.json
+1ac30093ff44a66c684850c496abb156478e6d4d data/minecraft/tags/blocks/mineable/axe.json
+7ae215e23849787679673897c383c5ec2cdd3408 data/minecraft/tags/blocks/mineable/pickaxe.json

@@ -4,6 +4,7 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.custom.planks.CherryPlanksPedestalBlock;
 import net.mattias.pedestals.block.custom.planks.OakPlanksPedestalBlock;
+import net.mattias.pedestals.block.entity.custom.concrete.*;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.planks.*;
@@ -162,7 +163,69 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("red_sandstone_pedestal", () -> BlockEntityType.Builder.of(
                     RedSandstonePedestalBlockEntity::new, ModBlocks.RED_SANDSTONE_PEDESTAL.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<BlackConcretePedestalBlockEntity>> BLACK_CONCRETE_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("black_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    BlackConcretePedestalBlockEntity::new, ModBlocks.BLACK_CONCRETE_PEDESTAL.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<BlueConcretePedestalBlockEntity>> BLUE_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("blue_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    BlueConcretePedestalBlockEntity::new, ModBlocks.BLUE_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BrownConcretePedestalBlockEntity>> BROWN_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("brown_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    BrownConcretePedestalBlockEntity::new, ModBlocks.BROWN_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CyanConcretePedestalBlockEntity>> CYAN_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("cyan_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    CyanConcretePedestalBlockEntity::new, ModBlocks.CYAN_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<GrayConcretePedestalBlockEntity>> GRAY_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("gray_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    GrayConcretePedestalBlockEntity::new, ModBlocks.GRAY_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<GreenConcretePedestalBlockEntity>> GREEN_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("green_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    GreenConcretePedestalBlockEntity::new, ModBlocks.GREEN_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<LightBlueConcretePedestalBlockEntity>> LIGHT_BLUE_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("light_blue_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    LightBlueConcretePedestalBlockEntity::new, ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<LightGrayConcretePedestalBlockEntity>> LIGHT_GRAY_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("light_gray_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    LightGrayConcretePedestalBlockEntity::new, ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<LimeConcretePedestalBlockEntity>> LIME_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("lime_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    LimeConcretePedestalBlockEntity::new, ModBlocks.LIME_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<MagentaConcretePedestalBlockEntity>> MAGENTA_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("magenta_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    MagentaConcretePedestalBlockEntity::new, ModBlocks.MAGENTA_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<OrangeConcretePedestalBlockEntity>> ORANGE_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("orange_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    OrangeConcretePedestalBlockEntity::new, ModBlocks.ORANGE_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PinkConcretePedestalBlockEntity>> PINK_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("pink_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    PinkConcretePedestalBlockEntity::new, ModBlocks.PINK_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PurpleConcretePedestalBlockEntity>> PURPLE_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("purple_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    PurpleConcretePedestalBlockEntity::new, ModBlocks.PURPLE_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<RedConcretePedestalBlockEntity>> RED_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("red_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    RedConcretePedestalBlockEntity::new, ModBlocks.RED_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<WhiteConcretePedestalBlockEntity>> WHITE_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("white_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    WhiteConcretePedestalBlockEntity::new, ModBlocks.WHITE_CONCRETE_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<YellowConcretePedestalBlockEntity>> YELLOW_CONCRETE_PEDESTAL =
+            BLOCK_ENTITIES.register("yellow_concrete_pedestal", () -> BlockEntityType.Builder.of(
+                    YellowConcretePedestalBlockEntity::new, ModBlocks.YELLOW_CONCRETE_PEDESTAL.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

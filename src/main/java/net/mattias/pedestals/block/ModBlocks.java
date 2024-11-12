@@ -1,6 +1,7 @@
 package net.mattias.pedestals.block;
 
 import net.mattias.pedestals.Pedestals;
+import net.mattias.pedestals.block.custom.concrete.*;
 import net.mattias.pedestals.block.custom.logs.*;
 import net.mattias.pedestals.block.custom.PedestalBlock;
 import net.mattias.pedestals.block.custom.planks.*;
@@ -130,6 +131,54 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SANDSTONE_PEDESTAL = registerBlock("sandstone_pedestal",
             () -> new SandstonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> BLACK_CONCRETE_PEDESTAL = registerBlock("black_concrete_pedestal",
+            () -> new BlackConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_CONCRETE)));
+
+    public static final RegistryObject<Block> BLUE_CONCRETE_PEDESTAL = registerBlock("blue_concrete_pedestal",
+            () -> new BlueConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_CONCRETE)));
+
+    public static final RegistryObject<Block> BROWN_CONCRETE_PEDESTAL = registerBlock("brown_concrete_pedestal",
+            () -> new BrownConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_CONCRETE)));
+
+    public static final RegistryObject<Block> GREEN_CONCRETE_PEDESTAL = registerBlock("green_concrete_pedestal",
+            () -> new GreenConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_CONCRETE)));
+
+    public static final RegistryObject<Block> GRAY_CONCRETE_PEDESTAL = registerBlock("gray_concrete_pedestal",
+            () -> new GrayConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_CONCRETE)));
+
+    public static final RegistryObject<Block> ORANGE_CONCRETE_PEDESTAL = registerBlock("orange_concrete_pedestal",
+            () -> new OrangeConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_CONCRETE)));
+
+    public static final RegistryObject<Block> PURPLE_CONCRETE_PEDESTAL = registerBlock("purple_concrete_pedestal",
+            () -> new PurpleConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_CONCRETE)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_CONCRETE_PEDESTAL = registerBlock("light_gray_concrete_pedestal",
+            () -> new LightGrayConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_CONCRETE)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_CONCRETE_PEDESTAL = registerBlock("light_blue_concrete_pedestal",
+            () -> new LightBlueConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_CONCRETE)));
+
+    public static final RegistryObject<Block> PINK_CONCRETE_PEDESTAL = registerBlock("pink_concrete_pedestal",
+            () -> new PinkConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_CONCRETE)));
+
+    public static final RegistryObject<Block> RED_CONCRETE_PEDESTAL = registerBlock("red_concrete_pedestal",
+            () -> new RedConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.RED_CONCRETE)));
+
+    public static final RegistryObject<Block> WHITE_CONCRETE_PEDESTAL = registerBlock("white_concrete_pedestal",
+            () -> new WhiteConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CONCRETE)));
+
+    public static final RegistryObject<Block> YELLOW_CONCRETE_PEDESTAL = registerBlock("yellow_concrete_pedestal",
+            () -> new YellowConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_CONCRETE)));
+
+    public static final RegistryObject<Block> MAGENTA_CONCRETE_PEDESTAL = registerBlock("magenta_concrete_pedestal",
+            () -> new MagentaConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_CONCRETE)));
+
+    public static final RegistryObject<Block> CYAN_CONCRETE_PEDESTAL = registerBlock("cyan_concrete_pedestal",
+            () -> new CyanConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.CYAN_CONCRETE)));
+
+    public static final RegistryObject<Block> LIME_CONCRETE_PEDESTAL = registerBlock("lime_concrete_pedestal",
+            () -> new LimeConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIME_CONCRETE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

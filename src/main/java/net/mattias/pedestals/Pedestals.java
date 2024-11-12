@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.ModBlockEntities;
 import net.mattias.pedestals.block.entity.custom.stones.SmoothStonePedestalBlockEntity;
+import net.mattias.pedestals.block.entity.renderer.concrete.*;
 import net.mattias.pedestals.block.entity.renderer.logs.*;
 import net.mattias.pedestals.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.mattias.pedestals.block.entity.renderer.planks.*;
@@ -11,7 +12,9 @@ import net.mattias.pedestals.block.entity.renderer.stone.*;
 import net.mattias.pedestals.item.ModCreativeModeTabs;
 import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
+import net.mattias.pedestals.screen.custom.concrete.screen.BlackConcretePedestalScreen;
 import net.mattias.pedestals.screen.custom.logs.screen.*;
+import net.mattias.pedestals.screen.custom.concrete.screen.*;
 import net.mattias.pedestals.screen.custom.PedestalScreen;
 import net.mattias.pedestals.screen.custom.planks.menu.SprucePlanksPedestalMenu;
 import net.mattias.pedestals.screen.custom.planks.screen.*;
@@ -114,7 +117,23 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.QUARTZ_PILLAR_PEDESTAL_MENU.get(), QuartzPillarPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.SANDSTONE_PEDESTAL_MENU.get(), SandstonePedestalScreen::new);
             MenuScreens.register(ModMenuTypes.RED_SANDSTONE_PEDESTAL_MENU.get(), RedSandstonePedestalScreen::new);
-            
+
+            MenuScreens.register(ModMenuTypes.BLACK_CONCRETE_PEDESTAL_MENU.get(), BlackConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.BLUE_CONCRETE_PEDESTAL_MENU.get(), BlueConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.BROWN_CONCRETE_PEDESTAL_MENU.get(), BrownConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.CYAN_CONCRETE_PEDESTAL_MENU.get(), CyanConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.GRAY_CONCRETE_PEDESTAL_MENU.get(), GrayConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.GREEN_CONCRETE_PEDESTAL_MENU.get(), GreenConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.LIGHT_BLUE_CONCRETE_PEDESTAL_MENU.get(), LightBlueConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.LIGHT_GRAY_CONCRETE_PEDESTAL_MENU.get(), LightGrayConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.LIME_CONCRETE_PEDESTAL_MENU.get(), LimeConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.MAGENTA_CONCRETE_PEDESTAL_MENU.get(), MagentaConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.ORANGE_CONCRETE_PEDESTAL_MENU.get(), OrangeConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.PINK_CONCRETE_PEDESTAL_MENU.get(), PinkConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.PURPLE_CONCRETE_PEDESTAL_MENU.get(), PurpleConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.RED_CONCRETE_PEDESTAL_MENU.get(), RedConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.WHITE_CONCRETE_PEDESTAL_MENU.get(), WhiteConcretePedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.YELLOW_CONCRETE_PEDESTAL_MENU.get(), YellowConcretePedestalScreen::new);
             
         }
 
@@ -160,6 +179,24 @@ public class Pedestals
             event.registerBlockEntityRenderer(ModBlockEntities.QUARTZ_PILLAR_PEDESTAL_BE.get(), QuartzPillarPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.SANDSTONE_PEDESTAL_BE.get(), SandstonePedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.RED_SANDSTONE_PEDESTAL_BE.get(), RedSandstonePedestalBlockEntityRenderer::new);
+
+            event.registerBlockEntityRenderer(ModBlockEntities.BLACK_CONCRETE_PEDESTAL_BE.get(), BlackConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.BLUE_CONCRETE_PEDESTAL.get(), BlueConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.BROWN_CONCRETE_PEDESTAL.get(), BrownConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.CYAN_CONCRETE_PEDESTAL.get(), CyanConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GRAY_CONCRETE_PEDESTAL.get(), GrayConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GREEN_CONCRETE_PEDESTAL.get(), GreenConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.LIGHT_GRAY_CONCRETE_PEDESTAL.get(), LightGrayConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.LIGHT_BLUE_CONCRETE_PEDESTAL.get(), LightBlueConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.LIME_CONCRETE_PEDESTAL.get(), LimeConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MAGENTA_CONCRETE_PEDESTAL.get(), MagentaConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.ORANGE_CONCRETE_PEDESTAL.get(), OrangeConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.PINK_CONCRETE_PEDESTAL.get(), PinkConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.PURPLE_CONCRETE_PEDESTAL.get(), PurpleConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.RED_CONCRETE_PEDESTAL.get(), RedConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.YELLOW_CONCRETE_PEDESTAL.get(), YellowConcretePedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.WHITE_CONCRETE_PEDESTAL.get(), WhiteConcretePedestalBlockEntityRenderer::new);
+
 
         }
 

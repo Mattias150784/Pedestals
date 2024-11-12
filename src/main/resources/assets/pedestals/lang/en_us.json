@@ -45,6 +45,22 @@
 
  "block.pedestals.gold_pedestal": "Gold Pedestal",
 
+ "block.pedestals.brown_concrete_pedestal": "Brown Concrete Pedestal",
+ "block.pedestals.blue_concrete_pedestal": "Blue Concrete Pedestal",
+ "block.pedestals.black_concrete_pedestal": "Black Concrete Pedestal",
+ "block.pedestals.cyan_concrete_pedestal": "Cyan Concrete Pedestal",
+ "block.pedestals.gray_concrete_pedestal": "Gray Concrete Pedestal",
+ "block.pedestals.green_concrete_pedestal": "Green Concrete Pedestal",
+ "block.pedestals.light_blue_concrete_pedestal": "Light Blue Concrete Pedestal",
+ "block.pedestals.light_gray_concrete_pedestal": "Light Gray Concrete Pedestal",
+ "block.pedestals.lime_concrete_pedestal": "Lime Concrete Pedestal",
+ "block.pedestals.magenta_concrete_pedestal": "Magenta Concrete Pedestal",
+ "block.pedestals.orange_concrete_pedestal": "Orange Concrete Pedestal",
+ "block.pedestals.pink_concrete_pedestal": "Pink Concrete Pedestal",
+ "block.pedestals.purple_concrete_pedestal": "Purple Concrete Pedestal",
+ "block.pedestals.red_concrete_pedestal": "Red Concrete Pedestal",
+ "block.pedestals.white_concrete_pedestal": "White Concrete Pedestal",
+ "block.pedestals.yellow_concrete_pedestal": "Yellow Concrete Pedestal",
 
   "creativetab.pedestals": "Pedestals"
 }
