@@ -61,6 +61,22 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SANDSTONE_PEDESTAL.get());
                         output.accept(ModBlocks.RED_SANDSTONE_PEDESTAL.get());
 
+                        output.accept(ModBlocks.BLACK_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.BLUE_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.BROWN_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.CYAN_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.GRAY_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.GREEN_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.LIME_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.MAGENTA_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.ORANGE_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.PINK_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.PURPLE_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.RED_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.WHITE_CONCRETE_PEDESTAL.get());
+                        output.accept(ModBlocks.YELLOW_CONCRETE_PEDESTAL.get());
 
 
                         //output.accept(ModBlocks.GOLD_PEDESTAL.get()); ADD LATER

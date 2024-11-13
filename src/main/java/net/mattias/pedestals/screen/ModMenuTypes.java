@@ -281,6 +281,119 @@ public class ModMenuTypes {
                 return new SandstonePedestalMenu(pContainerId, inventory, SandstonePedestalBlockEntity);
             });
 
+    public static final RegistryObject<MenuType<BlackConcretePedestalMenu>> BLACK_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("black_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BlackConcretePedestalBlockEntity BlackConcretePedestalBlockEntity = (BlackConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BlackConcretePedestalMenu(pContainerId, inventory, BlackConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<BlueConcretePedestalMenu>> BLUE_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("blue_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BlueConcretePedestalBlockEntity BlueConcretePedestalBlockEntity = (BlueConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BlueConcretePedestalMenu(pContainerId, inventory, BlueConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<BrownConcretePedestalMenu>> BROWN_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("brown_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BrownConcretePedestalBlockEntity BrownConcretePedestalBlockEntity = (BrownConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BrownConcretePedestalMenu(pContainerId, inventory, BrownConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<CyanConcretePedestalMenu>> CYAN_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("cyan_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                CyanConcretePedestalBlockEntity CyanConcretePedestalBlockEntity = (CyanConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new CyanConcretePedestalMenu(pContainerId, inventory, CyanConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<GrayConcretePedestalMenu>> GRAY_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("gray_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                GrayConcretePedestalBlockEntity GrayConcretePedestalBlockEntity = (GrayConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new GrayConcretePedestalMenu(pContainerId, inventory, GrayConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<GreenConcretePedestalMenu>> GREEN_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("green_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                GreenConcretePedestalBlockEntity GreenConcretePedestalBlockEntity = (GreenConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new GreenConcretePedestalMenu(pContainerId, inventory, GreenConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<LightBlueConcretePedestalMenu>> LIGHT_BLUE_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("light_blue_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                LightBlueConcretePedestalBlockEntity LightBlueConcretePedestalBlockEntity = (LightBlueConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new LightBlueConcretePedestalMenu(pContainerId, inventory, LightBlueConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<LightGrayConcretePedestalMenu>> LIGHT_GRAY_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("light_gray_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                LightGrayConcretePedestalBlockEntity LightGrayConcretePedestalBlockEntity = (LightGrayConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new LightGrayConcretePedestalMenu(pContainerId, inventory, LightGrayConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<LimeConcretePedestalMenu>> LIME_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("lime_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                LimeConcretePedestalBlockEntity LimeConcretePedestalBlockEntity = (LimeConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new LimeConcretePedestalMenu(pContainerId, inventory, LimeConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<MagentaConcretePedestalMenu>> MAGENTA_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("magenta_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                MagentaConcretePedestalBlockEntity MagentaConcretePedestalBlockEntity = (MagentaConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new MagentaConcretePedestalMenu(pContainerId, inventory, MagentaConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<OrangeConcretePedestalMenu>> ORANGE_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("orange_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                OrangeConcretePedestalBlockEntity OrangeConcretePedestalBlockEntity = (OrangeConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new OrangeConcretePedestalMenu(pContainerId, inventory, OrangeConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PinkConcretePedestalMenu>> PINK_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("pink_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PinkConcretePedestalBlockEntity PinkConcretePedestalBlockEntity = (PinkConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PinkConcretePedestalMenu(pContainerId, inventory, PinkConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PurpleConcretePedestalMenu>> PURPLE_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("purple_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PurpleConcretePedestalBlockEntity PurpleConcretePedestalBlockEntity = (PurpleConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PurpleConcretePedestalMenu(pContainerId, inventory, PurpleConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<RedConcretePedestalMenu>> RED_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("red_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                RedConcretePedestalBlockEntity RedConcretePedestalBlockEntity = (RedConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new RedConcretePedestalMenu(pContainerId, inventory, RedConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<WhiteConcretePedestalMenu>> WHITE_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("white_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                WhiteConcretePedestalBlockEntity WhiteConcretePedestalBlockEntity = (WhiteConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new WhiteConcretePedestalMenu(pContainerId, inventory, WhiteConcretePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<YellowConcretePedestalMenu>> YELLOW_CONCRETE_PEDESTAL_MENU =
+            registerMenuType("yellow_concrete_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                YellowConcretePedestalBlockEntity YellowConcretePedestalBlockEntity = (YellowConcretePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new YellowConcretePedestalMenu(pContainerId, inventory, YellowConcretePedestalBlockEntity);
+            });
+
+
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name,
                                                                                                  IContainerFactory<T> factory) {
