@@ -26,13 +26,14 @@
     "pedestals:cyan_concrete_pedestal",
     "pedestals:gray_concrete_pedestal",
     "pedestals:green_concrete_pedestal",
+    "pedestals:lime_concrete_pedestal",
     "pedestals:light_blue_concrete_pedestal",
     "pedestals:light_gray_concrete_pedestal",
     "pedestals:magenta_concrete_pedestal",
     "pedestals:orange_concrete_pedestal",
     "pedestals:pink_concrete_pedestal",
     "pedestals:purple_concrete_pedestal",
-    "pedestals:red_sandstone_pedestal",
+    "pedestals:red_concrete_pedestal",
     "pedestals:white_concrete_pedestal",
     "pedestals:yellow_concrete_pedestal"
   ]
