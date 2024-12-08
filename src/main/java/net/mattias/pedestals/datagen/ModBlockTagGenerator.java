@@ -20,6 +20,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.SOUL_SAND_PEDESTAL.get(),
+                     ModBlocks.SOUL_SOIL_PEDESTAL.get()
+                );
+
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PEDESTAL.get(),
                         ModBlocks.STONE_PEDESTAL.get(),
@@ -55,26 +61,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PURPLE_CONCRETE_PEDESTAL.get(),
                         ModBlocks.RED_CONCRETE_PEDESTAL.get(),
                         ModBlocks.WHITE_CONCRETE_PEDESTAL.get(),
-                        ModBlocks.YELLOW_CONCRETE_PEDESTAL.get()
-                );
-        this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.OAK_LOG_PEDESTAL.get(),
-                        ModBlocks.OAK_PLANKS_PEDESTAL.get(),
-                        ModBlocks.BIRCH_LOG_PEDESTAL.get(),
-                        ModBlocks.BIRCH_PLANKS_PEDESTAL.get(),
-                        ModBlocks.SPRUCE_LOG_PEDESTAL.get(),
-                        ModBlocks.SPRUCE_PLANKS_PEDESTAL.get(),
-                        ModBlocks.DARK_OAK_PLANKS_PEDESTAL.get(),
-                        ModBlocks.DARK_OAK_LOG_PEDESTAL.get(),
-                        ModBlocks.JUNGLE_LOG_PEDESTAL.get(),
-                        ModBlocks.JUNGLE_PLANKS_PEDESTAL.get(),
-                        ModBlocks.ACACIA_LOG_PEDESTAL.get(),
-                        ModBlocks.ACACIA_PLANKS_PEDESTAL.get(),
-                        ModBlocks.CHERRY_LOG_PEDESTAL.get(),
-                        ModBlocks.CHERRY_PLANKS_PEDESTAL.get(),
-                        ModBlocks.MANGROVE_LOG_PEDESTAL.get(),
-                        ModBlocks.MANGROVE_PLANKS_PEDESTAL.get()
+                        ModBlocks.YELLOW_CONCRETE_PEDESTAL.get(),
 
+                        ModBlocks.BLACKSTONE_PEDESTAL.get(),
+                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.NETHERRACK_PEDESTAL.get(),
+                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get(),
+                        ModBlocks.OBSIDIAN_PEDESTAL.get()
                 );
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
@@ -128,7 +122,37 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CHERRY_LOG_PEDESTAL.get(),
                         ModBlocks.CHERRY_PLANKS_PEDESTAL.get(),
                         ModBlocks.MANGROVE_LOG_PEDESTAL.get(),
+                        ModBlocks.MANGROVE_PLANKS_PEDESTAL.get(),
+                        ModBlocks.BLACKSTONE_PEDESTAL.get(),
+                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.NETHERRACK_PEDESTAL.get(),
+                        ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.SOUL_SAND_PEDESTAL.get(),
+                        ModBlocks.SOUL_SOIL_PEDESTAL.get()
+
+                );
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.OAK_LOG_PEDESTAL.get(),
+                        ModBlocks.OAK_PLANKS_PEDESTAL.get(),
+                        ModBlocks.BIRCH_LOG_PEDESTAL.get(),
+                        ModBlocks.BIRCH_PLANKS_PEDESTAL.get(),
+                        ModBlocks.SPRUCE_LOG_PEDESTAL.get(),
+                        ModBlocks.SPRUCE_PLANKS_PEDESTAL.get(),
+                        ModBlocks.DARK_OAK_PLANKS_PEDESTAL.get(),
+                        ModBlocks.DARK_OAK_LOG_PEDESTAL.get(),
+                        ModBlocks.JUNGLE_LOG_PEDESTAL.get(),
+                        ModBlocks.JUNGLE_PLANKS_PEDESTAL.get(),
+                        ModBlocks.ACACIA_LOG_PEDESTAL.get(),
+                        ModBlocks.ACACIA_PLANKS_PEDESTAL.get(),
+                        ModBlocks.CHERRY_LOG_PEDESTAL.get(),
+                        ModBlocks.CHERRY_PLANKS_PEDESTAL.get(),
+                        ModBlocks.MANGROVE_LOG_PEDESTAL.get(),
                         ModBlocks.MANGROVE_PLANKS_PEDESTAL.get()
+
+                );
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.OBSIDIAN_PEDESTAL.get(),
+                     ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get()
 
                 );
 
@@ -139,8 +163,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
       this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PEDESTAL.get());
 
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.PEDESTAL.get());
+
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.PEDESTAL.get()); */

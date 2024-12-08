@@ -4,11 +4,13 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.entity.custom.concrete.*;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
+import net.mattias.pedestals.block.entity.custom.nether.*;
 import net.mattias.pedestals.block.entity.custom.planks.*;
 import net.mattias.pedestals.block.entity.custom.stones.*;
 import net.mattias.pedestals.screen.custom.logs.menu.*;
 import net.mattias.pedestals.screen.custom.concrete.menu.*;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
+import net.mattias.pedestals.screen.custom.nether.menu.*;
 import net.mattias.pedestals.screen.custom.planks.menu.*;
 import net.mattias.pedestals.screen.custom.stone.menu.*;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -387,6 +389,63 @@ public class ModMenuTypes {
                         .getBlockEntity(extraData.readBlockPos());
                 return new GrayConcretePedestalMenu(pContainerId, inventory, grayConcretePedestalBlockEntity);
             });
+
+    public static final RegistryObject<MenuType<BlackstonePedestalMenu>> BLACKSTONE_PEDESTAL_MENU =
+            registerMenuType("blackstone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BlackstonePedestalBlockEntity blackstonePedestalBlockEntity = (BlackstonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BlackstonePedestalMenu(pContainerId, inventory, blackstonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<CryingObsidianPedestalMenu>> CRYING_OBSIDIAN_PEDESTAL_MENU =
+            registerMenuType("crying_obsidian_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                CryingObsidianPedestalBlockEntity cryingObsidianPedestalBlockEntity = (CryingObsidianPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new CryingObsidianPedestalMenu(pContainerId, inventory, cryingObsidianPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<NetherrackPedestalMenu>> NETHERRACK_PEDESTAL_MENU =
+            registerMenuType("netherrack_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                NetherrackPedestalBlockEntity netherrackPedestalBlockEntity = (NetherrackPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new NetherrackPedestalMenu(pContainerId, inventory, netherrackPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<ObsidianPedestalMenu>> OBSIDIAN_PEDESTAL_MENU =
+            registerMenuType("obsidian_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                ObsidianPedestalBlockEntity obsidianPedestalBlockEntity = (ObsidianPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new ObsidianPedestalMenu(pContainerId, inventory, obsidianPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<NetherBricksPedestalMenu>> NETHER_BRICKS_PEDESTAL_MENU =
+            registerMenuType("nether_bricks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                NetherBricksPedestalBlockEntity netherrackPedestalBlockEntity = (NetherBricksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new NetherBricksPedestalMenu(pContainerId, inventory, netherrackPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<RedNetherBricksPedestalMenu>> RED_NETHER_BRICKS_PEDESTAL_MENU =
+            registerMenuType("red_nether_bricks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                RedNetherBricksPedestalBlockEntity redNetherBricksPedestalBlockEntity = (RedNetherBricksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new RedNetherBricksPedestalMenu(pContainerId, inventory, redNetherBricksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<SoulSandPedestalMenu>> SOUL_SAND_PEDESTAL_MENU =
+            registerMenuType("soul_sand_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                SoulSandPedestalBlockEntity soulSandPedestalBlockEntity = (SoulSandPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new SoulSandPedestalMenu(pContainerId, inventory, soulSandPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<SoulSoilPedestalMenu>> SOUL_SOIL_PEDESTAL_MENU =
+            registerMenuType("soul_soil_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                SoulSoilPedestalBlockEntity soulSoilPedestalBlockEntity = (SoulSoilPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new SoulSoilPedestalMenu(pContainerId, inventory, soulSoilPedestalBlockEntity);
+            });
+
 
 
 

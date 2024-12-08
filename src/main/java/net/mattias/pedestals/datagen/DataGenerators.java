@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.CompletableFuture;
 
-
 @Mod.EventBusSubscriber(modid = Pedestals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
@@ -20,11 +19,17 @@ public class DataGenerators {
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
+        // BlockState Provider
+        generator.addProvider(event.includeClient(),
+                new ModBlockStateProvider(packOutput, Pedestals.MOD_ID, existingFileHelper));
 
+        // Loot Tables
+        generator.addProvider(event.includeServer(),
+                ModLootTableProvider.create(packOutput));
 
-        ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
+        // Block Tags
+        generator.addProvider(event.includeServer(),
                 new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
     }
 }

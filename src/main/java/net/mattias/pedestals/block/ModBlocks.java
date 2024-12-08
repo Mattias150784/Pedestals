@@ -4,6 +4,7 @@ import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.concrete.*;
 import net.mattias.pedestals.block.custom.logs.*;
 import net.mattias.pedestals.block.custom.PedestalBlock;
+import net.mattias.pedestals.block.custom.nether.*;
 import net.mattias.pedestals.block.custom.planks.*;
 import net.mattias.pedestals.block.custom.stones.*;
 import net.mattias.pedestals.item.ModItems;
@@ -180,6 +181,29 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIME_CONCRETE_PEDESTAL = registerBlock("lime_concrete_pedestal",
             () -> new LimeConcretePedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIME_CONCRETE)));
 
+    public static final RegistryObject<Block> BLACKSTONE_PEDESTAL = registerBlock("blackstone_pedestal",
+            () -> new BlackstonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE)));
+
+    public static final RegistryObject<Block> CRYING_OBSIDIAN_PEDESTAL = registerBlock("crying_obsidian_pedestal",
+            () -> new CryingObsidianPedestalBlock(BlockBehaviour.Properties.copy(Blocks.CRYING_OBSIDIAN)));
+
+    public static final RegistryObject<Block> OBSIDIAN_PEDESTAL = registerBlock("obsidian_pedestal",
+            () -> new ObsidianPedestalBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
+
+    public static final RegistryObject<Block> RED_NETHER_BRICKS_PEDESTAL = registerBlock("red_nether_bricks_pedestal",
+            () -> new RedNetherBricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.RED_NETHER_BRICKS)));
+
+    public static final RegistryObject<Block> NETHER_BRICKS_PEDESTAL = registerBlock("nether_bricks_pedestal",
+            () -> new NetherBricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS)));
+
+    public static final RegistryObject<Block> NETHERRACK_PEDESTAL = registerBlock("netherrack_pedestal",
+            () -> new NetherrackPedestalBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)));
+
+    public static final RegistryObject<Block> SOUL_SAND_PEDESTAL = registerBlock("soul_sand_pedestal",
+            () -> new SoulSandPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_SAND)));
+
+    public static final RegistryObject<Block> SOUL_SOIL_PEDESTAL = registerBlock("soul_soil_pedestal",
+            () -> new SoulSoilPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_SOIL)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

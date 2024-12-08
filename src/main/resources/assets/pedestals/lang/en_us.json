@@ -62,5 +62,14 @@
  "block.pedestals.white_concrete_pedestal": "White Concrete Pedestal",
  "block.pedestals.yellow_concrete_pedestal": "Yellow Concrete Pedestal",
 
+ "block.pedestals.blackstone_pedestal": "Blackstone Pedestal",
+ "block.pedestals.red_nether_bricks_pedestal": "Red Nether Bricks Pedestal",
+ "block.pedestals.nether_bricks_pedestal": "Nether Bricks Pedestal",
+ "block.pedestals.crying_obsidian_pedestal": "Crying Obsidian Pedestal",
+ "block.pedestals.obsidian_pedestal": "Obsidian Pedestal",
+ "block.pedestals.soul_sand_pedestal": "Soul Sand Pedestal",
+ "block.pedestals.soul_soil_pedestal": "Soul Soil Pedestal",
+ "block.pedestals.netherrack_pedestal": "Netherrack Pedestal",
+
   "creativetab.pedestals": "Pedestals"
 }

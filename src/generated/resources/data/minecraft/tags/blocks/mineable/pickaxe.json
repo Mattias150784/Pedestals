@@ -34,6 +34,12 @@
     "pedestals:purple_concrete_pedestal",
     "pedestals:red_concrete_pedestal",
     "pedestals:white_concrete_pedestal",
-    "pedestals:yellow_concrete_pedestal"
+    "pedestals:yellow_concrete_pedestal",
+    "pedestals:blackstone_pedestal",
+    "pedestals:red_nether_bricks_pedestal",
+    "pedestals:nether_bricks_pedestal",
+    "pedestals:netherrack_pedestal",
+    "pedestals:crying_obsidian_pedestal",
+    "pedestals:obsidian_pedestal"
   ]
 }
