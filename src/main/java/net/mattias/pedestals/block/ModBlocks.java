@@ -202,7 +202,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUL_SAND_PEDESTAL = registerBlock("soul_sand_pedestal",
             () -> new SoulSandPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_SAND)));
 
-    public static final RegistryObject<Block> SOUL_SOIL_PEDESTAL = registerBlock("soul_soil_pedestal",
+   public static final RegistryObject<Block> SOUL_SOIL_PEDESTAL = registerBlock("soul_soil_pedestal",
             () -> new SoulSoilPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_SOIL)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

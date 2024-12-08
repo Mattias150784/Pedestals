@@ -14,9 +14,9 @@ import net.minecraftforge.items.SlotItemHandler;
 public class NetherBricksPedestalMenu extends AbstractContainerMenu {
     public final NetherBricksPedestalBlockEntity NetherBricksPedestalBlockEntity;
 
-    public NetherBricksPedestalMenu(int pContainerId, Inventory inv, NetherBricksPedestalBlockEntity netherBricksPedestalBlockEntity ) {
+    public NetherBricksPedestalMenu(int pContainerId, Inventory inv, NetherBricksPedestalBlockEntity stonePedestalBlockEntity ) {
         super(ModMenuTypes.NETHER_BRICKS_PEDESTAL_MENU.get(), pContainerId);
-        this.NetherBricksPedestalBlockEntity = netherBricksPedestalBlockEntity;
+        this.NetherBricksPedestalBlockEntity = stonePedestalBlockEntity;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);

@@ -72,7 +72,7 @@ public class SoulSoilPedestalBlock extends BaseEntityBlock {
                 if (pPlayer instanceof ServerPlayer serverPlayer) {
                     NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
                             (id, inventory, player) -> new SoulSoilPedestalMenu(id, inventory, soulSoilPedestalBlockEntity),
-                            Component.literal("Soul Soil Pedestal")
+                            Component.literal("SoulSoil Pedestal")
                     ), pPos);
                 }
                 return InteractionResult.SUCCESS;

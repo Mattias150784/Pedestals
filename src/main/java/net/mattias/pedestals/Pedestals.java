@@ -141,9 +141,9 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.CRYING_OBSIDIAN_PEDESTAL_MENU.get(), CryingObsidianPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.OBSIDIAN_PEDESTAL_MENU.get(), ObsidianPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.NETHER_BRICKS_PEDESTAL_MENU.get(), NetherBricksPedestalScreen::new);
-            MenuScreens.register(ModMenuTypes.RED_NETHER_BRICKS_PEDESTAL_MENU.get(), RedNetherBricksPedestalScreen::new);
+           MenuScreens.register(ModMenuTypes.RED_NETHER_BRICKS_PEDESTAL_MENU.get(), RedNetherBricksPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.NETHERRACK_PEDESTAL_MENU.get(), NetherrackPedestalScreen::new);
-            MenuScreens.register(ModMenuTypes.SOUL_SAND_PEDESTAL_MENU.get(), SoulSandPedestalScreen::new);
+          MenuScreens.register(ModMenuTypes.SOUL_SAND_PEDESTAL_MENU.get(), SoulSandPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.SOUL_SOIL_PEDESTAL_MENU.get(), SoulSoilPedestalScreen::new);
         }
 

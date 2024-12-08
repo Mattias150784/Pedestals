@@ -72,7 +72,7 @@ public class NetherBricksPedestalBlock extends BaseEntityBlock {
                 if (pPlayer instanceof ServerPlayer serverPlayer) {
                     NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
                             (id, inventory, player) -> new NetherBricksPedestalMenu(id, inventory, netherBricksPedestalBlockEntity),
-                            Component.literal("Nether Bricks Pedestal")
+                            Component.literal("NetherBricks Pedestal")
                     ), pPos);
                 }
                 return InteractionResult.SUCCESS;
