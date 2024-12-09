@@ -52,6 +52,12 @@
     "pedestals:acacia_log_pedestal",
     "pedestals:cherry_log_pedestal",
     "pedestals:cherry_planks_pedestal",
-    "pedestals:bamboo_planks_pedestal"
+    "pedestals:bamboo_planks_pedestal",
+    "pedestals:blackstone_pedestal",
+    "pedestals:red_nether_bricks_pedestal",
+    "pedestals:netherrack_pedestal",
+    "pedestals:nether_bricks_pedestal",
+    "pedestals:soul_sand_pedestal",
+    "pedestals:soul_soil_pedestal"
   ]
 }

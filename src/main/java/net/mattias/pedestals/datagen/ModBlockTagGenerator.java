@@ -19,6 +19,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.SOUL_SAND_PEDESTAL.get(),
+                         ModBlocks.SOUL_SOIL_PEDESTAL.get()
+                );
+
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PEDESTAL.get(),
                         ModBlocks.STONE_PEDESTAL.get(),
@@ -55,7 +62,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PURPLE_CONCRETE_PEDESTAL.get(),
                         ModBlocks.RED_CONCRETE_PEDESTAL.get(),
                         ModBlocks.WHITE_CONCRETE_PEDESTAL.get(),
-                        ModBlocks.YELLOW_CONCRETE_PEDESTAL.get()
+                        ModBlocks.YELLOW_CONCRETE_PEDESTAL.get(),
+
+                        ModBlocks.BLACKSTONE_PEDESTAL.get(),
+                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.NETHERRACK_PEDESTAL.get(),
+                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get(),
+                        ModBlocks.OBSIDIAN_PEDESTAL.get()
 
 
                         );
@@ -134,17 +148,29 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ACACIA_LOG_PEDESTAL.get(),
                         ModBlocks.CHERRY_LOG_PEDESTAL.get(),
                         ModBlocks.CHERRY_PLANKS_PEDESTAL.get(),
-                        ModBlocks.BAMBOO_PLANKS_PEDESTAL.get()
+                        ModBlocks.BAMBOO_PLANKS_PEDESTAL.get(),
 
+                        ModBlocks.BLACKSTONE_PEDESTAL.get(),
+                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.NETHERRACK_PEDESTAL.get(),
+                        ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.SOUL_SAND_PEDESTAL.get(),
+                        ModBlocks.SOUL_SOIL_PEDESTAL.get()
+
+
+                );
+
+
+            this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.OBSIDIAN_PEDESTAL.get(),
+                        ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get()
 
                 );
 
        /* this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PEDESTAL.get());
 
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.PEDESTAL.get())
-                .add(ModBlocks.PEDESTAL.get());
+
 
         */
 

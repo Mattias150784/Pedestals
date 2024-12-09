@@ -76,6 +76,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RED_CONCRETE_PEDESTAL.get());
         this.dropSelf(ModBlocks.WHITE_CONCRETE_PEDESTAL.get());
         this.dropSelf(ModBlocks.YELLOW_CONCRETE_PEDESTAL.get());
+        this.dropSelf(ModBlocks.BLACKSTONE_PEDESTAL.get());
+        this.dropSelf(ModBlocks.SOUL_SAND_PEDESTAL.get());
+        this.dropSelf(ModBlocks.NETHERRACK_PEDESTAL.get());
+        this.dropSelf(ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get());
+        this.dropSelf(ModBlocks.OBSIDIAN_PEDESTAL.get());
+        this.dropSelf(ModBlocks.SOUL_SOIL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get());
+        this.dropSelf(ModBlocks.NETHER_BRICKS_PEDESTAL.get());
 
     }
 
