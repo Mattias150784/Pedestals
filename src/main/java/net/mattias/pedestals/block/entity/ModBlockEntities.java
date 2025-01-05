@@ -14,9 +14,15 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, Pedestals.MOD_ID);
+
+    private static final Map<String, RegistryObject<BlockEntityType<?>>> ADDON_ENTITIES = new HashMap<>();
+
 
     public static final RegistryObject<BlockEntityType<PedestalBlockEntity>> PEDESTAL_BE =
             BLOCK_ENTITIES.register("pedestal_be", () -> BlockEntityType.Builder.of(

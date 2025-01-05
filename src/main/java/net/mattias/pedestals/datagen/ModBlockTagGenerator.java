@@ -21,8 +21,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(ModBlocks.SOUL_SAND_PEDESTAL.get()
-                    // ModBlocks.SOUL_SOIL_PEDESTAL.get()
+                .add(ModBlocks.SOUL_SAND_PEDESTAL.get(),
+                    ModBlocks.SOUL_SOIL_PEDESTAL.get()
                 );
 
 
@@ -64,7 +64,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.YELLOW_CONCRETE_PEDESTAL.get(),
 
                         ModBlocks.BLACKSTONE_PEDESTAL.get(),
-//                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
+                       ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
                         ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
                         ModBlocks.NETHERRACK_PEDESTAL.get(),
                         ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get(),
@@ -124,11 +124,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.MANGROVE_LOG_PEDESTAL.get(),
                         ModBlocks.MANGROVE_PLANKS_PEDESTAL.get(),
                         ModBlocks.BLACKSTONE_PEDESTAL.get(),
-//                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
+                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
                         ModBlocks.NETHERRACK_PEDESTAL.get(),
                         ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
-                        ModBlocks.SOUL_SAND_PEDESTAL.get()
-//                        ModBlocks.SOUL_SOIL_PEDESTAL.get()
+                        ModBlocks.SOUL_SAND_PEDESTAL.get(),
+                        ModBlocks.SOUL_SOIL_PEDESTAL.get()
 
                 );
         this.tag(BlockTags.MINEABLE_WITH_AXE)
