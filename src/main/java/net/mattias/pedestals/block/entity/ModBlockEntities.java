@@ -3,6 +3,7 @@ package net.mattias.pedestals.block.entity;
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.custom.concrete.*;
+import net.mattias.pedestals.block.entity.custom.end.*;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.nether.*;
@@ -264,7 +265,21 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("soul_soil_pedestal", () -> BlockEntityType.Builder.of(
                     SoulSoilPedestalBlockEntity::new, ModBlocks.SOUL_SOIL_PEDESTAL.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<EndStonePedestalBlockEntity>> END_STONE_PEDESTAL =
+            BLOCK_ENTITIES.register("end_stone_pedestal", () -> BlockEntityType.Builder.of(
+                    EndStonePedestalBlockEntity::new, ModBlocks.END_STONE_PEDESTAL.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<EndStoneBricksPedestalBlockEntity>> END_STONE_BRICKS_PEDESTAL =
+            BLOCK_ENTITIES.register("end_stone_bricks_pedestal", () -> BlockEntityType.Builder.of(
+                    EndStoneBricksPedestalBlockEntity::new, ModBlocks.END_STONE_BRICKS_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PurpurPillarPedestalBlockEntity>> PURPUR_PILLAR_PEDESTAL =
+            BLOCK_ENTITIES.register("purpur_pillar_pedestal", () -> BlockEntityType.Builder.of(
+                    PurpurPillarPedestalBlockEntity::new, ModBlocks.PURPUR_PILLAR_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PurpurBlockPedestalBlockEntity>> PURPUR_BLOCK_PEDESTAL =
+            BLOCK_ENTITIES.register("purpur_block_pedestal", () -> BlockEntityType.Builder.of(
+                    PurpurBlockPedestalBlockEntity::new, ModBlocks.PURPUR_BLOCK_PEDESTAL.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

@@ -40,6 +40,10 @@
     "pedestals:nether_bricks_pedestal",
     "pedestals:netherrack_pedestal",
     "pedestals:crying_obsidian_pedestal",
-    "pedestals:obsidian_pedestal"
+    "pedestals:obsidian_pedestal",
+    "pedestals:purpur_block_pedestal",
+    "pedestals:purpur_pillar_pedestal",
+    "pedestals:end_stone_pedestal",
+    "pedestals:end_stone_bricks_pedestal"
   ]
 }

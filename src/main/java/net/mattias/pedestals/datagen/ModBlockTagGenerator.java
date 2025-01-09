@@ -62,13 +62,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.RED_CONCRETE_PEDESTAL.get(),
                         ModBlocks.WHITE_CONCRETE_PEDESTAL.get(),
                         ModBlocks.YELLOW_CONCRETE_PEDESTAL.get(),
-
                         ModBlocks.BLACKSTONE_PEDESTAL.get(),
                        ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(),
                         ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
                         ModBlocks.NETHERRACK_PEDESTAL.get(),
                         ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get(),
-                        ModBlocks.OBSIDIAN_PEDESTAL.get()
+                        ModBlocks.OBSIDIAN_PEDESTAL.get(),
+                        ModBlocks.PURPUR_BLOCK_PEDESTAL.get(),
+                        ModBlocks.PURPUR_PILLAR_PEDESTAL.get(),
+                        ModBlocks.END_STONE_PEDESTAL.get(),
+                        ModBlocks.END_STONE_BRICKS_PEDESTAL.get()
                 );
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
@@ -128,7 +131,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NETHERRACK_PEDESTAL.get(),
                         ModBlocks.NETHER_BRICKS_PEDESTAL.get(),
                         ModBlocks.SOUL_SAND_PEDESTAL.get(),
-                        ModBlocks.SOUL_SOIL_PEDESTAL.get()
+                        ModBlocks.SOUL_SOIL_PEDESTAL.get(),
+                        ModBlocks.PURPUR_BLOCK_PEDESTAL.get(),
+                        ModBlocks.PURPUR_PILLAR_PEDESTAL.get(),
+                        ModBlocks.END_STONE_PEDESTAL.get(),
+                        ModBlocks.END_STONE_BRICKS_PEDESTAL.get()
 
                 );
         this.tag(BlockTags.MINEABLE_WITH_AXE)

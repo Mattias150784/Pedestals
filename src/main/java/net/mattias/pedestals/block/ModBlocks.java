@@ -5,6 +5,7 @@ import net.mattias.pedestals.block.custom.concrete.*;
 import net.mattias.pedestals.block.custom.logs.*;
 import net.mattias.pedestals.block.custom.PedestalBlock;
 import net.mattias.pedestals.block.custom.nether.*;
+import net.mattias.pedestals.block.custom.end.*;
 import net.mattias.pedestals.block.custom.planks.*;
 import net.mattias.pedestals.block.custom.stones.*;
 import net.mattias.pedestals.item.ModItems;
@@ -204,6 +205,18 @@ public class ModBlocks {
 
    public static final RegistryObject<Block> SOUL_SOIL_PEDESTAL = registerBlock("soul_soil_pedestal",
             () -> new SoulSoilPedestalBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_SOIL)));
+
+    public static final RegistryObject<Block> PURPUR_BLOCK_PEDESTAL = registerBlock("purpur_block_pedestal",
+            () -> new PurpurBlockPedestalBlock(BlockBehaviour.Properties.copy(Blocks.PURPUR_BLOCK)));
+
+    public static final RegistryObject<Block> PURPUR_PILLAR_PEDESTAL = registerBlock("purpur_pillar_pedestal",
+            () -> new PurpurPillarPedestalBlock(BlockBehaviour.Properties.copy(Blocks.PURPUR_PILLAR)));
+
+    public static final RegistryObject<Block> END_STONE_PEDESTAL = registerBlock("end_stone_pedestal",
+            () -> new EndStonePedestalBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)));
+
+    public static final RegistryObject<Block> END_STONE_BRICKS_PEDESTAL = registerBlock("end_stone_bricks_pedestal",
+            () -> new EndStoneBricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICKS)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

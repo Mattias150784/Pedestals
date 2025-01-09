@@ -2,11 +2,13 @@ package net.mattias.pedestals.screen;
 
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.entity.custom.concrete.*;
+import net.mattias.pedestals.block.entity.custom.end.*;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.nether.*;
 import net.mattias.pedestals.block.entity.custom.planks.*;
 import net.mattias.pedestals.block.entity.custom.stones.*;
+import net.mattias.pedestals.screen.custom.end.menu.*;
 import net.mattias.pedestals.screen.custom.logs.menu.*;
 import net.mattias.pedestals.screen.custom.concrete.menu.*;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
@@ -445,6 +447,36 @@ public class ModMenuTypes {
                         .getBlockEntity(extraData.readBlockPos());
                 return new SoulSoilPedestalMenu(pContainerId, inventory, soulSoilPedestalBlockEntity);
             });
+
+    public static final RegistryObject<MenuType<EndStoneBricksPedestalMenu>> END_STONE_BRICKS_PEDESTAL_MENU =
+            registerMenuType("end_stone_bricks_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                EndStoneBricksPedestalBlockEntity endStoneBricksPedestalBlockEntity = (EndStoneBricksPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new EndStoneBricksPedestalMenu(pContainerId, inventory, endStoneBricksPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<EndStonePedestalMenu>> END_STONE_PEDESTAL_MENU =
+            registerMenuType("end_stone_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                EndStonePedestalBlockEntity endStonePedestalBlockEntity = (EndStonePedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new EndStonePedestalMenu(pContainerId, inventory, endStonePedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PurpurPillarPedestalMenu>> PURPUR_PILLAR_PEDESTAL_MENU =
+            registerMenuType("purpur_pillar_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PurpurPillarPedestalBlockEntity purpurPillarPedestalBlockEntity = (PurpurPillarPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PurpurPillarPedestalMenu(pContainerId, inventory, purpurPillarPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PurpurBlockPedestalMenu>> PURPUR_BLOCK_PEDESTAL_MENU =
+            registerMenuType("purpur_block_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PurpurBlockPedestalBlockEntity purpurBlockPedestalBlockEntity = (PurpurBlockPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PurpurBlockPedestalMenu(pContainerId, inventory, purpurBlockPedestalBlockEntity);
+            });
+    
+    
 
 
 

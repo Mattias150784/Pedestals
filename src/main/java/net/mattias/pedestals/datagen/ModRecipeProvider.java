@@ -45,6 +45,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createPedestalRecipe(ModBlocks.NETHERRACK_PEDESTAL.get(), Blocks.NETHERRACK, pWriter);
         createPedestalRecipe(ModBlocks.SOUL_SAND_PEDESTAL.get(), Blocks.SOUL_SAND, pWriter);
         createPedestalRecipe(ModBlocks.SOUL_SOIL_PEDESTAL.get(), Blocks.SOUL_SOIL, pWriter);
+        createPedestalRecipe(ModBlocks.END_STONE_PEDESTAL.get(), Blocks.END_STONE, pWriter);
+        createPedestalRecipe(ModBlocks.END_STONE_BRICKS_PEDESTAL.get(), Blocks.END_STONE_BRICKS, pWriter);
+        createPedestalRecipe(ModBlocks.PURPUR_BLOCK_PEDESTAL.get(), Blocks.PURPUR_BLOCK, pWriter);
+        createPedestalRecipe(ModBlocks.PURPUR_PILLAR_PEDESTAL.get(), Blocks.PURPUR_PILLAR, pWriter);
 
 // Concrete pedestals
         createPedestalRecipe(ModBlocks.BLACK_CONCRETE_PEDESTAL.get(), Blocks.BLACK_CONCRETE, pWriter);
