@@ -1,4 +1,4 @@
-// 1.21	2024-12-08T17:06:07.2055335	Loot Tables
+// 1.21	2025-01-08T19:23:19.469616	Loot Tables
 a9c67e877704c3f799482b2da72e0f438f542eeb data/pedestals/loot_table/blocks/acacia_log_pedestal.json
 7f48c18163a67393c2338907911023434e2ae92b data/pedestals/loot_table/blocks/acacia_planks_pedestal.json
 b96b509f4a7c17f9afdf72099644d4119854602b data/pedestals/loot_table/blocks/andesite_pedestal.json
@@ -18,6 +18,8 @@ a33503e8495c1bdf4858538e401d8403c79b52c6 data/pedestals/loot_table/blocks/cherry
 e32088caac2ccf3086c1989eac261a80b35201f5 data/pedestals/loot_table/blocks/dark_oak_log_pedestal.json
 080de413d8aad019786c08b72c0340d27a0a4b5d data/pedestals/loot_table/blocks/dark_oak_planks_pedestal.json
 8a91b59cff7d5027350d136b7161eaa98eb2b5c5 data/pedestals/loot_table/blocks/diorite_pedestal.json
+737a3d448a33ec31779e14cf5384c041f908b249 data/pedestals/loot_table/blocks/end_stone_bricks_pedestal.json
+936ecd8bd1cf1c4bda7bde8fc1585e6e7a358e9c data/pedestals/loot_table/blocks/end_stone_pedestal.json
 548f4cc442cd2fba07afb7b8d003baa2bd179794 data/pedestals/loot_table/blocks/gold_pedestal.json
 dce061252297a8a0dbe8058e6d66d55840afec38 data/pedestals/loot_table/blocks/granite_pedestal.json
 bcbd4dcf306ac8d784931f6878c4036ec9b77e39 data/pedestals/loot_table/blocks/gray_concrete_pedestal.json
@@ -46,6 +48,8 @@ daf31bfb8f24757152f04ce06864a67c64ae4c5c data/pedestals/loot_table/blocks/polish
 8e0ae71e8e0c79948b7f59e91cc7fa05903f902e data/pedestals/loot_table/blocks/polished_granite_pedestal.json
 476ef863f45d66ee6b55f10e5a32a9e1682358d8 data/pedestals/loot_table/blocks/polished_tuff_pedestal.json
 517881b1c38c8024df7792d8c917b320e78ea7aa data/pedestals/loot_table/blocks/purple_concrete_pedestal.json
+e6825430e0b11d8ba450de312526fb01d7ce0265 data/pedestals/loot_table/blocks/purpur_block_pedestal.json
+db668d38359704d2986642d84f138f09a14258e2 data/pedestals/loot_table/blocks/purpur_pillar_pedestal.json
 e247fe6677fcb8cde2f26bde1e4d5d563aecdc67 data/pedestals/loot_table/blocks/quartz_pedestal.json
 8d5eb684e5172a806bf020290095d0bb435fd76e data/pedestals/loot_table/blocks/quartz_pillar_pedestal.json
 7b0f981fceeb98b72660fc0961ff263cfbb34824 data/pedestals/loot_table/blocks/red_concrete_pedestal.json

@@ -57,7 +57,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         PedestalRecipe(recipeOutput, ModBlocks.NETHERRACK_PEDESTAL.get(), Blocks.NETHERRACK);
         PedestalRecipe(recipeOutput, ModBlocks.SOUL_SAND_PEDESTAL.get(), Blocks.SOUL_SAND);
         PedestalRecipe(recipeOutput, ModBlocks.SOUL_SOIL_PEDESTAL.get(), Blocks.SOUL_SOIL);
-
         PedestalRecipe(recipeOutput, ModBlocks.BLACK_CONCRETE_PEDESTAL.get(), Blocks.BLACK_CONCRETE);
         PedestalRecipe(recipeOutput, ModBlocks.BLUE_CONCRETE_PEDESTAL.get(), Blocks.BLUE_CONCRETE);
         PedestalRecipe(recipeOutput, ModBlocks.BROWN_CONCRETE_PEDESTAL.get(), Blocks.BROWN_CONCRETE);
@@ -74,6 +73,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         PedestalRecipe(recipeOutput, ModBlocks.LIME_CONCRETE_PEDESTAL.get(), Blocks.LIME_CONCRETE);
         PedestalRecipe(recipeOutput, ModBlocks.WHITE_CONCRETE_PEDESTAL.get(), Blocks.WHITE_CONCRETE);
         PedestalRecipe(recipeOutput, ModBlocks.YELLOW_CONCRETE_PEDESTAL.get(), Blocks.YELLOW_CONCRETE);
+
+        PedestalRecipe(recipeOutput, ModBlocks.END_STONE_PEDESTAL.get(), Blocks.END_STONE);
+        PedestalRecipe(recipeOutput, ModBlocks.PURPUR_PILLAR_PEDESTAL.get(), Blocks.PURPUR_PILLAR);
+        PedestalRecipe(recipeOutput, ModBlocks.END_STONE_BRICKS_PEDESTAL.get(), Blocks.END_STONE_BRICKS);
+        PedestalRecipe(recipeOutput, ModBlocks.PURPUR_BLOCK_PEDESTAL.get(), Blocks.PURPUR_BLOCK);
+
 
 
         PlanksPedestalRecipe(recipeOutput, ModBlocks.OAK_PLANKS_PEDESTAL.get(), Blocks.OAK_PLANKS);

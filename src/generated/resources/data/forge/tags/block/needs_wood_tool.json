@@ -58,6 +58,10 @@
     "pedestals:netherrack_pedestal",
     "pedestals:nether_bricks_pedestal",
     "pedestals:soul_sand_pedestal",
-    "pedestals:soul_soil_pedestal"
+    "pedestals:soul_soil_pedestal",
+    "pedestals:end_stone_pedestal",
+    "pedestals:end_stone_bricks_pedestal",
+    "pedestals:purpur_block_pedestal",
+    "pedestals:purpur_pillar_pedestal"
   ]
 }

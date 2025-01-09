@@ -72,5 +72,11 @@
  "block.pedestals.soul_soil_pedestal": "Soul Soil Pedestal",
  "block.pedestals.netherrack_pedestal": "Netherrack Pedestal",
 
-  "creativetab.pedestals": "Pedestals"
+ "block.pedestals.end_stone_bricks_pedestal": "End Stone Bricks Pedestal",
+ "block.pedestals.end_stone_pedestal": "End Stone Pedestal",
+ "block.pedestals.purpur_pillar_pedestal": "Purpur Pillar Pedestal",
+ "block.pedestals.purpur_block_pedestal": "Purpur Block Pedestal",
+
+
+ "creativetab.pedestals": "Pedestals"
 }

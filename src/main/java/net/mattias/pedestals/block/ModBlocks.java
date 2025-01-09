@@ -208,6 +208,18 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SOUL_SOIL_PEDESTAL = registerBlock("soul_soil_pedestal",
             () -> new SoulSoilPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_SOIL)));
+
+    public static final RegistryObject<Block> END_STONE_BRICKS_PEDESTAL = registerBlock("end_stone_bricks_pedestal",
+            () -> new EndStoneBricksPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> END_STONE_PEDESTAL = registerBlock("end_stone_pedestal",
+            () -> new EndStonePedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)));
+
+    public static final RegistryObject<Block> PURPUR_BLOCK_PEDESTAL = registerBlock("purpur_block_pedestal",
+            () -> new PurpurBlockPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPUR_BLOCK)));
+
+    public static final RegistryObject<Block> PURPUR_PILLAR_PEDESTAL = registerBlock("purpur_pillar_pedestal",
+            () -> new PurpurPillarPedestalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PURPUR_PILLAR)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

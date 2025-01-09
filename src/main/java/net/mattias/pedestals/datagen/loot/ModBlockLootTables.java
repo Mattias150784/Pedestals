@@ -27,7 +27,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.JUNGLE_LOG_PEDESTAL.get());
         this.dropSelf(ModBlocks.SPRUCE_LOG_PEDESTAL.get());
         this.dropSelf(ModBlocks.MANGROVE_LOG_PEDESTAL.get());
-
         this.dropSelf(ModBlocks.OAK_PLANKS_PEDESTAL.get());
         this.dropSelf(ModBlocks.CHERRY_PLANKS_PEDESTAL.get());
         this.dropSelf(ModBlocks.BIRCH_PLANKS_PEDESTAL.get());
@@ -37,9 +36,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SPRUCE_PLANKS_PEDESTAL.get());
         this.dropSelf(ModBlocks.JUNGLE_PLANKS_PEDESTAL.get());
         this.dropSelf(ModBlocks.DARK_OAK_PLANKS_PEDESTAL.get());
-
         this.dropSelf(ModBlocks.GOLD_PEDESTAL.get());
-
         this.dropSelf(ModBlocks.STONE_PEDESTAL.get());
         this.dropSelf(ModBlocks.COBBLESTONE_PEDESTAL.get());
         this.dropSelf(ModBlocks.STONE_BRICKS_PEDESTAL.get());
@@ -59,7 +56,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.QUARTZ_PILLAR_PEDESTAL.get());
         this.dropSelf(ModBlocks.RED_SANDSTONE_PEDESTAL.get());
         this.dropSelf(ModBlocks.SANDSTONE_PEDESTAL.get());
-
         this.dropSelf(ModBlocks.BLACK_CONCRETE_PEDESTAL.get());
         this.dropSelf(ModBlocks.BLUE_CONCRETE_PEDESTAL.get());
         this.dropSelf(ModBlocks.BROWN_CONCRETE_PEDESTAL.get());
@@ -84,6 +80,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SOUL_SOIL_PEDESTAL.get());
         this.dropSelf(ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get());
         this.dropSelf(ModBlocks.NETHER_BRICKS_PEDESTAL.get());
+        this.dropSelf(ModBlocks.END_STONE_PEDESTAL.get());
+        this.dropSelf(ModBlocks.END_STONE_BRICKS_PEDESTAL.get());
+        this.dropSelf(ModBlocks.PURPUR_BLOCK_PEDESTAL.get());
+        this.dropSelf(ModBlocks.PURPUR_PILLAR_PEDESTAL.get());
 
     }
 

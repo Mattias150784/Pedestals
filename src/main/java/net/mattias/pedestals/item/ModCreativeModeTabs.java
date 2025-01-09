@@ -77,8 +77,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_CONCRETE_PEDESTAL.get());
                         output.accept(ModBlocks.WHITE_CONCRETE_PEDESTAL.get());
                         output.accept(ModBlocks.YELLOW_CONCRETE_PEDESTAL.get());
-
-
                         output.accept(ModBlocks.BLACKSTONE_PEDESTAL.get());
                         output.accept(ModBlocks.NETHER_BRICKS_PEDESTAL.get());
                         output.accept(ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get());
@@ -87,6 +85,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OBSIDIAN_PEDESTAL.get());
                         output.accept(ModBlocks.SOUL_SAND_PEDESTAL.get());
                         output.accept(ModBlocks.SOUL_SOIL_PEDESTAL.get());
+                        output.accept(ModBlocks.END_STONE_BRICKS_PEDESTAL.get());
+                        output.accept(ModBlocks.END_STONE_PEDESTAL.get());
+                        output.accept(ModBlocks.PURPUR_BLOCK_PEDESTAL.get());
+                        output.accept(ModBlocks.PURPUR_PILLAR_PEDESTAL.get());
 
                         //output.accept(ModBlocks.GOLD_PEDESTAL.get()); ADD LATER
 

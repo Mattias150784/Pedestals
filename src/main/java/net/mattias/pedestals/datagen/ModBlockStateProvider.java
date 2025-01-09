@@ -76,9 +76,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         pedestalBlock(ModBlocks.OBSIDIAN_PEDESTAL.get(), "obsidian_pedestal");
         pedestalBlock(ModBlocks.NETHERRACK_PEDESTAL.get(), "netherrack_pedestal");
         pedestalBlock(ModBlocks.NETHER_BRICKS_PEDESTAL.get(), "nether_bricks_pedestal");
-       pedestalBlock(ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(), "red_nether_bricks_pedestal");
+        pedestalBlock(ModBlocks.RED_NETHER_BRICKS_PEDESTAL.get(), "red_nether_bricks_pedestal");
         pedestalBlock(ModBlocks.SOUL_SOIL_PEDESTAL.get(), "soul_soil_pedestal");
         pedestalBlock(ModBlocks.SOUL_SAND_PEDESTAL.get(), "soul_sand_pedestal");
+        pedestalBlock(ModBlocks.END_STONE_PEDESTAL.get(), "end_stone_pedestal");
+        pedestalBlock(ModBlocks.END_STONE_BRICKS_PEDESTAL.get(), "end_stone_bricks_pedestal");
+        pedestalBlock(ModBlocks.PURPUR_BLOCK_PEDESTAL.get(), "purpur_block_pedestal");
+        pedestalBlock(ModBlocks.PURPUR_PILLAR_PEDESTAL.get(), "purpur_pillar_pedestal");
 
 
     }
