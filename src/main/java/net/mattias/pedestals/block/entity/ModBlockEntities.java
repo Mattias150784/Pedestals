@@ -9,6 +9,7 @@ import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.nether.*;
 import net.mattias.pedestals.block.entity.custom.planks.*;
 import net.mattias.pedestals.block.entity.custom.stones.*;
+import net.mattias.pedestals.block.entity.custom.wool.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -280,6 +281,70 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<PurpurBlockPedestalBlockEntity>> PURPUR_BLOCK_PEDESTAL =
             BLOCK_ENTITIES.register("purpur_block_pedestal", () -> BlockEntityType.Builder.of(
                     PurpurBlockPedestalBlockEntity::new, ModBlocks.PURPUR_BLOCK_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BlackWoolPedestalBlockEntity>> BLACK_WOOL_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("black_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    BlackWoolPedestalBlockEntity::new, ModBlocks.BLACK_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BlueWoolPedestalBlockEntity>> BLUE_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("blue_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    BlueWoolPedestalBlockEntity::new, ModBlocks.BLUE_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BrownWoolPedestalBlockEntity>> BROWN_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("brown_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    BrownWoolPedestalBlockEntity::new, ModBlocks.BROWN_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CyanWoolPedestalBlockEntity>> CYAN_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("cyan_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    CyanWoolPedestalBlockEntity::new, ModBlocks.CYAN_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<GrayWoolPedestalBlockEntity>> GRAY_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("gray_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    GrayWoolPedestalBlockEntity::new, ModBlocks.GRAY_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<GreenWoolPedestalBlockEntity>> GREEN_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("green_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    GreenWoolPedestalBlockEntity::new, ModBlocks.GREEN_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<LightBlueWoolPedestalBlockEntity>> LIGHT_BLUE_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("light_blue_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    LightBlueWoolPedestalBlockEntity::new, ModBlocks.LIGHT_BLUE_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<LightGrayWoolPedestalBlockEntity>> LIGHT_GRAY_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("light_gray_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    LightGrayWoolPedestalBlockEntity::new, ModBlocks.LIGHT_GRAY_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<LimeWoolPedestalBlockEntity>> LIME_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("lime_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    LimeWoolPedestalBlockEntity::new, ModBlocks.LIME_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<MagentaWoolPedestalBlockEntity>> MAGENTA_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("magenta_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    MagentaWoolPedestalBlockEntity::new, ModBlocks.MAGENTA_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<OrangeWoolPedestalBlockEntity>> ORANGE_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("orange_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    OrangeWoolPedestalBlockEntity::new, ModBlocks.ORANGE_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PinkWoolPedestalBlockEntity>> PINK_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("pink_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    PinkWoolPedestalBlockEntity::new, ModBlocks.PINK_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<PurpleWoolPedestalBlockEntity>> PURPLE_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("purple_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    PurpleWoolPedestalBlockEntity::new, ModBlocks.PURPLE_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<RedWoolPedestalBlockEntity>> RED_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("red_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    RedWoolPedestalBlockEntity::new, ModBlocks.RED_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<WhiteWoolPedestalBlockEntity>> WHITE_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("white_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    WhiteWoolPedestalBlockEntity::new, ModBlocks.WHITE_WOOL_PEDESTAL.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<YellowWoolPedestalBlockEntity>> YELLOW_WOOL_PEDESTAL =
+            BLOCK_ENTITIES.register("yellow_wool_pedestal", () -> BlockEntityType.Builder.of(
+                    YellowWoolPedestalBlockEntity::new, ModBlocks.YELLOW_WOOL_PEDESTAL.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

@@ -2,6 +2,7 @@ package net.mattias.pedestals.screen;
 
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.entity.custom.concrete.*;
+import net.mattias.pedestals.block.entity.custom.wool.*;
 import net.mattias.pedestals.block.entity.custom.end.*;
 import net.mattias.pedestals.block.entity.custom.logs.*;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
@@ -15,6 +16,7 @@ import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.mattias.pedestals.screen.custom.nether.menu.*;
 import net.mattias.pedestals.screen.custom.planks.menu.*;
 import net.mattias.pedestals.screen.custom.stone.menu.*;
+import net.mattias.pedestals.screen.custom.wool.menu.*;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -475,7 +477,118 @@ public class ModMenuTypes {
                         .getBlockEntity(extraData.readBlockPos());
                 return new PurpurBlockPedestalMenu(pContainerId, inventory, purpurBlockPedestalBlockEntity);
             });
-    
+
+    public static final RegistryObject<MenuType<BlackWoolPedestalMenu>> BLACK_WOOL_PEDESTAL_MENU =
+            registerMenuType("black_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BlackWoolPedestalBlockEntity blackWoolPedestalBlockEntity = (BlackWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BlackWoolPedestalMenu(pContainerId, inventory, blackWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<BlueWoolPedestalMenu>> BLUE_WOOL_PEDESTAL_MENU =
+            registerMenuType("blue_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BlueWoolPedestalBlockEntity blueWoolPedestalBlockEntity = (BlueWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BlueWoolPedestalMenu(pContainerId, inventory, blueWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<BrownWoolPedestalMenu>> BROWN_WOOL_PEDESTAL_MENU =
+            registerMenuType("brown_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                BrownWoolPedestalBlockEntity brownWoolPedestalBlockEntity = (BrownWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new BrownWoolPedestalMenu(pContainerId, inventory, brownWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<CyanWoolPedestalMenu>> CYAN_WOOL_PEDESTAL_MENU =
+            registerMenuType("cyan_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                CyanWoolPedestalBlockEntity cyanWoolPedestalBlockEntity = (CyanWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new CyanWoolPedestalMenu(pContainerId, inventory, cyanWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<GreenWoolPedestalMenu>> GREEN_WOOL_PEDESTAL_MENU =
+            registerMenuType("green_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                GreenWoolPedestalBlockEntity greenWoolPedestalBlockEntity = (GreenWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new GreenWoolPedestalMenu(pContainerId, inventory, greenWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<LightGrayWoolPedestalMenu>> LIGHT_GRAY_WOOL_PEDESTAL_MENU =
+            registerMenuType("light_gray_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                LightGrayWoolPedestalBlockEntity lightgrayWoolPedestalBlockEntity = (LightGrayWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new LightGrayWoolPedestalMenu(pContainerId, inventory, lightgrayWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<LightBlueWoolPedestalMenu>> LIGHT_BLUE_WOOL_PEDESTAL_MENU =
+            registerMenuType("light_blue_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                LightBlueWoolPedestalBlockEntity lightblueWoolPedestalBlockEntity = (LightBlueWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new LightBlueWoolPedestalMenu(pContainerId, inventory, lightblueWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<LimeWoolPedestalMenu>> LIME_WOOL_PEDESTAL_MENU =
+            registerMenuType("lime_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                LimeWoolPedestalBlockEntity limeWoolPedestalBlockEntity = (LimeWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new LimeWoolPedestalMenu(pContainerId, inventory, limeWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<MagentaWoolPedestalMenu>> MAGENTA_WOOL_PEDESTAL_MENU =
+            registerMenuType("magenta_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                MagentaWoolPedestalBlockEntity magentaWoolPedestalBlockEntity = (MagentaWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new MagentaWoolPedestalMenu(pContainerId, inventory, magentaWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<OrangeWoolPedestalMenu>> ORANGE_WOOL_PEDESTAL_MENU =
+            registerMenuType("orange_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                OrangeWoolPedestalBlockEntity orangeWoolPedestalBlockEntity = (OrangeWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new OrangeWoolPedestalMenu(pContainerId, inventory, orangeWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PinkWoolPedestalMenu>> PINK_WOOL_PEDESTAL_MENU =
+            registerMenuType("pink_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PinkWoolPedestalBlockEntity pinkWoolPedestalBlockEntity = (PinkWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PinkWoolPedestalMenu(pContainerId, inventory, pinkWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<PurpleWoolPedestalMenu>> PURPLE_WOOL_PEDESTAL_MENU =
+            registerMenuType("purple_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                PurpleWoolPedestalBlockEntity purpleWoolPedestalBlockEntity = (PurpleWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new PurpleWoolPedestalMenu(pContainerId, inventory, purpleWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<RedWoolPedestalMenu>> RED_WOOL_PEDESTAL_MENU =
+            registerMenuType("red_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                RedWoolPedestalBlockEntity redWoolPedestalBlockEntity = (RedWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new RedWoolPedestalMenu(pContainerId, inventory, redWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<WhiteWoolPedestalMenu>> WHITE_WOOL_PEDESTAL_MENU =
+            registerMenuType("white_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                WhiteWoolPedestalBlockEntity whiteWoolPedestalBlockEntity = (WhiteWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new WhiteWoolPedestalMenu(pContainerId, inventory, whiteWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<YellowWoolPedestalMenu>> YELLOW_WOOL_PEDESTAL_MENU =
+            registerMenuType("yellow_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                YellowWoolPedestalBlockEntity yellowWoolPedestalBlockEntity = (YellowWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new YellowWoolPedestalMenu(pContainerId, inventory, yellowWoolPedestalBlockEntity);
+            });
+
+    public static final RegistryObject<MenuType<GrayWoolPedestalMenu>> GRAY_WOOL_PEDESTAL_MENU =
+            registerMenuType("gray_wool_pedestal_menu", (pContainerId, inventory, extraData) -> {
+                GrayWoolPedestalBlockEntity grayWoolPedestalBlockEntity = (GrayWoolPedestalBlockEntity) inventory.player.level()
+                        .getBlockEntity(extraData.readBlockPos());
+                return new GrayWoolPedestalMenu(pContainerId, inventory, grayWoolPedestalBlockEntity);
+            });
     
 
 

@@ -24,7 +24,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SOUL_SAND_PEDESTAL.get(),
                     ModBlocks.SOUL_SOIL_PEDESTAL.get()
                 );
-
+this.tag(BlockTags.WOOL)
+        .add(ModBlocks.BLACK_WOOL_PEDESTAL.get(),
+                ModBlocks.BROWN_WOOL_PEDESTAL.get(),
+                ModBlocks.BLUE_WOOL_PEDESTAL.get(),
+                ModBlocks.CYAN_WOOL_PEDESTAL.get(),
+                ModBlocks.GRAY_WOOL_PEDESTAL.get(),
+                ModBlocks.GREEN_WOOL_PEDESTAL.get(),
+                ModBlocks.LIGHT_GRAY_WOOL_PEDESTAL.get(),
+                ModBlocks.LIGHT_BLUE_WOOL_PEDESTAL.get(),
+                ModBlocks.LIME_WOOL_PEDESTAL.get(),
+                ModBlocks.MAGENTA_WOOL_PEDESTAL.get(),
+                ModBlocks.ORANGE_WOOL_PEDESTAL.get(),
+                ModBlocks.PINK_WOOL_PEDESTAL.get(),
+                ModBlocks.PURPLE_WOOL_PEDESTAL.get(),
+                ModBlocks.RED_WOOL_PEDESTAL.get(),
+                ModBlocks.WHITE_WOOL_PEDESTAL.get(),
+                ModBlocks.YELLOW_WOOL_PEDESTAL.get()
+        
+        );
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PEDESTAL.get(),

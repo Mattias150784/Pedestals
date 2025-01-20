@@ -79,6 +79,23 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.END_STONE_BRICKS_PEDESTAL.get());
         this.dropSelf(ModBlocks.PURPUR_BLOCK_PEDESTAL.get());
         this.dropSelf(ModBlocks.PURPUR_PILLAR_PEDESTAL.get());
+
+        this.dropSelf(ModBlocks.BLACK_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.BLUE_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.BROWN_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.GREEN_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.GRAY_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.CYAN_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.LIME_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.MAGENTA_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.ORANGE_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.PINK_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.PURPLE_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.RED_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.WHITE_WOOL_PEDESTAL.get());
+        this.dropSelf(ModBlocks.YELLOW_WOOL_PEDESTAL.get());
     }
 
 

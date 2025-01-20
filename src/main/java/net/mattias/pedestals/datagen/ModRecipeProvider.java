@@ -49,6 +49,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createPedestalRecipe(ModBlocks.END_STONE_BRICKS_PEDESTAL.get(), Blocks.END_STONE_BRICKS, pWriter);
         createPedestalRecipe(ModBlocks.PURPUR_BLOCK_PEDESTAL.get(), Blocks.PURPUR_BLOCK, pWriter);
         createPedestalRecipe(ModBlocks.PURPUR_PILLAR_PEDESTAL.get(), Blocks.PURPUR_PILLAR, pWriter);
+        
 
 // Concrete pedestals
         createPedestalRecipe(ModBlocks.BLACK_CONCRETE_PEDESTAL.get(), Blocks.BLACK_CONCRETE, pWriter);
@@ -68,6 +69,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createPedestalRecipe(ModBlocks.CYAN_CONCRETE_PEDESTAL.get(), Blocks.CYAN_CONCRETE, pWriter);
         createPedestalRecipe(ModBlocks.LIME_CONCRETE_PEDESTAL.get(), Blocks.LIME_CONCRETE, pWriter);
 
+// Wool pedestals
+        createPedestalRecipe(ModBlocks.BLACK_WOOL_PEDESTAL.get(), Blocks.BLACK_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.BLUE_WOOL_PEDESTAL.get(), Blocks.BLUE_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.BROWN_WOOL_PEDESTAL.get(), Blocks.BROWN_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.GREEN_WOOL_PEDESTAL.get(), Blocks.GREEN_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.GRAY_WOOL_PEDESTAL.get(), Blocks.GRAY_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.ORANGE_WOOL_PEDESTAL.get(), Blocks.ORANGE_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.PURPLE_WOOL_PEDESTAL.get(), Blocks.PURPLE_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.LIGHT_GRAY_WOOL_PEDESTAL.get(), Blocks.LIGHT_GRAY_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.LIGHT_BLUE_WOOL_PEDESTAL.get(), Blocks.LIGHT_BLUE_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.PINK_WOOL_PEDESTAL.get(), Blocks.PINK_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.RED_WOOL_PEDESTAL.get(), Blocks.RED_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.WHITE_WOOL_PEDESTAL.get(), Blocks.WHITE_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.YELLOW_WOOL_PEDESTAL.get(), Blocks.YELLOW_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.MAGENTA_WOOL_PEDESTAL.get(), Blocks.MAGENTA_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.CYAN_WOOL_PEDESTAL.get(), Blocks.CYAN_WOOL, pWriter);
+        createPedestalRecipe(ModBlocks.LIME_WOOL_PEDESTAL.get(), Blocks.LIME_WOOL, pWriter);
+        
 // Planks pedestals
         createPlanksPedestalRecipe(ModBlocks.OAK_PLANKS_PEDESTAL.get(), Blocks.OAK_PLANKS, pWriter);
         createPlanksPedestalRecipe(ModBlocks.BIRCH_PLANKS_PEDESTAL.get(), Blocks.BIRCH_PLANKS, pWriter);

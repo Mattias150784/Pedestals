@@ -16,7 +16,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Pedestals.MOD_ID);
 
-
+//    public static final RegistryObject<Item> PEDESTAL_LOCK = ITEMS.register("pedestal_lock",
+//            () -> new Item(new Item.Properties()));
+//
+//    public static final RegistryObject<Item> PEDESTAL_KEY = ITEMS.register("pedestal_key",
+//            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

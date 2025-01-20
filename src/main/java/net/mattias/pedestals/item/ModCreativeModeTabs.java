@@ -19,6 +19,8 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PEDESTAL.get()))
                     .title(Component.translatable("creativetab.pedestals"))
                     .displayItems((itemDisplayParameters, output) -> {
+//                        output.accept(ModItems.PEDESTAL_LOCK.get());
+//                        output.accept(ModItems.PEDESTAL_KEY.get());
                         output.accept(ModBlocks.PEDESTAL.get());
                         output.accept(ModBlocks.OAK_LOG_PEDESTAL.get());
                         output.accept(ModBlocks.BIRCH_LOG_PEDESTAL.get());
@@ -89,6 +91,22 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PURPUR_PILLAR_PEDESTAL.get());
                         output.accept(ModBlocks.PURPUR_BLOCK_PEDESTAL.get());
 
+                        output.accept(ModBlocks.BLACK_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.BLUE_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.BROWN_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.CYAN_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.GRAY_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.GREEN_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.LIGHT_GRAY_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.LIME_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.MAGENTA_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.ORANGE_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.PINK_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.PURPLE_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.RED_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.WHITE_WOOL_PEDESTAL.get());
+                        output.accept(ModBlocks.YELLOW_WOOL_PEDESTAL.get());
 
                     }).build());
 

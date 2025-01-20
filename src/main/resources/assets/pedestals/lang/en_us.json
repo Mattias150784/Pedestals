@@ -62,6 +62,23 @@
  "block.pedestals.white_concrete_pedestal": "White Concrete Pedestal",
  "block.pedestals.yellow_concrete_pedestal": "Yellow Concrete Pedestal",
 
+ "block.pedestals.brown_wool_pedestal": "Brown Wool Pedestal",
+ "block.pedestals.blue_wool_pedestal": "Blue Wool Pedestal",
+ "block.pedestals.black_wool_pedestal": "Black Wool Pedestal",
+ "block.pedestals.cyan_wool_pedestal": "Cyan Wool Pedestal",
+ "block.pedestals.gray_wool_pedestal": "Gray Wool Pedestal",
+ "block.pedestals.green_wool_pedestal": "Green Wool Pedestal",
+ "block.pedestals.light_blue_wool_pedestal": "Light Blue Wool Pedestal",
+ "block.pedestals.light_gray_wool_pedestal": "Light Gray Wool Pedestal",
+ "block.pedestals.lime_wool_pedestal": "Lime Wool Pedestal",
+ "block.pedestals.magenta_wool_pedestal": "Magenta Wool Pedestal",
+ "block.pedestals.orange_wool_pedestal": "Orange Wool Pedestal",
+ "block.pedestals.pink_wool_pedestal": "Pink Wool Pedestal",
+ "block.pedestals.purple_wool_pedestal": "Purple Wool Pedestal",
+ "block.pedestals.red_wool_pedestal": "Red Wool Pedestal",
+ "block.pedestals.white_wool_pedestal": "White Wool Pedestal",
+ "block.pedestals.yellow_wool_pedestal": "Yellow Wool Pedestal",
+
  "block.pedestals.blackstone_pedestal": "Blackstone Pedestal",
  "block.pedestals.red_nether_bricks_pedestal": "Red Nether Bricks Pedestal",
  "block.pedestals.nether_bricks_pedestal": "Nether Bricks Pedestal",
@@ -77,5 +94,10 @@
  "block.pedestals.end_stone_bricks_pedestal": "End Stone Bricks Pedestal",
  "block.pedestals.purpur_pillar_pedestal": "Purpur Pillar Pedestal",
 
-  "creativetab.pedestals": "Pedestals"
+ "item.pedestals.pedestal_lock": "Pedestal Lock",
+ "item.pedestals.pedestal_key": "Pedestal Key",
+
+
+
+ "creativetab.pedestals": "Pedestals"
 }

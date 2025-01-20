@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.ModBlockEntities;
 import net.mattias.pedestals.block.entity.renderer.concrete.*;
+import net.mattias.pedestals.block.entity.renderer.wool.*;
 import net.mattias.pedestals.block.entity.renderer.end.*;
 import net.mattias.pedestals.block.entity.renderer.logs.*;
 import net.mattias.pedestals.screen.custom.end.screen.*;
@@ -20,6 +21,7 @@ import net.mattias.pedestals.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.mattias.pedestals.item.ModCreativeModeTabs;
 import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
+import net.mattias.pedestals.screen.custom.wool.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -142,6 +144,22 @@ public class Pedestals
             MenuScreens.register(ModMenuTypes.END_STONE_PEDESTAL_MENU.get(), EndStonePedestalScreen::new);
             MenuScreens.register(ModMenuTypes.PURPUR_PILLAR_PEDESTAL_MENU.get(), PurpurPillarPedestalScreen::new);
             MenuScreens.register(ModMenuTypes.PURPUR_BLOCK_PEDESTAL_MENU.get(), PurpurBlockPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.BLACK_WOOL_PEDESTAL_MENU.get(), BlackWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.BLUE_WOOL_PEDESTAL_MENU.get(), BlueWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.BROWN_WOOL_PEDESTAL_MENU.get(), BrownWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.CYAN_WOOL_PEDESTAL_MENU.get(), CyanWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.GRAY_WOOL_PEDESTAL_MENU.get(), GrayWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.GREEN_WOOL_PEDESTAL_MENU.get(), GreenWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.LIGHT_BLUE_WOOL_PEDESTAL_MENU.get(), LightBlueWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.LIGHT_GRAY_WOOL_PEDESTAL_MENU.get(), LightGrayWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.LIME_WOOL_PEDESTAL_MENU.get(), LimeWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.MAGENTA_WOOL_PEDESTAL_MENU.get(), MagentaWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.ORANGE_WOOL_PEDESTAL_MENU.get(), OrangeWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.PINK_WOOL_PEDESTAL_MENU.get(), PinkWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.PURPLE_WOOL_PEDESTAL_MENU.get(), PurpleWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.RED_WOOL_PEDESTAL_MENU.get(), RedWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.WHITE_WOOL_PEDESTAL_MENU.get(), WhiteWoolPedestalScreen::new);
+            MenuScreens.register(ModMenuTypes.YELLOW_WOOL_PEDESTAL_MENU.get(), YellowWoolPedestalScreen::new);
         }
 
         @SubscribeEvent
@@ -206,11 +224,26 @@ public class Pedestals
             event.registerBlockEntityRenderer(ModBlockEntities.RED_NETHER_BRICKS_PEDESTAL.get(), RedNetherBricksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.SOUL_SOIL_PEDESTAL.get(), SoulSoilPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.SOUL_SAND_PEDESTAL.get(), SoulSandPedestalBlockEntityRenderer::new);
-
             event.registerBlockEntityRenderer(ModBlockEntities.END_STONE_BRICKS_PEDESTAL.get(), EndStoneBricksPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.END_STONE_PEDESTAL.get(), EndStonePedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.PURPUR_PILLAR_PEDESTAL.get(), PurpurPillarPedestalBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.PURPUR_BLOCK_PEDESTAL.get(), PurpurBlockPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.BLACK_WOOL_PEDESTAL_BE.get(), BlackWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.BLUE_WOOL_PEDESTAL.get(), BlueWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.BROWN_WOOL_PEDESTAL.get(), BrownWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.CYAN_WOOL_PEDESTAL.get(), CyanWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GRAY_WOOL_PEDESTAL.get(), GrayWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.GREEN_WOOL_PEDESTAL.get(), GreenWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.LIGHT_GRAY_WOOL_PEDESTAL.get(), LightGrayWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.LIGHT_BLUE_WOOL_PEDESTAL.get(), LightBlueWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.LIME_WOOL_PEDESTAL.get(), LimeWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MAGENTA_WOOL_PEDESTAL.get(), MagentaWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.ORANGE_WOOL_PEDESTAL.get(), OrangeWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.PINK_WOOL_PEDESTAL.get(), PinkWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.PURPLE_WOOL_PEDESTAL.get(), PurpleWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.RED_WOOL_PEDESTAL.get(), RedWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.YELLOW_WOOL_PEDESTAL.get(), YellowWoolPedestalBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.WHITE_WOOL_PEDESTAL.get(), WhiteWoolPedestalBlockEntityRenderer::new);
 
 
         }

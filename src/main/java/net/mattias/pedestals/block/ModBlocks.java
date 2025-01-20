@@ -2,6 +2,7 @@ package net.mattias.pedestals.block;
 
 import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.concrete.*;
+import net.mattias.pedestals.block.custom.wool.*;
 import net.mattias.pedestals.block.custom.logs.*;
 import net.mattias.pedestals.block.custom.PedestalBlock;
 import net.mattias.pedestals.block.custom.nether.*;
@@ -217,6 +218,55 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> END_STONE_BRICKS_PEDESTAL = registerBlock("end_stone_bricks_pedestal",
             () -> new EndStoneBricksPedestalBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> BLACK_WOOL_PEDESTAL = registerBlock("black_wool_pedestal",
+            () -> new BlackWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.BLACK_WOOL)));
+
+    public static final RegistryObject<Block> BLUE_WOOL_PEDESTAL = registerBlock("blue_wool_pedestal",
+            () -> new BlueWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.BLUE_WOOL)));
+
+    public static final RegistryObject<Block> BROWN_WOOL_PEDESTAL = registerBlock("brown_wool_pedestal",
+            () -> new BrownWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+
+    public static final RegistryObject<Block> GREEN_WOOL_PEDESTAL = registerBlock("green_wool_pedestal",
+            () -> new GreenWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.GREEN_WOOL)));
+
+    public static final RegistryObject<Block> GRAY_WOOL_PEDESTAL = registerBlock("gray_wool_pedestal",
+            () -> new GrayWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.GRAY_WOOL)));
+
+    public static final RegistryObject<Block> ORANGE_WOOL_PEDESTAL = registerBlock("orange_wool_pedestal",
+            () -> new OrangeWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.ORANGE_WOOL)));
+
+    public static final RegistryObject<Block> PURPLE_WOOL_PEDESTAL = registerBlock("purple_wool_pedestal",
+            () -> new PurpleWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.PURPLE_WOOL)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_WOOL_PEDESTAL = registerBlock("light_gray_wool_pedestal",
+            () -> new LightGrayWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_GRAY_WOOL)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_WOOL_PEDESTAL = registerBlock("light_blue_wool_pedestal",
+            () -> new LightBlueWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_WOOL)));
+
+    public static final RegistryObject<Block> PINK_WOOL_PEDESTAL = registerBlock("pink_wool_pedestal",
+            () -> new PinkWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.PINK_WOOL)));
+
+    public static final RegistryObject<Block> RED_WOOL_PEDESTAL = registerBlock("red_wool_pedestal",
+            () -> new RedWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.RED_WOOL)));
+
+    public static final RegistryObject<Block> WHITE_WOOL_PEDESTAL = registerBlock("white_wool_pedestal",
+            () -> new WhiteWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final RegistryObject<Block> YELLOW_WOOL_PEDESTAL = registerBlock("yellow_wool_pedestal",
+            () -> new YellowWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.YELLOW_WOOL)));
+
+    public static final RegistryObject<Block> MAGENTA_WOOL_PEDESTAL = registerBlock("magenta_wool_pedestal",
+            () -> new MagentaWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.MAGENTA_WOOL)));
+
+    public static final RegistryObject<Block> CYAN_WOOL_PEDESTAL = registerBlock("cyan_wool_pedestal",
+            () -> new CyanWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.CYAN_WOOL)));
+
+    public static final RegistryObject<Block> LIME_WOOL_PEDESTAL = registerBlock("lime_wool_pedestal",
+            () -> new LimeWoolPedestalBlock(BlockBehaviour.Properties.copy(Blocks.LIME_WOOL)));
+    
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
