@@ -67,6 +67,60 @@ public enum PedestalVariant {
     CYAN_CONCRETE("cyan_concrete_pedestal", Blocks.CYAN_CONCRETE, "cyan_concrete"),
     LIME_CONCRETE("lime_concrete_pedestal", Blocks.LIME_CONCRETE, "lime_concrete"),
 
+    // Wool
+    BLACK_WOOL("black_wool_pedestal", Blocks.BLACK_WOOL, "black_wool"),
+    BLUE_WOOL("blue_wool_pedestal", Blocks.BLUE_WOOL, "blue_wool"),
+    BROWN_WOOL("brown_wool_pedestal", Blocks.BROWN_WOOL, "brown_wool"),
+    GREEN_WOOL("green_wool_pedestal", Blocks.GREEN_WOOL, "green_wool"),
+    GRAY_WOOL("gray_wool_pedestal", Blocks.GRAY_WOOL, "gray_wool"),
+    ORANGE_WOOL("orange_wool_pedestal", Blocks.ORANGE_WOOL, "orange_wool"),
+    PURPLE_WOOL("purple_wool_pedestal", Blocks.PURPLE_WOOL, "purple_wool"),
+    LIGHT_GRAY_WOOL("light_gray_wool_pedestal", Blocks.LIGHT_GRAY_WOOL, "light_gray_wool"),
+    LIGHT_BLUE_WOOL("light_blue_wool_pedestal", Blocks.LIGHT_BLUE_WOOL, "light_blue_wool"),
+    PINK_WOOL("pink_wool_pedestal", Blocks.PINK_WOOL, "pink_wool"),
+    RED_WOOL("red_wool_pedestal", Blocks.RED_WOOL, "red_wool"),
+    WHITE_WOOL("white_wool_pedestal", Blocks.WHITE_WOOL, "white_wool"),
+    YELLOW_WOOL("yellow_wool_pedestal", Blocks.YELLOW_WOOL, "yellow_wool"),
+    MAGENTA_WOOL("magenta_wool_pedestal", Blocks.MAGENTA_WOOL, "magenta_wool"),
+    CYAN_WOOL("cyan_wool_pedestal", Blocks.CYAN_WOOL, "cyan_wool"),
+    LIME_WOOL("lime_wool_pedestal", Blocks.LIME_WOOL, "lime_wool"),
+
+    // Terracotta
+    TERRACOTTA("terracotta_pedestal", Blocks.TERRACOTTA, "terracotta"),
+    BLACK_TERRACOTTA("black_terracotta_pedestal", Blocks.BLACK_TERRACOTTA, "black_terracotta"),
+    BLUE_TERRACOTTA("blue_terracotta_pedestal", Blocks.BLUE_TERRACOTTA, "blue_terracotta"),
+    BROWN_TERRACOTTA("brown_terracotta_pedestal", Blocks.BROWN_TERRACOTTA, "brown_terracotta"),
+    GREEN_TERRACOTTA("green_terracotta_pedestal", Blocks.GREEN_TERRACOTTA, "green_terracotta"),
+    GRAY_TERRACOTTA("gray_terracotta_pedestal", Blocks.GRAY_TERRACOTTA, "gray_terracotta"),
+    ORANGE_TERRACOTTA("orange_terracotta_pedestal", Blocks.ORANGE_TERRACOTTA, "orange_terracotta"),
+    PURPLE_TERRACOTTA("purple_terracotta_pedestal", Blocks.PURPLE_TERRACOTTA, "purple_terracotta"),
+    LIGHT_GRAY_TERRACOTTA("light_gray_terracotta_pedestal", Blocks.LIGHT_GRAY_TERRACOTTA, "light_gray_terracotta"),
+    LIGHT_BLUE_TERRACOTTA("light_blue_terracotta_pedestal", Blocks.LIGHT_BLUE_TERRACOTTA, "light_blue_terracotta"),
+    PINK_TERRACOTTA("pink_terracotta_pedestal", Blocks.PINK_TERRACOTTA, "pink_terracotta"),
+    RED_TERRACOTTA("red_terracotta_pedestal", Blocks.RED_TERRACOTTA, "red_terracotta"),
+    WHITE_TERRACOTTA("white_terracotta_pedestal", Blocks.WHITE_TERRACOTTA, "white_terracotta"),
+    YELLOW_TERRACOTTA("yellow_terracotta_pedestal", Blocks.YELLOW_TERRACOTTA, "yellow_terracotta"),
+    MAGENTA_TERRACOTTA("magenta_terracotta_pedestal", Blocks.MAGENTA_TERRACOTTA, "magenta_terracotta"),
+    CYAN_TERRACOTTA("cyan_terracotta_pedestal", Blocks.CYAN_TERRACOTTA, "cyan_terracotta"),
+    LIME_TERRACOTTA("lime_terracotta_pedestal", Blocks.LIME_TERRACOTTA, "lime_terracotta"),
+
+    BLACK_TERRACOTTA_GLAZED("black_terracotta_glazed_pedestal", Blocks.BLACK_GLAZED_TERRACOTTA, "black_terracotta_glaze"),
+    BLUE_TERRACOTTA_GLAZED("blue_terracotta_glazed_pedestal", Blocks.BLUE_GLAZED_TERRACOTTA, "blue_terracotta_glaze"),
+    BROWN_TERRACOTTA_GLAZED("brown_terracotta_glazed_pedestal", Blocks.BROWN_GLAZED_TERRACOTTA, "brown_terracotta_glaze"),
+    GREEN_TERRACOTTA_GLAZED("green_terracotta_glazed_pedestal", Blocks.GREEN_GLAZED_TERRACOTTA, "green_terracotta_glaze"),
+    GRAY_TERRACOTTA_GLAZED("gray_terracotta_glazed_pedestal", Blocks.GRAY_GLAZED_TERRACOTTA, "gray_terracotta_glaze"),
+    ORANGE_TERRACOTTA_GLAZED("orange_terracotta_glazed_pedestal", Blocks.ORANGE_GLAZED_TERRACOTTA, "orange_terracotta_glaze"),
+    PURPLE_TERRACOTTA_GLAZED("purple_terracotta_glazed_pedestal", Blocks.PURPLE_GLAZED_TERRACOTTA, "purple_terracotta_glaze"),
+    LIGHT_GRAY_TERRACOTTA_GLAZED("light_gray_terracotta_glazed_pedestal", Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, "light_gray_terracotta_glaze"),
+    LIGHT_BLUE_TERRACOTTA_GLAZED("light_blue_terracotta_glazed_pedestal", Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, "light_blue_terracotta_glaze"),
+    PINK_TERRACOTTA_GLAZED("pink_terracotta_glazed_pedestal", Blocks.PINK_GLAZED_TERRACOTTA, "pink_terracotta_glaze"),
+    RED_TERRACOTTA_GLAZED("red_terracotta_glazed_pedestal", Blocks.RED_GLAZED_TERRACOTTA, "red_terracotta_glaze"),
+    WHITE_TERRACOTTA_GLAZED("white_terracotta_glazed_pedestal", Blocks.WHITE_GLAZED_TERRACOTTA, "white_terracotta_glaze"),
+    YELLOW_TERRACOTTA_GLAZED("yellow_terracotta_glazed_pedestal", Blocks.YELLOW_GLAZED_TERRACOTTA, "yellow_terracotta_glaze"),
+    MAGENTA_TERRACOTTA_GLAZED("magenta_terracotta_glazed_pedestal", Blocks.MAGENTA_GLAZED_TERRACOTTA, "magenta_terracotta_glaze"),
+    CYAN_TERRACOTTA_GLAZED("cyan_terracotta_glazed_pedestal", Blocks.CYAN_GLAZED_TERRACOTTA, "cyan_terracotta_glaze"),
+    LIME_TERRACOTTA_GLAZED("lime_terracotta_glazed_pedestal", Blocks.LIME_GLAZED_TERRACOTTA, "lime_terracotta_glaze"),
+    
     BLACKSTONE("blackstone_pedestal", Blocks.BLACKSTONE, "blackstone"),
     CRYING_OBSIDIAN("crying_obsidian_pedestal", Blocks.CRYING_OBSIDIAN, "crying_obsidian"),
     OBSIDIAN("obsidian_pedestal", Blocks.OBSIDIAN, "obsidian"),
@@ -79,6 +133,8 @@ public enum PedestalVariant {
     END_STONE_BRICKS("end_stone_bricks_pedestal", Blocks.END_STONE_BRICKS, "end_stone_bricks"),
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
     PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block");
+    
+    
 
     ;
 

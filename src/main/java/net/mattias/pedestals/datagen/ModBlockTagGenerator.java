@@ -22,14 +22,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PEDESTAL.get());
+
+        // Adding Wool Pedestals properly
+        this.tag(BlockTags.WOOL);
 
         for (PedestalVariant variant : PedestalVariant.values()) {
             Block block = ModBlocks.PEDESTAL_BLOCKS.get(variant).get();
             String name = variant.getRegistryName();
-            if (name.contains("soul")) {
+
+            if (name.contains("wool")) {
+                this.tag(BlockTags.WOOL).add(block);
+            } else if (name.contains("soul")) {
                 this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(block);
             } else if (name.contains("log") || name.contains("planks")) {
                 this.tag(BlockTags.MINEABLE_WITH_AXE).add(block);
@@ -46,7 +51,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         }
 
 
-        // this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+
+
+    // this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
         //        .add(ModBlocks.OBSIDIAN_PEDESTAL.get(), ModBlocks.CRYING_OBSIDIAN_PEDESTAL.get());
     }
 }
