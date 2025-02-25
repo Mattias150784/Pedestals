@@ -1,7 +1,6 @@
 package net.mattias.pedestals.block.entity.custom;
 
 import net.mattias.pedestals.block.entity.ModBlockEntities;
-import net.mattias.pedestals.block.entity.custom.logs.OakLogPedestalBlockEntity;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -49,8 +48,9 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
     private float rotation = 0;
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
-    public PedestalBlockEntity(@NotNull BlockEntityType<OakLogPedestalBlockEntity> oakLogPedestalBlockEntityBlockEntityType, BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.PEDESTAL_BE.get(), pPos, pBlockState);
+    // Fixed Constructor
+    public PedestalBlockEntity(@NotNull BlockEntityType<PedestalBlockEntity> pedestalBlockEntityBlockEntityType, BlockPos pPos, BlockState pBlockState) {
+        super(ModBlockEntities.getPedestalBE().get(), pPos, pBlockState);
     }
 
     @Override
@@ -75,12 +75,12 @@ public class PedestalBlockEntity extends BlockEntity implements Container, MenuP
 
     @Override
     public ItemStack removeItem(int i, int amount) {
-        return ContainerHelper.removeItem((List<ItemStack>) this, i, amount);
+        return ContainerHelper.removeItem((List<ItemStack>) inventory, i, amount);
     }
 
     @Override
     public ItemStack removeItemNoUpdate(int i) {
-        return ContainerHelper.takeItem((List<ItemStack>) this, i);
+        return inventory.extractItem(i, inventory.getStackInSlot(i).getCount(), false);
     }
 
     @Override

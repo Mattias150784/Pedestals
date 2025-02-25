@@ -2,7 +2,6 @@ package net.mattias.pedestals.block.custom;
 
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.ModBlockEntities;
-import net.mattias.pedestals.block.entity.custom.logs.OakLogPedestalBlockEntity;
 import net.mattias.pedestals.block.entity.custom.PedestalBlockEntity;
 import net.mattias.pedestals.screen.custom.PedestalMenu;
 import net.minecraft.core.BlockPos;
@@ -42,10 +41,10 @@ public class PedestalBlock extends BaseEntityBlock {
 
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        if (blockState.getBlock() == ModBlocks.OAK_LOG_PEDESTAL.get()) {
-            return new OakLogPedestalBlockEntity(blockPos, blockState);
+        if (blockState.getBlock() == ModBlocks.PEDESTAL.get()) {
+            return new PedestalBlockEntity(ModBlockEntities.PEDESTAL_BE.get(), blockPos, blockState);
         }
-        return new PedestalBlockEntity(ModBlockEntities.OAK_LOG_PEDESTAL_BE.get(), blockPos, blockState);
+        return new PedestalBlockEntity(ModBlockEntities.PEDESTAL_BE.get(), blockPos, blockState);
     }
 
 
