@@ -1,8 +1,10 @@
 package net.mattias.pedestals;
 
+import net.mattias.mystigrecia.common.block.ModBlocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+
 
 public enum PedestalVariant {
     // Log variants
@@ -131,11 +133,11 @@ public enum PedestalVariant {
 
     END_STONE_BRICKS("end_stone_bricks_pedestal", Blocks.END_STONE_BRICKS, "end_stone_bricks"),
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
-    PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block");
-
-
+    PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
 
     ;
+
+
 
     private final String registryName;
     private final Block baseBlock;

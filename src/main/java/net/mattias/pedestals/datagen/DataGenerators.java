@@ -26,7 +26,7 @@ public class DataGenerators {
 
         // Loot Tables
         generator.addProvider(event.includeServer(),
-                ModLootTableProvider.create(packOutput, lookupProvider.join()));
+                ModLootTableProvider.create(packOutput));
 
         // Block Tags
         generator.addProvider(event.includeServer(),

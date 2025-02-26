@@ -89,6 +89,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(PedestalVariant.MAGENTA_WOOL, Blocks.MAGENTA_WOOL);
         MATERIAL_MAP.put(PedestalVariant.CYAN_WOOL, Blocks.CYAN_WOOL);
         MATERIAL_MAP.put(PedestalVariant.LIME_WOOL, Blocks.LIME_WOOL);
+
+        // Terracotta variants
+        MATERIAL_MAP.put(PedestalVariant.TERRACOTTA, Blocks.TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.BLACK_TERRACOTTA, Blocks.BLACK_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.BLUE_TERRACOTTA, Blocks.BLUE_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.BROWN_TERRACOTTA, Blocks.BROWN_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.GREEN_TERRACOTTA, Blocks.GREEN_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.GRAY_TERRACOTTA, Blocks.GRAY_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.ORANGE_TERRACOTTA, Blocks.ORANGE_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.PURPLE_TERRACOTTA, Blocks.PURPLE_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_TERRACOTTA, Blocks.LIGHT_GRAY_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_TERRACOTTA, Blocks.LIGHT_BLUE_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.PINK_TERRACOTTA, Blocks.PINK_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.RED_TERRACOTTA, Blocks.RED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.WHITE_TERRACOTTA, Blocks.WHITE_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.YELLOW_TERRACOTTA, Blocks.YELLOW_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.MAGENTA_TERRACOTTA, Blocks.MAGENTA_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.CYAN_TERRACOTTA, Blocks.CYAN_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.LIME_TERRACOTTA, Blocks.LIME_TERRACOTTA);
+
+        MATERIAL_MAP.put(PedestalVariant.BLACK_TERRACOTTA_GLAZED, Blocks.BLACK_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.BLUE_TERRACOTTA_GLAZED, Blocks.BLUE_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.BROWN_TERRACOTTA_GLAZED, Blocks.BROWN_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.GREEN_TERRACOTTA_GLAZED, Blocks.GREEN_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.GRAY_TERRACOTTA_GLAZED, Blocks.GRAY_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.ORANGE_TERRACOTTA_GLAZED, Blocks.ORANGE_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.PURPLE_TERRACOTTA_GLAZED, Blocks.PURPLE_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_TERRACOTTA_GLAZED, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_TERRACOTTA_GLAZED, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.PINK_TERRACOTTA_GLAZED, Blocks.PINK_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.RED_TERRACOTTA_GLAZED, Blocks.RED_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.WHITE_TERRACOTTA_GLAZED, Blocks.WHITE_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.YELLOW_TERRACOTTA_GLAZED, Blocks.YELLOW_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.MAGENTA_TERRACOTTA_GLAZED, Blocks.MAGENTA_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.CYAN_TERRACOTTA_GLAZED, Blocks.CYAN_GLAZED_TERRACOTTA);
+        MATERIAL_MAP.put(PedestalVariant.LIME_TERRACOTTA_GLAZED, Blocks.LIME_GLAZED_TERRACOTTA);
+
+        // Nether and End
+        MATERIAL_MAP.put(PedestalVariant.BLACKSTONE, Blocks.BLACKSTONE);
+        MATERIAL_MAP.put(PedestalVariant.CRYING_OBSIDIAN, Blocks.CRYING_OBSIDIAN);
+        MATERIAL_MAP.put(PedestalVariant.OBSIDIAN, Blocks.OBSIDIAN);
+        MATERIAL_MAP.put(PedestalVariant.NETHER_BRICKS, Blocks.NETHER_BRICKS);
+        MATERIAL_MAP.put(PedestalVariant.END_STONE_BRICKS, Blocks.END_STONE_BRICKS);
+        MATERIAL_MAP.put(PedestalVariant.END_STONE, Blocks.END_STONE);
+        MATERIAL_MAP.put(PedestalVariant.PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
+
     }
 
     public ModRecipeProvider(PackOutput pOutput) {

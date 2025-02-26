@@ -11,8 +11,9 @@ import java.util.List;
 import java.util.Set;
 
 public class ModLootTableProvider {
-    public static LootTableProvider create(PackOutput packOutput, HolderLookup.Provider provider) {
+    public static LootTableProvider create(PackOutput packOutput) {
         return new LootTableProvider(packOutput, Set.of(),
-                List.of(new LootTableProvider.SubProviderEntry(() -> new ModBlockLootTables(provider), LootContextParamSets.BLOCK)));
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTables::new, LootContextParamSets.BLOCK)));
     }
+
 }
