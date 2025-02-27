@@ -132,11 +132,18 @@ public enum PedestalVariant {
 
     END_STONE_BRICKS("end_stone_bricks_pedestal", Blocks.END_STONE_BRICKS, "end_stone_bricks"),
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
-    PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block");
+    PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
     
-    
+    //  Stuff
+    GRAVEL("gravel_pedestal", Blocks.GRAVEL, "gravel"),
+    MUD("mud_pedestal", Blocks.MUD, "mud"),
+    RED_SAND("red_sand_pedestal", Blocks.RED_SAND, "red_sand"),
+    SAND("sand_pedestal", Blocks.SAND, "sand"),
+
+
 
     ;
+
 
     private final String registryName;
     private final Block baseBlock;

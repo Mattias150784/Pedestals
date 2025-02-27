@@ -112,6 +112,13 @@
     "pedestals:soul_soil_pedestal",
     "pedestals:end_stone_bricks_pedestal",
     "pedestals:end_stone_pedestal",
-    "pedestals:purpur_block_pedestal"
+    "pedestals:purpur_block_pedestal",
+    "pedestals:grass_block_pedestal",
+    "pedestals:dirt_pedestal",
+    "pedestals:coarse_dirt_pedestal",
+    "pedestals:gravel_pedestal",
+    "pedestals:mud_pedestal",
+    "pedestals:red_sand_pedestal",
+    "pedestals:sand_pedestal"
   ]
 }
