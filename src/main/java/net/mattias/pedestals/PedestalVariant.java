@@ -1,6 +1,6 @@
 package net.mattias.pedestals;
 
-import net.mattias.mystigrecia.common.block.ModBlocks;
+import com.simibubi.create.AllBlocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -134,7 +134,7 @@ public enum PedestalVariant {
     END_STONE_BRICKS("end_stone_bricks_pedestal", Blocks.END_STONE_BRICKS, "end_stone_bricks"),
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
     PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
-
+    TEST_CREATE("create_test", AllBlocks.BRASS_BLOCK.get(),"test")
     ;
 
 
