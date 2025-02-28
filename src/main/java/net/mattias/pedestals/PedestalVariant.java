@@ -134,7 +134,9 @@ public enum PedestalVariant {
     END_STONE_BRICKS("end_stone_bricks_pedestal", Blocks.END_STONE_BRICKS, "end_stone_bricks"),
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
     PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
-    TEST_CREATE("create_test", AllBlocks.BRASS_BLOCK.get(),"test")
+
+    // CREATE
+    ANDESITE_CASING("andesite_casing", AllBlocks.ANDESITE_CASING.get(),"andesite_casing")
     ;
 
 

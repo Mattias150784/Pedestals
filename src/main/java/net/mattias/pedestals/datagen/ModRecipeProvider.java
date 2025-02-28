@@ -1,5 +1,6 @@
 package net.mattias.pedestals.datagen;
 
+import com.simibubi.create.AllBlocks;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.PedestalVariant;
 import net.minecraft.data.PackOutput;
@@ -134,6 +135,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(PedestalVariant.END_STONE_BRICKS, Blocks.END_STONE_BRICKS);
         MATERIAL_MAP.put(PedestalVariant.END_STONE, Blocks.END_STONE);
         MATERIAL_MAP.put(PedestalVariant.PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
+
+        MATERIAL_MAP.put(PedestalVariant.ANDESITE_CASING, AllBlocks.ANDESITE_CASING.get());
+
 
     }
 
