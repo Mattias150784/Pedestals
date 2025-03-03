@@ -2,9 +2,11 @@ package net.mattias.pedestals;
 
 import com.github.alexthe666.iceandfire.block.IafBlockRegistry;
 import net.mattias.mystigrecia.common.block.ModBlocks;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.registries.ForgeRegistries;
 
 
 public enum PedestalVariant {
@@ -136,12 +138,95 @@ public enum PedestalVariant {
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
     PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
 
-    //Mysti
-    BRONZE("bronze_block_pedestal", ModBlocks.BRONZE_BLOCK.get(), "bronze_block"),
-    //CELESTIAL_BRONZE("celestial_bronze_pedestal", ModBlocks.BRONZE_BLOCK.get(), "celestial_bronze"),
+    // Mysti
+    BRONZE("bronze_block_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "bronze_block")), "bronze_block"),
+// CELESTIAL_BRONZE("celestial_bronze_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "celestial_bronze")), "celestial_bronze"),
 
-    //Ice And Fire
-    SAPPHIRE("sapphire_block_pedestal", IafBlockRegistry.SAPPHIRE_BLOCK.get(),"saphhire")
+    BLACK_MARBLE_BRICK("black_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "black_marble_brick")), "black_marble_brick"),
+    BLACK_MARBLE("black_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "black_marble")), "black_marble"),
+    BLACK_MARBLE_PILLAR("black_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "black_marble_pillar")), "black_marble_pillar"),
+    BLACK_POLISHED("black_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "black_polished_marble")), "black_polished_marble"),
+    BLACK_RAW_MARBLE("black_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "black_raw_marble")), "black_raw_marble"),
+    BLUE_MARBLE_BRICK("blue_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "blue_marble_brick")), "blue_marble_brick"),
+    BLUE_MARBLE("blue_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "blue_marble")), "blue_marble"),
+    BLUE_MARBLE_PILLAR("blue_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "blue_marble_pillar")), "blue_marble_pillar"),
+    BLUE_POLISHED("blue_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "blue_polished_marble")), "blue_polished_marble"),
+    BLUE_RAW_MARBLE("blue_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "blue_raw_marble")), "blue_raw_marble"),
+    BROWN_MARBLE_BRICK("brown_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "brown_marble_brick")), "brown_marble_brick"),
+    BROWN_MARBLE("brown_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "brown_marble")), "brown_marble"),
+    BROWN_MARBLE_PILLAR("brown_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "brown_marble_pillar")), "brown_marble_pillar"),
+    BROWN_POLISHED("brown_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "brown_polished_marble")), "brown_polished_marble"),
+    BROWN_RAW_MARBLE("brown_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "brown_raw_marble")), "brown_raw_marble"),
+    CYAN_MARBLE_BRICK("cyan_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "cyan_marble_brick")), "cyan_marble_brick"),
+    CYAN_MARBLE("cyan_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "cyan_marble")), "cyan_marble"),
+    CYAN_MARBLE_PILLAR("cyan_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "cyan_marble_pillar")), "cyan_marble_pillar"),
+    CYAN_POLISHED("cyan_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "cyan_polished_marble")), "cyan_polished_marble"),
+    CYAN_RAW_MARBLE("cyan_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "cyan_raw_marble")), "cyan_raw_marble"),
+    GRAY_MARBLE_BRICK("gray_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "gray_marble_brick")), "gray_marble_brick"),
+    GRAY_MARBLE("gray_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "gray_marble")), "gray_marble"),
+    GRAY_MARBLE_PILLAR("gray_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "gray_marble_pillar")), "gray_marble_pillar"),
+    GRAY_POLISHED("gray_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "gray_polished_marble")), "gray_polished_marble"),
+    GRAY_RAW_MARBLE("gray_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "gray_raw_marble")), "gray_raw_marble"),
+    GREEN_MARBLE_BRICK("green_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "green_marble_brick")), "green_marble_brick"),
+    GREEN_MARBLE("green_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "green_marble")), "green_marble"),
+    GREEN_MARBLE_PILLAR("green_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "green_marble_pillar")), "green_marble_pillar"),
+    GREEN_POLISHED("green_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "green_polished_marble")), "green_polished_marble"),
+    GREEN_RAW_MARBLE("green_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "green_raw_marble")), "green_raw_marble"),
+    LIGHT_BLUE_MARBLE_BRICK("light_blue_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_blue_marble_brick")), "light_blue_marble_brick"),
+    LIGHT_BLUE_MARBLE("light_blue_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_blue_marble")), "light_blue_marble"),
+    LIGHT_BLUE_MARBLE_PILLAR("light_blue_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_blue_marble_pillar")), "light_blue_marble_pillar"),
+    LIGHT_BLUE_POLISHED("light_blue_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_blue_polished_marble")), "light_blue_polished_marble"),
+    LIGHT_BLUE_RAW_MARBLE("light_blue_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_blue_raw_marble")), "light_blue_raw_marble"),
+    LIGHT_GRAY_MARBLE_BRICK("light_gray_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_gray_marble_brick")), "light_gray_marble_brick"),
+    LIGHT_GRAY_MARBLE("light_gray_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_gray_marble")), "light_gray_marble"),
+    LIGHT_GRAY_MARBLE_PILLAR("light_gray_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_gray_marble_pillar")), "light_gray_marble_pillar"),
+    LIGHT_GRAY_POLISHED("light_gray_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_gray_polished_marble")), "light_gray_polished_marble"),
+    LIGHT_GRAY_RAW_MARBLE("light_gray_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "light_gray_raw_marble")), "light_gray_raw_marble"),
+    LIME_MARBLE_BRICK("lime_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "lime_marble_brick")), "lime_marble_brick"),
+    LIME_MARBLE("lime_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "lime_marble")), "lime_marble"),
+    LIME_MARBLE_PILLAR("lime_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "lime_marble_pillar")), "lime_marble_pillar"),
+    LIME_POLISHED("lime_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "lime_polished_marble")), "lime_polished_marble"),
+    LIME_RAW_MARBLE("lime_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "lime_raw_marble")), "lime_raw_marble"),
+    MAGENTA_MARBLE_BRICK("magenta_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "magenta_marble_brick")), "magenta_marble_brick"),
+    MAGENTA_MARBLE("magenta_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "magenta_marble")), "magenta_marble"),
+    MAGENTA_MARBLE_PILLAR("magenta_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "magenta_marble_pillar")), "magenta_marble_pillar"),
+    MAGENTA_POLISHED("magenta_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "magenta_polished_marble")), "magenta_polished_marble"),
+    MAGENTA_RAW_MARBLE("magenta_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "magenta_raw_marble")), "magenta_raw_marble"),
+    ORANGE_MARBLE_BRICK("orange_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "orange_marble_brick")), "orange_marble_brick"),
+    ORANGE_MARBLE("orange_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "orange_marble")), "orange_marble"),
+    ORANGE_MARBLE_PILLAR("orange_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "orange_marble_pillar")), "orange_marble_pillar"),
+    ORANGE_POLISHED("orange_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "orange_polished_marble")), "orange_polished_marble"),
+    ORANGE_RAW_MARBLE("orange_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "orange_raw_marble")), "orange_raw_marble"),
+    PINK_MARBLE_BRICK("pink_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "pink_marble_brick")), "pink_marble_brick"),
+    PINK_MARBLE("pink_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "pink_marble")), "pink_marble"),
+    PINK_MARBLE_PILLAR("pink_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "pink_marble_pillar")), "pink_marble_pillar"),
+    PINK_POLISHED("pink_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "pink_polished_marble")), "pink_polished_marble"),
+    PINK_RAW_MARBLE("pink_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "pink_raw_marble")), "pink_raw_marble"),
+    PURPLE_MARBLE_BRICK("purple_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "purple_marble_brick")), "purple_marble_brick"),
+    PURPLE_MARBLE("purple_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "purple_marble")), "purple_marble"),
+    PURPLE_MARBLE_PILLAR("purple_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "purple_marble_pillar")), "purple_marble_pillar"),
+    PURPLE_POLISHED("purple_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "purple_polished_marble")), "purple_polished_marble"),
+    PURPLE_RAW_MARBLE("purple_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "purple_raw_marble")), "purple_raw_marble"),
+    RED_MARBLE_BRICK("red_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "red_marble_brick")), "red_marble_brick"),
+    RED_MARBLE("red_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "red_marble")), "red_marble"),
+    RED_MARBLE_PILLAR("red_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "red_marble_pillar")), "red_marble_pillar"),
+    RED_POLISHED("red_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "red_polished_marble")), "red_polished_marble"),
+    RED_RAW_MARBLE("red_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "red_raw_marble")), "red_raw_marble"),
+    WHITE_MARBLE_BRICK("white_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "white_marble_brick")), "white_marble_brick"),
+    WHITE_MARBLE("white_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "white_marble")), "white_marble"),
+    WHITE_MARBLE_PILLAR("white_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "white_marble_pillar")), "white_marble_pillar"),
+    WHITE_POLISHED("white_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "white_polished_marble")), "white_polished_marble"),
+    WHITE_RAW_MARBLE("white_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "white_raw_marble")), "white_raw_marble"),
+    YELLOW_MARBLE_BRICK("yellow_marble_brick_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_marble_brick")), "yellow_marble_brick"),
+    YELLOW_MARBLE("yellow_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_marble")), "yellow_marble"),
+    YELLOW_MARBLE_PILLAR("yellow_marble_pillar_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_marble_pillar")), "yellow_marble_pillar"),
+    YELLOW_POLISHED("yellow_polished_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_polished_marble")), "yellow_polished_marble"),
+    YELLOW_RAW_MARBLE("yellow_raw_marble_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_raw_marble")), "yellow_raw_marble"),
+
+
+    // Ice And Fire
+    SAPPHIRE("sapphire_block_pedestal", ForgeRegistries.BLOCKS.getValue(new ResourceLocation("iceandfire", "sapphire_block")), "sapphire");
+
     //Biomes O' Plenty
 
     ;

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_magenta_polished_marble": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysti:magenta_polished_marble"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:magenta_polished_marble_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_magenta_polished_marble",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:magenta_polished_marble_pedestal"
+    ]
+  },
+  "sends_telemetry_event": false
+}
