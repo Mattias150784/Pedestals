@@ -69,8 +69,7 @@ minecraft {
             // "REGISTRIES": For firing of registry events.
             // "REGISTRYDUMP": For getting the contents of all registries.
             property 'forge.logging.markers', 'REGISTRIES'
-            property("mixin.env.remapRefMap", "true")
-            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
@@ -86,14 +85,10 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
-            property("mixin.env.remapRefMap", "true")
-            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
         }
 
         server {
             property 'forge.enabledGameTestNamespaces', mod_id
-            property("mixin.env.remapRefMap", "true")
-            property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
             args '--nogui'
         }
 
@@ -122,11 +117,13 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven { // Registrate
+        url "https://maven.tterrag.com/"
+    }
     maven { url = "https://modmaven.dev/" }
-    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
-    maven { url = "https://maven.tterrag.com" } // Registrate
-    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
-
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 
@@ -138,6 +135,8 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:mysti-969505:6120676")
     compileOnly fg.deobf("curse.maven:iaf-264231:5633453")
     runtimeOnly fg.deobf("curse.maven:iaf-264231:5633453")
+    compileOnly fg.deobf("curse.maven:citadel-331936:6002521")
+    runtimeOnly fg.deobf("curse.maven:citadel-331936:6002521")
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
 }
@@ -178,7 +177,12 @@ tasks.named('jar', Jar).configure {
     // This is the preferred method to reobfuscate your jar file
     finalizedBy 'reobfJar'
 }
+reobf {
+    jarJar { }
+}
 
+jar.finalizedBy('reobfJar')
+tasks.jarJar.finalizedBy('reobfJarJar')
 // However if you are in a multi-project build, dev time needs unobfed jar files, so you can delay the obfuscation until publishing by doing:
 // tasks.named('publish').configure {
 //     dependsOn 'reobfJar'

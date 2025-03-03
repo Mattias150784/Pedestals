@@ -137,10 +137,11 @@ public enum PedestalVariant {
     PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
 
     //Mysti
-    BRONZE("bronze_pedestal", ModBlocks.BRONZE_BLOCK.get(), "bronze_block"),
-    CELESTIAL_BRONZE("celestial_bronze_pedestal", ModBlocks.BRONZE_BLOCK.get(), "celestial_bronze"),
+    BRONZE("bronze_block_pedestal", ModBlocks.BRONZE_BLOCK.get(), "bronze_block"),
+    //CELESTIAL_BRONZE("celestial_bronze_pedestal", ModBlocks.BRONZE_BLOCK.get(), "celestial_bronze"),
+
     //Ice And Fire
-    SAPHIRE("saphire", IafBlockRegistry.SAPPHIRE_BLOCK.get(),"saphhire")
+    SAPPHIRE("sapphire_block_pedestal", IafBlockRegistry.SAPPHIRE_BLOCK.get(),"saphhire")
     //Biomes O' Plenty
 
     ;

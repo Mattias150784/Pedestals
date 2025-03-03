@@ -1,5 +1,6 @@
 package net.mattias.pedestals.datagen;
 
+import com.github.alexthe666.iceandfire.block.IafBlockRegistry;
 import net.mattias.pedestals.PedestalVariant;
 import net.mattias.pedestals.block.ModBlocks;
 import net.minecraft.data.PackOutput;
@@ -135,6 +136,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(PedestalVariant.END_STONE, Blocks.END_STONE);
         MATERIAL_MAP.put(PedestalVariant.PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
 
+        // Mysti Grecia
+
+        MATERIAL_MAP.put(PedestalVariant.BRONZE, net.mattias.mystigrecia.common.block.ModBlocks.BRONZE_BLOCK.get());
+
+        // Ice And Fire
+        MATERIAL_MAP.put(PedestalVariant.SAPPHIRE, IafBlockRegistry.SAPPHIRE_BLOCK.get());
 
     }
 
