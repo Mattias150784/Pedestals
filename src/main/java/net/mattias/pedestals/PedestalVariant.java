@@ -1,6 +1,7 @@
 package net.mattias.pedestals;
 
-import com.simibubi.create.AllBlocks;
+import com.github.alexthe666.iceandfire.block.IafBlockRegistry;
+import net.mattias.mystigrecia.common.block.ModBlocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -135,8 +136,13 @@ public enum PedestalVariant {
     END_STONE("end_stone_pedestal", Blocks.END_STONE, "end_stone"),
     PURPUR_BLOCK("purpur_block_pedestal", Blocks.PURPUR_BLOCK, "purpur_block"),
 
-    // CREATE
-    ANDESITE_CASING("andesite_casing", AllBlocks.ANDESITE_CASING.get(),"andesite_casing")
+    //Mysti
+    BRONZE("bronze_pedestal", ModBlocks.BRONZE_BLOCK.get(), "bronze_block"),
+    CELESTIAL_BRONZE("celestial_bronze_pedestal", ModBlocks.BRONZE_BLOCK.get(), "celestial_bronze"),
+    //Ice And Fire
+    SAPHIRE("saphire", IafBlockRegistry.SAPPHIRE_BLOCK.get(),"saphhire")
+    //Biomes O' Plenty
+
     ;
 
 

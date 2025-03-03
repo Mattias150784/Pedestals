@@ -1,9 +1,9 @@
 package net.mattias.pedestals.block;
 
-import net.mattias.pedestals.Pedestals;
-import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.PedestalVariant;
+import net.mattias.pedestals.Pedestals;
 import net.mattias.pedestals.block.custom.PedestalBlock;
+import net.mattias.pedestals.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -42,6 +42,7 @@ public class ModBlocks {
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
 
     public static Block getPedestal(PedestalVariant variant) {
         return PEDESTAL_BLOCKS.get(variant).get();

@@ -3,11 +3,11 @@ package net.mattias.pedestals;
 import com.mojang.logging.LogUtils;
 import net.mattias.pedestals.block.ModBlocks;
 import net.mattias.pedestals.block.entity.ModBlockEntities;
-import net.mattias.pedestals.screen.custom.PedestalScreen;
 import net.mattias.pedestals.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.mattias.pedestals.item.ModCreativeModeTabs;
 import net.mattias.pedestals.item.ModItems;
 import net.mattias.pedestals.screen.ModMenuTypes;
+import net.mattias.pedestals.screen.custom.PedestalScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -29,7 +29,6 @@ public class Pedestals
     public static final String MOD_ID = "pedestals";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-
 
     public Pedestals() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
