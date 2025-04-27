@@ -8,5 +8,9 @@ public class ObjectRegistry {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModTabs.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenus.register(modEventBus);
+
     }
 }
