@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "mysti:brown_raw_marble"
+    }
+  },
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:brown_raw_marble_pedestal"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cyan_marble_brick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysti:cyan_marble_brick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:cyan_marble_brick_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cyan_marble_brick",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:cyan_marble_brick_pedestal"
+    ]
+  },
+  "sends_telemetry_event": false
+}

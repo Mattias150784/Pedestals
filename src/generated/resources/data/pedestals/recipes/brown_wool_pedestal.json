@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    "   ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:brown_wool_pedestal"
+  },
+  "show_notification": true
+}

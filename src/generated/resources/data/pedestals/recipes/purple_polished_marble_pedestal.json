@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "mysti:purple_polished_marble"
+    }
+  },
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:purple_polished_marble_pedestal"
+  },
+  "show_notification": true
+}

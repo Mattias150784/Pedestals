@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:blue_terracotta"
+    }
+  },
+  "pattern": [
+    "   ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:blue_terracotta_pedestal"
+  },
+  "show_notification": true
+}
