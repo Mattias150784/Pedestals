@@ -106,17 +106,12 @@ public class PedestalBlock extends BaseEntityBlock {
 
             if (pPlayer.isCrouching() && !pLevel.isClientSide()) {
                 if (pPlayer instanceof ServerPlayer serverPlayer) {
-//                    NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
-//                            (id, inventory, player) -> new PedestalMenu(id, inventory, pedestalBlockEntity, pedestalBlockEntity),
-//                            Component.literal("Pedestal")
-//                    ), pPos);
+                    NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
+                            (id, inventory, player) -> new PedestalMenu(id, inventory, pedestalBlockEntity),
+                            Component.literal("Pedestal")
+                    ), pPos);
 
                     // NetworkHooks.openScreen(serverPlayer, pedestalBlockEntity, pPos);
-
-                    MenuProvider menuprovider = this.getMenuProvider(pState, pLevel, pPos);
-                    if (menuprovider != null) {
-                        pPlayer.openMenu(menuprovider);
-                    }
                 }
                 return InteractionResult.SUCCESS;
             }

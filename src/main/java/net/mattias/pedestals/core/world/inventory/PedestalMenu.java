@@ -3,6 +3,7 @@ package net.mattias.pedestals.core.world.inventory;
 import net.mattias.pedestals.core.registry.ModMenus;
 import net.mattias.pedestals.core.world.block.PedestalBlock;
 import net.mattias.pedestals.core.world.block.entity.PedestalBlockEntity;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -15,13 +16,13 @@ import org.jetbrains.annotations.Nullable;
 
 public class PedestalMenu extends AbstractContainerMenu {
 
-    public PedestalMenu(int containerID, Inventory playerInventory) {
-        this(containerID, playerInventory, new SimpleContainer(1));
+    public PedestalMenu(int containerID, Inventory playerInventory, FriendlyByteBuf extraData) {
+        this(containerID, playerInventory, (PedestalBlockEntity) playerInventory.player.level().getBlockEntity(extraData.readBlockPos()));
     }
 
     private final Container container;
 
-    public PedestalMenu(int containerID, Inventory playerInventory, Container container) {
+    public PedestalMenu(int containerID, Inventory playerInventory, PedestalBlockEntity container) {
         super(ModMenus.PEDESTAL.get(), containerID);
 
         // ItemStack of inventory
@@ -29,11 +30,17 @@ public class PedestalMenu extends AbstractContainerMenu {
         this.container = container;
 
         // this.addSlot(new SlotItemHandler(container, 0, 80, 35));
-        if (container instanceof PedestalBlockEntity pedestal) {
-            pedestal.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
+//        if (container instanceof PedestalBlockEntity pedestal) {
+//            pedestal.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
+//                this.addSlot(new SlotItemHandler(itemHandler, 0, 80, 35));
+//            });
+//        }
+
+        ((PedestalBlockEntity)container).getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
+            ((PedestalBlockEntity)container).getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
                 this.addSlot(new SlotItemHandler(itemHandler, 0, 80, 35));
             });
-        }
+        });
 
         /// PLAYER INVENTORY SLOTS
         for(int row = 0; row < 3; ++row) {
