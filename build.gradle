@@ -82,20 +82,20 @@ dependencies {
     // Mysti Grecia
     // compileOnly fg.deobf("curse.maven:mysti-grecia-969505:6120676")
     // runtimeOnly fg.deobf("curse.maven:mysti-grecia-969505:6120676")
-    // implementation fg.deobf("curse.maven:mysti-grecia-969505:6120676")
+    implementation fg.deobf("curse.maven:mysti-grecia-969505:6120676")
 
     // Ice and Fire
     // compileOnly fg.deobf("curse.maven:citadel-331936:6002521") // dependency
     // runtimeOnly fg.deobf("curse.maven:citadel-331936:6002521") // dependency
-    // implementation fg.deobf("curse.maven:citadel-331936:6002521") // dependency
+    implementation fg.deobf("curse.maven:citadel-331936:6002521") // dependency
     // compileOnly fg.deobf("curse.maven:iaf-264231:5633453")
     // runtimeOnly fg.deobf("curse.maven:iaf-264231:5633453")
-    // implementation fg.deobf("curse.maven:iaf-264231:5633453")
+    implementation fg.deobf("curse.maven:iaf-264231:5633453")
 
     // Create
     // compileOnly fg.deobf("curse.maven:create-328085:6323270")
     // runtimeOnly fg.deobf("curse.maven:create-328085:6323270")
-    // implementation fg.deobf("curse.maven:create-328085:6323270")
+    implementation fg.deobf("curse.maven:create-328085:6323270")
 }
 
 tasks.named('processResources', ProcessResources).configure {

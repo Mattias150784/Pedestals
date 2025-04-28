@@ -58,3 +58,24 @@ description='''${mod_description}'''
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="mysti"
+    mandatory=false
+    versionRange="[1.20.1-0.3,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="iceandfire"
+    mandatory=false
+    versionRange="[2.1.13-1.20.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="create"
+    mandatory=false
+    versionRange="[6.0.4,)"
+    ordering="AFTER"
+    side="BOTH"

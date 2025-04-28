@@ -1,6 +1,7 @@
 package net.mattias.pedestals.core.registry;
 
 import net.mattias.pedestals.core.Constants;
+import net.mattias.pedestals.core.optional.BasePedestalVariants;
 import net.mattias.pedestals.core.util.PedestalVariant;
 import net.mattias.pedestals.core.util.PedestalVariants;
 import net.mattias.pedestals.core.world.block.PedestalBlock;
@@ -24,6 +25,17 @@ public class ModBlocks {
 
     public static final Map<PedestalVariant, RegistryObject<Block>> REGISTERED_VARIANT_MAP = new HashMap<>();
 
+    public static RegistryObject<Block> getPedestalFromVariant(PedestalVariant variant) {
+        return REGISTERED_VARIANT_MAP.get(variant);
+    }
+
+//    static {
+//        PedestalVariants.VARIANTS.forEach(variant -> {
+//            RegistryObject<Block> registeredVariant = registerBlockWithBlockItem(variant.registryName(), () -> new PedestalBlock(variant.getProperties()));
+//            REGISTERED_VARIANT_MAP.put(variant, registeredVariant);
+//        });
+//    }
+
     public static void register(IEventBus modEventBus) {
 
         PedestalVariants.VARIANTS.forEach(variant -> {
@@ -32,6 +44,8 @@ public class ModBlocks {
         });
 
         BLOCKS.register(modEventBus);
+
+        System.out.println("registered blocks for Pedestals");
     }
 
     public static RegistryObject<Block> registerBlockWithBlockItem(String name, Supplier<Block> blockSupplier) {

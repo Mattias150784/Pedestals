@@ -2,9 +2,19 @@ package net.mattias.pedestals.core.world.block;
 
 import net.mattias.pedestals.core.registry.ModBlocks;
 import net.mattias.pedestals.core.world.block.entity.PedestalBlockEntity;
+import net.mattias.pedestals.core.world.inventory.PedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Containers;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.SimpleMenuProvider;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -20,8 +30,10 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public class PedestalBlock extends BaseEntityBlock {
@@ -43,8 +55,13 @@ public class PedestalBlock extends BaseEntityBlock {
     }
 
     @Override
+    public VoxelShape getCollisionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return SHAPE;
+    }
+
+    @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return pState.getBlock() == ModBlocks.PEDESTAL.get() ? new PedestalBlockEntity(pPos, pState) : null;
+        return pState.getBlock() instanceof PedestalBlock ? new PedestalBlockEntity(pPos, pState) : null;
     }
 
     @Override
@@ -58,5 +75,34 @@ public class PedestalBlock extends BaseEntityBlock {
         }
     }
 
-    // todo add use method
+    @Override
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult) {
+        if (pLevel.getBlockEntity(pPos) instanceof PedestalBlockEntity pedestalBlockEntity) {
+            ItemStack stackInHand = pPlayer.getItemInHand(pHand);
+
+            if (pPlayer.isCrouching() && !pLevel.isClientSide()) {
+                if (pPlayer instanceof ServerPlayer serverPlayer) {
+//                    NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
+//                            (id, inventory, player) -> new PedestalMenu(id, inventory, pedestalBlockEntity, pedestalBlockEntity),
+//                            Component.literal("Pedestal")
+//                    ), pPos);
+                    NetworkHooks.openScreen(serverPlayer, pedestalBlockEntity);
+                }
+                return InteractionResult.SUCCESS;
+            }
+
+            if (pedestalBlockEntity.isEmpty() && !stackInHand.isEmpty()) {
+                pedestalBlockEntity.setItem(0, stackInHand.split(1));
+                pLevel.playSound(null, pPos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1.5f);
+            }
+            else if (!pedestalBlockEntity.isEmpty() && stackInHand.isEmpty()) {
+                pPlayer.setItemInHand(pHand, pedestalBlockEntity.getItem(0).copy());
+                pedestalBlockEntity.clearContent();
+                pLevel.playSound(null, pPos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
+            }
+
+            return InteractionResult.SUCCESS;
+        }
+        return InteractionResult.PASS;
+    }
 }

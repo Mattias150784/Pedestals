@@ -26,7 +26,6 @@ public class PedestalRenderer implements BlockEntityRenderer<PedestalBlockEntity
         ItemStack stack = pedestal.getItem(0);
         Level level = pedestal.getLevel();
 
-
         float time = (level != null) ? level.getGameTime() + partialTick : 0;
         float yOffset = 0.1f * (float) Math.sin(time * 0.1f);
 
