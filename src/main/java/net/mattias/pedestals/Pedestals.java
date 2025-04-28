@@ -10,7 +10,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLLoader;
+import net.minecraftforge.registries.RegisterEvent;
+
+import java.util.function.Consumer;
 
 @Mod(Constants.MOD_ID)
 public class Pedestals {
@@ -24,7 +26,7 @@ public class Pedestals {
         if (ModList.get().isLoaded("mysti")) MystiGreciaVariants.define();
         if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
 
-        ObjectRegistry.register(EVENT_BUS);
+        EVENT_BUS.addListener((Consumer<RegisterEvent>) event -> ObjectRegistry.register(EVENT_BUS));
     }
 
     public static ResourceLocation identifier(String path) {

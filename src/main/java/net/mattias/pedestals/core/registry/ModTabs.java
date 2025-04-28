@@ -24,7 +24,6 @@ public class ModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.PEDESTAL.get());
                         PedestalVariants.VARIANTS.forEach(variant -> {
-                            System.out.println(variant.registryName());
                             // pOutput.accept(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());
                             if (ModBlocks.REGISTERED_VARIANT_MAP.get(variant) != null) pOutput.accept(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());
                         });
