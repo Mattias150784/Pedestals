@@ -1,7 +1,10 @@
 package net.mattias.pedestals.datagen;
 
+import com.github.alexthe666.iceandfire.block.IafBlockRegistry;
 import net.mattias.pedestals.core.Constants;
 import net.mattias.pedestals.core.optional.BasePedestalVariants;
+import net.mattias.pedestals.core.optional.IceAndFireVariants;
+import net.mattias.pedestals.core.optional.MystiGreciaVariants;
 import net.mattias.pedestals.core.registry.ModBlocks;
 import net.mattias.pedestals.core.util.PedestalVariant;
 import net.mattias.pedestals.core.util.PedestalVariants;
@@ -139,93 +142,93 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(BasePedestalVariants.END_STONE, Blocks.END_STONE);
         MATERIAL_MAP.put(BasePedestalVariants.PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
 
-//        // Mysti Grecia
-//
-//        MATERIAL_MAP.put(PedestalVariant.BRONZE, net.mattias.mystigrecia.common.block.ModBlocks.BRONZE_BLOCK.get());
-//
-//        MATERIAL_MAP.put(PedestalVariant.BLACK_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLACK_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLACK_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLACK_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLACK_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLUE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLUE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLUE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLUE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.BLUE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BROWN_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.BROWN_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BROWN_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.BROWN_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.BROWN_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.CYAN_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.CYAN_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.CYAN_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.CYAN_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.CYAN_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.GRAY_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.GRAY_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.GRAY_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.GRAY_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.GRAY_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.GREEN_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.GREEN_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.GREEN_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.GREEN_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.GREEN_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_BLUE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIGHT_GRAY_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIME_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.LIME_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIME_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIME_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIME_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.LIME_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIME_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.LIME_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.LIME_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIME_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.MAGENTA_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.MAGENTA_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.MAGENTA_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.MAGENTA_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.MAGENTA_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.ORANGE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.ORANGE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.ORANGE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.ORANGE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.ORANGE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.PINK_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.PINK_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.PINK_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PINK_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.PINK_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.PINK_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.PINK_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.PINK_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.PINK_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PINK_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.PURPLE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.PURPLE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.PURPLE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.PURPLE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.PURPLE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.RED_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.RED_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.RED_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.RED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.RED_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.RED_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.RED_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.RED_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.RED_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.RED_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.WHITE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.WHITE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.WHITE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.WHITE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.WHITE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_RAW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.YELLOW_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_MARBLE_BRICK.get());
-//        MATERIAL_MAP.put(PedestalVariant.YELLOW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.YELLOW_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_POLISHED_MARBLE.get());
-//        MATERIAL_MAP.put(PedestalVariant.YELLOW_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_MARBLE_PILLAR.get());
-//        MATERIAL_MAP.put(PedestalVariant.YELLOW_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_RAW_MARBLE.get());
-//        // Ice And Fire
-//
-//        MATERIAL_MAP.put(PedestalVariant.SAPPHIRE, IafBlockRegistry.SAPPHIRE_BLOCK.get());
+        // Mysti Grecia
+
+        MATERIAL_MAP.put(MystiGreciaVariants.BRONZE, net.mattias.mystigrecia.common.block.ModBlocks.BRONZE_BLOCK.get());
+
+        MATERIAL_MAP.put(MystiGreciaVariants.BLACK_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLACK_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLACK_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLACK_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLACK_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLACK_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLUE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLUE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLUE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLUE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BLUE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BLUE_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BROWN_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BROWN_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BROWN_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BROWN_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.BROWN_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.BROWN_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.CYAN_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.CYAN_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.CYAN_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.CYAN_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.CYAN_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.CYAN_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GRAY_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GRAY_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GRAY_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GRAY_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GRAY_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GRAY_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GREEN_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GREEN_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GREEN_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GREEN_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.GREEN_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.GREEN_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_BLUE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_BLUE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_BLUE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_BLUE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_BLUE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_BLUE_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_GRAY_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_GRAY_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_GRAY_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_GRAY_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIGHT_GRAY_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIGHT_GRAY_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIME_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.LIME_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIME_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIME_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIME_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.LIME_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIME_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.LIME_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.LIME_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.LIME_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.MAGENTA_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.MAGENTA_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.MAGENTA_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.MAGENTA_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.MAGENTA_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.MAGENTA_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.ORANGE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.ORANGE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.ORANGE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.ORANGE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.ORANGE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.ORANGE_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PINK_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.PINK_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PINK_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PINK_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PINK_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.PINK_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PINK_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.PINK_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PINK_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PINK_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PURPLE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PURPLE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PURPLE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PURPLE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.PURPLE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.PURPLE_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.RED_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.RED_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.RED_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.RED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.RED_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.RED_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.RED_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.RED_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.RED_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.RED_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.WHITE_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.WHITE_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.WHITE_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.WHITE_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.WHITE_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.WHITE_RAW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.YELLOW_MARBLE_BRICK, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_MARBLE_BRICK.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.YELLOW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.YELLOW_POLISHED, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_POLISHED_MARBLE.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.YELLOW_MARBLE_PILLAR, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_MARBLE_PILLAR.get());
+        MATERIAL_MAP.put(MystiGreciaVariants.YELLOW_RAW_MARBLE, net.mattias.mystigrecia.common.block.ModBlocks.YELLOW_RAW_MARBLE.get());
+        // Ice And Fire
+
+        MATERIAL_MAP.put(IceAndFireVariants.SAPPHIRE, IafBlockRegistry.SAPPHIRE_BLOCK.get());
 
     }
 
@@ -235,20 +238,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        Constants.LOG.info("building recipes for Pedestals");
-        MATERIAL_MAP.forEach((variant, block) -> createPedestalRecipe(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get(), block, pWriter));
+        Constants.LOG.info("building recipes for Pedestals and Planks");
+
+        MATERIAL_MAP.forEach((variant, block) -> {
+            Block output = ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get();
+            if (isPlankOrMarbleVariant(variant)) {
+                createPlanksRecipe(output, block, pWriter);
+            } else {
+                createPedestalRecipe(output, block, pWriter);
+            }
+        });
     }
 
     /**
-     * Utility method for creating a pedestal recipe with a specific ingredient.
-     *
-     * @param outputBlock The block to be crafted.
-     * @param ingredientBlock The ingredient block for the recipe.
-     * @param pWriter The consumer for the finished recipe.
+     * Returns true if the variant is a plank or marble variant.
      */
+    private boolean isPlankOrMarbleVariant(PedestalVariant variant) {
+        String name = variant.registryName().toUpperCase();
+        return name.contains("PLANKS") || name.contains("MARBLE");
+
+    }
+
     private void createPedestalRecipe(Block outputBlock, Block ingredientBlock, Consumer<FinishedRecipe> pWriter) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, outputBlock)
                 .pattern("   ")
+                .pattern(" P ")
+                .pattern(" P ")
+                .define('P', ingredientBlock)
+                .unlockedBy(getHasName(ingredientBlock), has(ingredientBlock))
+                .save(pWriter);
+    }
+
+    private void createPlanksRecipe(Block outputBlock, Block ingredientBlock, Consumer<FinishedRecipe> pWriter) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, outputBlock)
+                .pattern(" P ")
                 .pattern(" P ")
                 .pattern(" P ")
                 .define('P', ingredientBlock)
