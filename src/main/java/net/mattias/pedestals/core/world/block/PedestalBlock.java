@@ -80,13 +80,9 @@ public class PedestalBlock extends BaseEntityBlock {
                         pedestalBlockEntity.setItem(0, stackInHand.split(1));
                         pLevel.playSound(null, pPos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1.5f);
                     }
-                    //debug
-                    // else {
-                    //     pLevel.destroyBlock(pPos, true);
-                    // }
                 }
                 else if (!pedestalBlockEntity.isEmpty() && stackInHand.isEmpty()) {
-                    pPlayer.setItemInHand(pHand, pedestalBlockEntity.getItem(0).copy());
+                    pPlayer.addItem(pedestalBlockEntity.getItem(0));
                     pedestalBlockEntity.clearContent();
                     pLevel.playSound(null, pPos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
                 }

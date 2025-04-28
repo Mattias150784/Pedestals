@@ -5,7 +5,6 @@ import net.mattias.pedestals.core.optional.BasePedestalVariants;
 import net.mattias.pedestals.core.util.PedestalVariant;
 import net.mattias.pedestals.core.util.PedestalVariants;
 import net.mattias.pedestals.core.world.block.PedestalBlock;
-import net.mattias.pedestals.core.world.item.BlockItemWithSupplier;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -26,17 +25,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> PEDESTAL = registerBlockWithBlockItem("pedestal", () -> new PedestalBlock(Block.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final Map<PedestalVariant, RegistryObject<Block>> REGISTERED_VARIANT_MAP = new HashMap<>();
-
     public static RegistryObject<Block> getPedestalFromVariant(PedestalVariant variant) {
         return REGISTERED_VARIANT_MAP.get(variant);
     }
-
-//    static {
-//        PedestalVariants.VARIANTS.forEach(variant -> {
-//            RegistryObject<Block> registeredVariant = registerBlockWithBlockItem(variant.registryName(), () -> new PedestalBlock(variant.getProperties()));
-//            REGISTERED_VARIANT_MAP.put(variant, registeredVariant);
-//        });
-//    }
 
     public static void register(IEventBus modEventBus) {
 
@@ -51,10 +42,8 @@ public class ModBlocks {
     }
 
     public static RegistryObject<Block> registerBlockWithBlockItem(String name, Supplier<Block> blockSupplier) {
-        RegistryObject<Block> returned = BLOCKS.register(name, () -> {
-            return blockSupplier.get();
-        });
-        ModItems.ITEMS.register(name, () -> new BlockItemWithSupplier(returned, new Item.Properties()));
+        RegistryObject<Block> returned = BLOCKS.register(name, blockSupplier);
+        ModItems.ITEMS.register(name, () -> new BlockItem(returned.get(), new Item.Properties()));
         return returned;
     }
 }

@@ -22,22 +22,14 @@ public class PedestalMenu extends AbstractContainerMenu {
 
     private final Container container;
 
-    public PedestalMenu(int containerID, Inventory playerInventory, PedestalBlockEntity container) {
+    public PedestalMenu(int containerID, Inventory playerInventory, PedestalBlockEntity pedestal) {
         super(ModMenus.PEDESTAL.get(), containerID);
 
-        // ItemStack of inventory
-        checkContainerSize(container, 1);
-        this.container = container;
+        checkContainerSize(pedestal, 1);
+        this.container = pedestal;
 
-        // this.addSlot(new SlotItemHandler(container, 0, 80, 35));
-//        if (container instanceof PedestalBlockEntity pedestal) {
-//            pedestal.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
-//                this.addSlot(new SlotItemHandler(itemHandler, 0, 80, 35));
-//            });
-//        }
-
-        ((PedestalBlockEntity)container).getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            ((PedestalBlockEntity)container).getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
+        pedestal.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
+            pedestal.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler -> {
                 this.addSlot(new SlotItemHandler(itemHandler, 0, 80, 35));
             });
         });
