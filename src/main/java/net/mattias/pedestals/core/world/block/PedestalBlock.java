@@ -1,43 +1,27 @@
 package net.mattias.pedestals.core.world.block;
 
-import com.google.common.collect.ImmutableMap;
-import net.mattias.pedestals.core.registry.ModBlocks;
 import net.mattias.pedestals.core.world.block.entity.PedestalBlockEntity;
 import net.mattias.pedestals.core.world.inventory.PedestalMenu;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.*;
-import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.material.Fluid;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Map;
-import java.util.function.Function;
 
 public class PedestalBlock extends BaseEntityBlock {
 
@@ -48,11 +32,6 @@ public class PedestalBlock extends BaseEntityBlock {
     }
 
     @Override
-    public VoxelShape getInteractionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return SHAPE;
-    }
-
-    @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return SHAPE;
     }
@@ -60,27 +39,6 @@ public class PedestalBlock extends BaseEntityBlock {
     @Override
     public RenderShape getRenderShape(BlockState pState) {
         return RenderShape.MODEL;
-    }
-
-    @Override
-    public VoxelShape getCollisionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return SHAPE;
-    }
-
-    @Override
-    protected ImmutableMap<BlockState, VoxelShape> getShapeForEachState(Function<BlockState, VoxelShape> pShapeGetter) {
-        ImmutableMap<BlockState, VoxelShape> map = ImmutableMap.of(this.stateDefinition.any(), SHAPE);
-        return map;
-    }
-
-    @Override
-    public boolean canBeReplaced(BlockState pState, BlockPlaceContext pUseContext) {
-        return false;
-    }
-
-    @Override
-    public boolean canBeReplaced(BlockState pState, Fluid pFluid) {
-        return false;
     }
 
     @Override
@@ -122,7 +80,7 @@ public class PedestalBlock extends BaseEntityBlock {
                         pedestalBlockEntity.setItem(0, stackInHand.split(1));
                         pLevel.playSound(null, pPos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1.5f);
                     }
-                    //debug 
+                    //debug
                     // else {
                     //     pLevel.destroyBlock(pPos, true);
                     // }
@@ -137,10 +95,5 @@ public class PedestalBlock extends BaseEntityBlock {
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
-    }
-
-    @Override
-    public boolean canHarvestBlock(BlockState state, BlockGetter level, BlockPos pos, Player player) {
-        return true;
     }
 }

@@ -26,7 +26,7 @@ public class Pedestals {
         if (ModList.get().isLoaded("mysti")) MystiGreciaVariants.define();
         if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
 
-        EVENT_BUS.addListener((Consumer<RegisterEvent>) event -> ObjectRegistry.register(EVENT_BUS));
+        ObjectRegistry.register(EVENT_BUS);
     }
 
     public static ResourceLocation identifier(String path) {
