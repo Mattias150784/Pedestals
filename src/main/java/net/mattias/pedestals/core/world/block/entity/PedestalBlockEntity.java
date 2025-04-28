@@ -1,6 +1,7 @@
 package net.mattias.pedestals.core.world.block.entity;
 
 import net.mattias.pedestals.core.registry.ModBlockEntities;
+import net.mattias.pedestals.core.world.inventory.PedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -40,7 +41,7 @@ public class PedestalBlockEntity extends BaseContainerBlockEntity {
 
     @Override
     protected AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory) {
-        return null;
+        return new PedestalMenu(pContainerId, pInventory, this);
     }
 
     private float rotation = 0;

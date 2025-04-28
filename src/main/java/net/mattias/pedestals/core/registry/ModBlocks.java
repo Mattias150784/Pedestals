@@ -9,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -39,7 +40,7 @@ public class ModBlocks {
     public static void register(IEventBus modEventBus) {
 
         PedestalVariants.VARIANTS.forEach(variant -> {
-            RegistryObject<Block> registeredVariant = registerBlockWithBlockItem(variant.registryName(), () -> new PedestalBlock(variant.getProperties()));
+            RegistryObject<Block> registeredVariant = registerBlockWithBlockItem(variant.registryName(), () -> new PedestalBlock(variant.getProperties().dynamicShape().pushReaction(PushReaction.DESTROY)));
             REGISTERED_VARIANT_MAP.put(variant, registeredVariant);
         });
 

@@ -16,22 +16,17 @@ import org.jetbrains.annotations.Nullable;
 public class PedestalMenu extends AbstractContainerMenu {
 
     public PedestalMenu(int containerID, Inventory playerInventory) {
-        this(containerID, playerInventory, new SimpleContainer(1), new SimpleContainerData(1));
+        this(containerID, playerInventory, new SimpleContainer(1));
     }
 
     private final Container container;
-    // private final ContainerData containerData;
 
-    public PedestalMenu(int containerID, Inventory playerInventory, Container container, ContainerData containerData) {
+    public PedestalMenu(int containerID, Inventory playerInventory, Container container) {
         super(ModMenus.PEDESTAL.get(), containerID);
 
         // ItemStack of inventory
         checkContainerSize(container, 1);
         this.container = container;
-
-        // float for rotation
-        // checkContainerDataCount(containerData, 1);
-        // this.containerData = containerData;
 
         // this.addSlot(new SlotItemHandler(container, 0, 80, 35));
         if (container instanceof PedestalBlockEntity pedestal) {
