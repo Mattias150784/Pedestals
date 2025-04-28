@@ -14,7 +14,6 @@ public class ModMenus {
 
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, Constants.MOD_ID);
 
-    // public static final RegistryObject<MenuType<PedestalMenu>> PEDESTAL = MENUS.register("pedestal", () -> new MenuType<PedestalMenu>(PedestalMenu::new, FeatureFlags.VANILLA_SET));
     public static final RegistryObject<MenuType<PedestalMenu>> PEDESTAL = MENUS.register("pedestal", () -> IForgeMenuType.create(PedestalMenu::new));
 
     public static void register(IEventBus modEventBus) {

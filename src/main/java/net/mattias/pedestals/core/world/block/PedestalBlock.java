@@ -68,8 +68,6 @@ public class PedestalBlock extends BaseEntityBlock {
                             (id, inventory, player) -> new PedestalMenu(id, inventory, pedestalBlockEntity),
                             Component.literal("Pedestal")
                     ), pPos);
-
-                    // NetworkHooks.openScreen(serverPlayer, pedestalBlockEntity, pPos);
                 }
                 return InteractionResult.SUCCESS;
             }
