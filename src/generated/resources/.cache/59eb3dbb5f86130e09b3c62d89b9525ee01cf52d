@@ -1,4 +1,4 @@
-// 1.21	2025-04-29T08:58:56.2257693	Loot Tables
+// 1.21	2025-04-29T10:43:16.4800035	Loot Tables
 a9c67e877704c3f799482b2da72e0f438f542eeb data/pedestals/loot_table/blocks/acacia_log_pedestal.json
 7f48c18163a67393c2338907911023434e2ae92b data/pedestals/loot_table/blocks/acacia_planks_pedestal.json
 b96b509f4a7c17f9afdf72099644d4119854602b data/pedestals/loot_table/blocks/andesite_pedestal.json
@@ -32,6 +32,7 @@ e32088caac2ccf3086c1989eac261a80b35201f5 data/pedestals/loot_table/blocks/dark_o
 8a91b59cff7d5027350d136b7161eaa98eb2b5c5 data/pedestals/loot_table/blocks/diorite_pedestal.json
 737a3d448a33ec31779e14cf5384c041f908b249 data/pedestals/loot_table/blocks/end_stone_bricks_pedestal.json
 936ecd8bd1cf1c4bda7bde8fc1585e6e7a358e9c data/pedestals/loot_table/blocks/end_stone_pedestal.json
+aed8d85d67fdb577e089cad25224ce3c702903a0 data/pedestals/loot_table/blocks/fir_planks_pedestal.json
 dce061252297a8a0dbe8058e6d66d55840afec38 data/pedestals/loot_table/blocks/granite_pedestal.json
 bcbd4dcf306ac8d784931f6878c4036ec9b77e39 data/pedestals/loot_table/blocks/gray_concrete_pedestal.json
 9f216f25f5aa1e3c9c86990e196ce57a363dfa65 data/pedestals/loot_table/blocks/gray_terracotta_glazed_pedestal.json

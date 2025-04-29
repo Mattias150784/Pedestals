@@ -1,4 +1,4 @@
-// 1.21	2025-04-29T08:58:56.2162463	Block States: pedestals
+// 1.21	2025-04-29T10:43:16.4694827	Block States: pedestals
 87bc2ae38f9d5a0ce9b347d59fb300f0fe349c0b assets/pedestals/blockstates/acacia_log_pedestal.json
 5c8d1c3805307018a966e2a4fb18132d5cf4c864 assets/pedestals/blockstates/acacia_planks_pedestal.json
 2622b3210ca5faa023d76c9dd894f4ed72379c3d assets/pedestals/blockstates/andesite_pedestal.json
@@ -32,6 +32,7 @@ b13c9e13a005197c478e2e0017a0fcc87fd73989 assets/pedestals/blockstates/cyan_wool_
 93906e6a602359f4869733c9d5fe7e2ffe38cc62 assets/pedestals/blockstates/diorite_pedestal.json
 8608a04b7038017f0213908320a8d957377cb2c9 assets/pedestals/blockstates/end_stone_bricks_pedestal.json
 3a0aef854dfe51aea25b40761f18ab91f3adfdb4 assets/pedestals/blockstates/end_stone_pedestal.json
+943c8cf1ca80a38148b1f3471e12b0cc6a5d630c assets/pedestals/blockstates/fir_planks_pedestal.json
 8269e9ccb9b1ee6b906dbf5758fb3964e8db08cc assets/pedestals/blockstates/granite_pedestal.json
 9faf68461c5ad22374a7f74f44711262a48df90a assets/pedestals/blockstates/gray_concrete_pedestal.json
 e9ebd361f3a249048ad9215ba306476217d10c84 assets/pedestals/blockstates/gray_terracotta_glazed_pedestal.json
@@ -145,6 +146,7 @@ b46c7ce0a447b7097cf0d2cff2e12869c9271680 assets/pedestals/models/item/dark_oak_p
 53365d3bf53191d1a1c084f610952262c2599f13 assets/pedestals/models/item/diorite_pedestal.json
 248057ad82011759bd5314f4253eda72151a2bc9 assets/pedestals/models/item/end_stone_bricks_pedestal.json
 b3f9e3a368170752ac36aba43305b3bbebc40d4f assets/pedestals/models/item/end_stone_pedestal.json
+b6415a2e418617e23059bdc54bbafcc308b24aab assets/pedestals/models/item/fir_planks_pedestal.json
 ac0f4f141fa273ce47c4d31213f4c1c514355393 assets/pedestals/models/item/granite_pedestal.json
 af025977b5e37bf937607d4bcc6927e63e426bb8 assets/pedestals/models/item/gray_concrete_pedestal.json
 9dfb86bc02e0cc2dcad0fab1b6bb2ad414dd58c6 assets/pedestals/models/item/gray_terracotta_glazed_pedestal.json

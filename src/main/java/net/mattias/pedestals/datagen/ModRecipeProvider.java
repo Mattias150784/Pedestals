@@ -156,7 +156,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         // Biomes O Plenty
-        // MATERIAL_MAP.put(BiomeOPlentyVariants.FIR_LOG, BOPBlocks.FIR_LOG.get());
+        MATERIAL_MAP.put(BiomeOPlentyVariants.FIR_PLANKS, BOPBlocks.FIR_PLANKS);
+        MATERIAL_MAP.put(BiomeOPlentyVariants.FIR_LOG, BOPBlocks.FIR_LOG);
 
     }
 

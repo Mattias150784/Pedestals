@@ -1,4 +1,4 @@
-// 1.21	2025-04-29T08:58:56.231769	Recipes
+// 1.21	2025-04-29T10:43:16.4840098	Recipes
 0bbe646dfad97c01fad8fcc64bb0090b04578063 data/pedestals/advancement/recipes/misc/acacia_log_pedestal.json
 31f3e76424ce5fa3d13ce4eeaeade8260e5090ff data/pedestals/advancement/recipes/misc/acacia_planks_pedestal.json
 5e3c4df2fa80a3e1f181d8117c0b37689fcc64ec data/pedestals/advancement/recipes/misc/andesite_pedestal.json
@@ -32,6 +32,7 @@ e85c1be84f4ed220ed7701b33f20b91df0369ddb data/pedestals/advancement/recipes/misc
 a9f754f40c6eea1e10d4257eb673013da9938d02 data/pedestals/advancement/recipes/misc/diorite_pedestal.json
 16fd25f6ac9df3926347ec2daa396180117accc0 data/pedestals/advancement/recipes/misc/end_stone_bricks_pedestal.json
 b6770245c42360e999b29d54342f7f19bec11e89 data/pedestals/advancement/recipes/misc/end_stone_pedestal.json
+dd4494012e4100d9e8af5118621cfb13de8bdf7d data/pedestals/advancement/recipes/misc/fir_planks_pedestal.json
 784eacf0e533723f1ad8581868517efd2120e633 data/pedestals/advancement/recipes/misc/granite_pedestal.json
 b1be5a50a71207617a05426bb8ee1638c8423218 data/pedestals/advancement/recipes/misc/gray_concrete_pedestal.json
 42f40b37f196ec4674ab9afd9ad72bd76655fdc5 data/pedestals/advancement/recipes/misc/gray_terracotta_glazed_pedestal.json
@@ -140,6 +141,7 @@ e12c0feef79e380beb255592d103f4721bef89b3 data/pedestals/recipe/dark_oak_planks_p
 d3820e169aba87b0e0cf8e7fbbc2102a0d782c40 data/pedestals/recipe/diorite_pedestal.json
 0aa625292d4ef6fd31caedbe07cbd3616f7402e0 data/pedestals/recipe/end_stone_bricks_pedestal.json
 dca752c4faedba107776c92bb34ef00353f7a5d9 data/pedestals/recipe/end_stone_pedestal.json
+b65463475a3473c96132d331481fd49ccad70477 data/pedestals/recipe/fir_planks_pedestal.json
 4c29e58884f71d98664b9ccf69407b7a3d3ea883 data/pedestals/recipe/granite_pedestal.json
 f3039d32b441ce80c8e7535df51b7af798afb729 data/pedestals/recipe/gray_concrete_pedestal.json
 2ca68eb9a235e22a50a8dc8780397407eb126f46 data/pedestals/recipe/gray_terracotta_glazed_pedestal.json

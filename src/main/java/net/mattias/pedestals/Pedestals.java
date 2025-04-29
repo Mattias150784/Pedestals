@@ -19,7 +19,7 @@ public class Pedestals {
         EVENT_BUS = context.getModEventBus();
 
         BasePedestalVariants.define();
-        if (ModList.get().isLoaded("bopapi")) BiomeOPlentyVariants.define();
+        if (ModList.get().isLoaded("biomesoplenty")) BiomeOPlentyVariants.define();
 
         ObjectRegistry.register(EVENT_BUS);
     }
