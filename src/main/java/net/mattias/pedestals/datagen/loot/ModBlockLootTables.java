@@ -1,7 +1,8 @@
 package net.mattias.pedestals.datagen.loot;
 
-import net.mattias.pedestals.block.ModBlocks;
-import net.mattias.pedestals.variant.PedestalVariant;
+import net.mattias.pedestals.core.registry.ModBlocks;
+import net.mattias.pedestals.core.util.PedestalVariant;
+import net.mattias.pedestals.core.util.PedestalVariants;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -15,11 +16,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), provider);
     }
 
+
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.PEDESTAL.get());
-        for (PedestalVariant variant : PedestalVariant.values()) {
-            this.dropSelf(ModBlocks.PEDESTAL_BLOCKS.get(variant).get());
+        for (PedestalVariant variant : PedestalVariants.VARIANTS) {
+            this.dropSelf(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());
         }
     }
 

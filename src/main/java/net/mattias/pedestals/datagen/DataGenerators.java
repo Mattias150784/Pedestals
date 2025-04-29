@@ -1,10 +1,10 @@
 package net.mattias.pedestals.datagen;
 
 import net.mattias.pedestals.Pedestals;
+import net.mattias.pedestals.core.Constants;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.CompletableFuture;
 
-@Mod.EventBusSubscriber(modid = Pedestals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = Constants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
@@ -21,15 +21,20 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+        // BlockState Provider
         generator.addProvider(event.includeClient(),
-                new ModBlockStateProvider(packOutput, Pedestals.MOD_ID, existingFileHelper));
+                new ModBlockStateProvider(packOutput, Constants.MOD_ID, existingFileHelper));
 
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput, lookupProvider));
+        // Loot Tables
+        generator.addProvider(event.includeServer(),
+                ModLootTableProvider.create(packOutput, lookupProvider));
 
-        BlockTagsProvider blockTagsProvider = new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper);
-        generator.addProvider(event.includeServer(), blockTagsProvider);
+        // Block Tags
+        generator.addProvider(event.includeServer(),
+                new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
 
-
+        // Recipes
+        generator.addProvider(event.includeServer(),
+                new ModRecipeProvider(packOutput, lookupProvider));
     }
 }

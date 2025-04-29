@@ -25,10 +25,10 @@
     "pedestals:polished_granite_pedestal",
     "pedestals:polished_diorite_pedestal",
     "pedestals:polished_andesite_pedestal",
+    "pedestals:polished_tuff_pedestal",
     "pedestals:granite_pedestal",
     "pedestals:diorite_pedestal",
     "pedestals:andesite_pedestal",
-    "pedestals:polished_tuff_pedestal",
     "pedestals:polished_deepslate_pedestal",
     "pedestals:bricks_pedestal",
     "pedestals:mossy_cobblestone_pedestal",
@@ -112,13 +112,6 @@
     "pedestals:soul_soil_pedestal",
     "pedestals:end_stone_bricks_pedestal",
     "pedestals:end_stone_pedestal",
-    "pedestals:purpur_block_pedestal",
-    "pedestals:grass_block_pedestal",
-    "pedestals:dirt_pedestal",
-    "pedestals:coarse_dirt_pedestal",
-    "pedestals:gravel_pedestal",
-    "pedestals:mud_pedestal",
-    "pedestals:red_sand_pedestal",
-    "pedestals:sand_pedestal"
+    "pedestals:purpur_block_pedestal"
   ]
 }

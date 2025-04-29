@@ -1,8 +1,9 @@
 package net.mattias.pedestals.datagen;
 
 import net.mattias.pedestals.Pedestals;
-import net.mattias.pedestals.block.ModBlocks;
-import net.mattias.pedestals.variant.PedestalVariant;
+import net.mattias.pedestals.core.registry.ModBlocks;
+import net.mattias.pedestals.core.util.PedestalVariant;
+import net.mattias.pedestals.core.util.PedestalVariants;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -19,8 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         pedestalBlock(ModBlocks.PEDESTAL.get(), "pedestal");
-        for (PedestalVariant variant : PedestalVariant.values()) {
-            pedestalBlock(ModBlocks.PEDESTAL_BLOCKS.get(variant).get(), variant.getRegistryName());
+        for (PedestalVariant variant : PedestalVariants.VARIANTS) {
+            pedestalBlock(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get(), variant.registryName());
         }
     }
 

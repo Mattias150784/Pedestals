@@ -130,13 +130,7 @@
  "block.pedestals.end_stone_bricks_pedestal": "End Stone Bricks Pedestal",
  "block.pedestals.purpur_pillar_pedestal": "Purpur Pillar Pedestal",
 
- "block.pedestals.grass_block_pedestal": "Grass Block Pedestal",
- "block.pedestals.dirt_pedestal": "Dirt Pedestal",
- "block.pedestals.coarse_dirt_pedestal": "Coarse Dirt Pedestal",
- "block.pedestals.gravel_pedestal": "Gravel Pedestal",
- "block.pedestals.red_sand_pedestal": "Red Sand Pedestal",
- "block.pedestals.sand_pedestal": "Sand Pedestal",
- "block.pedestals.mud_pedestal": "Mud Pedestal",
+ "block.pedestals.fir_log_pedestal": "Fir Log Pedestal",
 
  "creativetab.pedestals": "Pedestals"
 }
