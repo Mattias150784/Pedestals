@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pedestals:block/fir_log_pedestal"
+    }
+  }
+}

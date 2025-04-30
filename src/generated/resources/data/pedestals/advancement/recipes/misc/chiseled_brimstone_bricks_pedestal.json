@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chiseled_brimstone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:chiseled_brimstone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:chiseled_brimstone_bricks_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chiseled_brimstone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:chiseled_brimstone_bricks_pedestal"
+    ]
+  }
+}

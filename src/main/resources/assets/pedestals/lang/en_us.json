@@ -131,7 +131,38 @@
  "block.pedestals.purpur_pillar_pedestal": "Purpur Pillar Pedestal",
 
  "block.pedestals.fir_planks_pedestal": "Fir Planks Pedestal",
- "block.pedestals.fir_log_pedestal": "Fir Log Pedestal",
+ "block.pedestals.pine_planks_pedestal": "Pine Planks Pedestal",
+ "block.pedestals.maple_planks_pedestal": "Maple Planks Pedestal",
+ "block.pedestals.redwood_planks_pedestal": "Redwood Planks Pedestal",
+ "block.pedestals.mahogany_planks_pedestal": "Mahogany Planks Pedestal",
+ "block.pedestals.jacaranda_planks_pedestal": "Jacaranda Planks Pedestal",
+ "block.pedestals.palm_planks_pedestal": "Palm Planks Pedestal",
+ "block.pedestals.dead_planks_pedestal": "Dead Planks Pedestal",
+ "block.pedestals.magic_planks_pedestal": "Magic Planks Pedestal",
+ "block.pedestals.willow_planks_pedestal": "Willow Planks Pedestal",
+ "block.pedestals.umbran_planks_pedestal": "Umbran Planks Pedestal",
+ "block.pedestals.hellbark_planks_pedestal": "Hellbark Planks Pedestal",
+ "block.pedestals.empyreal_planks_pedestal": "Empyreal Planks Pedestal",
 
- "creativetab.pedestals": "Pedestals"
+ "block.pedestals.fir_log_pedestal": "Fir Log Pedestal",
+ "block.pedestals.pine_log_pedestal": "Pine Log Pedestal",
+ "block.pedestals.maple_log_pedestal": "Maple Log Pedestal",
+ "block.pedestals.redwood_log_pedestal": "Redwood Log Pedestal",
+ "block.pedestals.mahogany_log_pedestal": "Mahogany Log Pedestal",
+ "block.pedestals.jacaranda_log_pedestal": "Jacaranda Log Pedestal",
+ "block.pedestals.palm_log_pedestal": "Palm Log Pedestal",
+ "block.pedestals.dead_log_pedestal": "Dead Log Pedestal",
+ "block.pedestals.magic_log_pedestal": "Magic Log Pedestal",
+ "block.pedestals.willow_log_pedestal": "Willow Log Pedestal",
+ "block.pedestals.umbran_log_pedestal": "Umbran Log Pedestal",
+ "block.pedestals.hellbark_log_pedestal": "Hellbark Log Pedestal",
+ "block.pedestals.empyreal_log_pedestal": "Empyreal Log Pedestal",
+
+ "block.pedestals.brimstone_pedestal": "Brimstone Pedestal",
+ "block.pedestals.brimstone_bricks_pedestal": "Brimstone Bricks Pedestal",
+ "block.pedestals.chiseled_brimstone_bricks_pedestal": "Chiseled Brimstone Bricks Pedestal",
+
+
+
+ "itemGroup.pedestals": "Pedestals"
 }

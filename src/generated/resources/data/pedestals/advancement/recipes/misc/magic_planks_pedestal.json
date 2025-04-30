@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_magic_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:magic_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:magic_planks_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_magic_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:magic_planks_pedestal"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jacaranda_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomesoplenty:jacaranda_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:jacaranda_planks_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jacaranda_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:jacaranda_planks_pedestal"
+    ]
+  }
+}

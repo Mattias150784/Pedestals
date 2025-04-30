@@ -77,6 +77,9 @@
     "pedestals:netherrack_pedestal",
     "pedestals:end_stone_bricks_pedestal",
     "pedestals:end_stone_pedestal",
-    "pedestals:purpur_block_pedestal"
+    "pedestals:purpur_block_pedestal",
+    "pedestals:brimstone_pedestal",
+    "pedestals:brimstone_bricks_pedestal",
+    "pedestals:chiseled_brimstone_bricks_pedestal"
   ]
 }
