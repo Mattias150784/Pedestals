@@ -1,6 +1,7 @@
-// 1.20.1	2025-04-29T18:58:09.2293252	Loot Tables
+// 1.20.1	2025-04-30T09:32:23.4126856	Loot Tables
 a9c67e877704c3f799482b2da72e0f438f542eeb data/pedestals/loot_tables/blocks/acacia_log_pedestal.json
 7f48c18163a67393c2338907911023434e2ae92b data/pedestals/loot_tables/blocks/acacia_planks_pedestal.json
+37ff961ab2917073571ae2bcdfcbeb1610232a3d data/pedestals/loot_tables/blocks/andesite_casing_pedestal.json
 b96b509f4a7c17f9afdf72099644d4119854602b data/pedestals/loot_tables/blocks/andesite_pedestal.json
 a962306334b653999020a81afe9faadd2fd266ed data/pedestals/loot_tables/blocks/bamboo_planks_pedestal.json
 30746221fef287eac0b96d208bfc7ba0f9f006e5 data/pedestals/loot_tables/blocks/birch_log_pedestal.json

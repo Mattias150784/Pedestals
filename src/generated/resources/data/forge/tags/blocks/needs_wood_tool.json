@@ -197,6 +197,7 @@
     "pedestals:sapphire_block_pedestal",
     "pedestals:dragonforge_fire_brick_pedestal",
     "pedestals:dragonforge_ice_brick_pedestal",
-    "pedestals:dragonforge_lightning_brick_pedestal"
+    "pedestals:dragonforge_lightning_brick_pedestal",
+    "pedestals:andesite_casing_pedestal"
   ]
 }

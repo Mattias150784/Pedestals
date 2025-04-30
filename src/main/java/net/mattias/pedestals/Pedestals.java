@@ -2,6 +2,7 @@ package net.mattias.pedestals;
 
 import net.mattias.pedestals.core.Constants;
 import net.mattias.pedestals.core.optional.BasePedestalVariants;
+import net.mattias.pedestals.core.optional.CreateVariants;
 import net.mattias.pedestals.core.optional.IceAndFireVariants;
 import net.mattias.pedestals.core.optional.MystiGreciaVariants;
 import net.mattias.pedestals.core.registry.ObjectRegistry;
@@ -25,6 +26,7 @@ public class Pedestals {
         BasePedestalVariants.define();
         if (ModList.get().isLoaded("mysti")) MystiGreciaVariants.define();
         if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
+        if (ModList.get().isLoaded("create")) CreateVariants.define();
 
         ObjectRegistry.register(EVENT_BUS);
     }

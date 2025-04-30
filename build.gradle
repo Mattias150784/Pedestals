@@ -73,6 +73,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     maven { url "https://cursemaven.com" } // CurseForge
     maven { url "https://repo.spongepowered.org/repository/maven-public/" } // Mixin
+//    maven { url = "https://maven.tterrag.com" } // Registrate
 }
 
 dependencies {
@@ -96,6 +97,7 @@ dependencies {
     // compileOnly fg.deobf("curse.maven:create-328085:6323270")
     // runtimeOnly fg.deobf("curse.maven:create-328085:6323270")
     implementation fg.deobf("curse.maven:create-328085:6323270")
+//    implementation fg.deobf("com.tterrag.registrate:Registrate:$registrate_version")
 }
 
 tasks.named('processResources', ProcessResources).configure {

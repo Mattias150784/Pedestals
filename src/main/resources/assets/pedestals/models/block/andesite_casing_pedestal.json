@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "pedestals:block/andesite_casing_pedestal",
-		"particle": "pedestals:block/andesite_casing_pedestal"
+		"0": "create:block/andesite_casing",
+		"particle": "create:block/andesite_casing"
 	},
 	"elements": [
 		{
