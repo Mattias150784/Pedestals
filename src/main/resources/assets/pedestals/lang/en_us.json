@@ -130,9 +130,6 @@
  "block.pedestals.end_stone_bricks_pedestal": "End Stone Bricks Pedestal",
  "block.pedestals.purpur_pillar_pedestal": "Purpur Pillar Pedestal",
 
- "block.pedestals.sapphire_block_pedestal": "Sapphire Block Pedestal",
-
-
  "block.pedestals.bronze_block_pedestal": "Bronze Block Pedestal",
  "block.pedestals.marble_pedestal": "Marble Pedestal",
  "block.pedestals.black_marble_pedestal": "Black Marble Pedestal",
@@ -216,7 +213,15 @@
  "block.pedestals.yellow_marble_pillar_pedestal": "Yellow Marble Pillar Pedestal",
  "block.pedestals.yellow_polished_marble_pedestal": "Yellow Polished Marble Pedestal",
  "block.pedestals.yellow_raw_marble_pedestal": "Yellow Raw Marble Pedestal",
- 
+
+ "block.pedestals.sapphire_block_pedestal": "Sapphire Block Pedestal",
+ "block.pedestals.silver_block_pedestal": "Silver Block Pedestal",
+
+ "block.pedestals.dragonforge_fire_brick_pedestal": "Dragonforge Fire Brick Pedestal",
+ "block.pedestals.dragonforge_ice_brick_pedestal": "Dragonforge Ice Brick Pedestal",
+ "block.pedestals.dragonforge_lightning_brick_pedestal": "Dragonforge Lightning Brick Pedestal",
+
+
  "item.pedestals.pedestal_lock": "Pedestal Lock",
  "item.pedestals.pedestal_key": "Pedestal Key",
 

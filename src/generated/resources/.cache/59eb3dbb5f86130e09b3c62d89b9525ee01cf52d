@@ -1,4 +1,4 @@
-// 1.20.1	2025-04-28T00:22:07.0663542	Loot Tables
+// 1.20.1	2025-04-29T18:58:09.2293252	Loot Tables
 a9c67e877704c3f799482b2da72e0f438f542eeb data/pedestals/loot_tables/blocks/acacia_log_pedestal.json
 7f48c18163a67393c2338907911023434e2ae92b data/pedestals/loot_tables/blocks/acacia_planks_pedestal.json
 b96b509f4a7c17f9afdf72099644d4119854602b data/pedestals/loot_tables/blocks/andesite_pedestal.json
@@ -51,6 +51,9 @@ c315da274850560e2bd27aaea965b23bb2a6e5d0 data/pedestals/loot_tables/blocks/cyan_
 e32088caac2ccf3086c1989eac261a80b35201f5 data/pedestals/loot_tables/blocks/dark_oak_log_pedestal.json
 080de413d8aad019786c08b72c0340d27a0a4b5d data/pedestals/loot_tables/blocks/dark_oak_planks_pedestal.json
 8a91b59cff7d5027350d136b7161eaa98eb2b5c5 data/pedestals/loot_tables/blocks/diorite_pedestal.json
+02e442ea2151e44a5a0624ec761a9e4231e7e739 data/pedestals/loot_tables/blocks/dragonforge_fire_brick_pedestal.json
+9443c5dfb513b0a6a89b634da5e7a5c3efb1cfa1 data/pedestals/loot_tables/blocks/dragonforge_ice_brick_pedestal.json
+a2a61872c5f80c7534a8552994f172a7417e8af2 data/pedestals/loot_tables/blocks/dragonforge_lightning_brick_pedestal.json
 737a3d448a33ec31779e14cf5384c041f908b249 data/pedestals/loot_tables/blocks/end_stone_bricks_pedestal.json
 936ecd8bd1cf1c4bda7bde8fc1585e6e7a358e9c data/pedestals/loot_tables/blocks/end_stone_pedestal.json
 dce061252297a8a0dbe8058e6d66d55840afec38 data/pedestals/loot_tables/blocks/granite_pedestal.json
@@ -167,6 +170,7 @@ ba084a8a943628d61f97cb4d88a320ee30485a3f data/pedestals/loot_tables/blocks/red_t
 018b08144b5fbf3b623b293fc478fc5b3fb2ee4b data/pedestals/loot_tables/blocks/red_wool_pedestal.json
 546007d2902e92239bd6a6787c50e6fa712e7801 data/pedestals/loot_tables/blocks/sandstone_pedestal.json
 57ef5a03d18c91ea30e18d17e73e5867e911986f data/pedestals/loot_tables/blocks/sapphire_block_pedestal.json
+3d64cac936720817ae324979b5db6434ab9f2bfb data/pedestals/loot_tables/blocks/silver_block_pedestal.json
 16ff3b2f5b4588557b424f082e6c9e1f732437fb data/pedestals/loot_tables/blocks/smooth_stone_pedestal.json
 dde7c0be1bd6c8d8e34cd69d83339def051f63bf data/pedestals/loot_tables/blocks/soul_sand_pedestal.json
 07bfcde0d30b4e60392369bc244e5e484ec23718 data/pedestals/loot_tables/blocks/soul_soil_pedestal.json

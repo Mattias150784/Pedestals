@@ -229,6 +229,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // Ice And Fire
 
         MATERIAL_MAP.put(IceAndFireVariants.SAPPHIRE, IafBlockRegistry.SAPPHIRE_BLOCK.get());
+        MATERIAL_MAP.put(IceAndFireVariants.SILVER, IafBlockRegistry.SILVER_BLOCK.get());
+
+        MATERIAL_MAP.put(IceAndFireVariants.DRAGONFORGE_FIRE, IafBlockRegistry.DRAGONFORGE_FIRE_BRICK.get());
+        MATERIAL_MAP.put(IceAndFireVariants.DRAGONFORGE_ICE, IafBlockRegistry.DRAGONFORGE_ICE_BRICK.get());
+        MATERIAL_MAP.put(IceAndFireVariants.DRAGONFORGE_LIGHTNING, IafBlockRegistry.DRAGONFORGE_LIGHTNING_BRICK.get());
 
     }
 

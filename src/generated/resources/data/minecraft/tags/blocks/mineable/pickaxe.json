@@ -158,6 +158,10 @@
     "pedestals:yellow_marble_pillar_pedestal",
     "pedestals:yellow_polished_marble_pedestal",
     "pedestals:yellow_raw_marble_pedestal",
-    "pedestals:sapphire_block_pedestal"
+    "pedestals:silver_block_pedestal",
+    "pedestals:sapphire_block_pedestal",
+    "pedestals:dragonforge_fire_brick_pedestal",
+    "pedestals:dragonforge_ice_brick_pedestal",
+    "pedestals:dragonforge_lightning_brick_pedestal"
   ]
 }
