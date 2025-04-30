@@ -163,6 +163,17 @@
     "pedestals:dragonforge_fire_brick_pedestal",
     "pedestals:dragonforge_ice_brick_pedestal",
     "pedestals:dragonforge_lightning_brick_pedestal",
-    "pedestals:andesite_casing_pedestal"
+    "pedestals:dragonscale_red_pedestal",
+    "pedestals:dragonscale_green_pedestal",
+    "pedestals:dragonscale_bronze_pedestal",
+    "pedestals:dragonscale_gray_pedestal",
+    "pedestals:dragonscale_blue_pedestal",
+    "pedestals:dragonscale_white_pedestal",
+    "pedestals:dragonscale_sapphire_pedestal",
+    "pedestals:dragonscale_silver_pedestal",
+    "pedestals:dragonscale_electric_pedestal",
+    "pedestals:dragonscale_amythest_pedestal",
+    "pedestals:dragonscale_copper_pedestal",
+    "pedestals:dragonscale_black_pedestal"
   ]
 }

@@ -117,6 +117,7 @@
 
  "block.pedestals.blackstone_pedestal": "Blackstone Pedestal",
  "block.pedestals.red_nether_bricks_pedestal": "Red Nether Bricks Pedestal",
+
  "block.pedestals.nether_bricks_pedestal": "Nether Bricks Pedestal",
  "block.pedestals.crying_obsidian_pedestal": "Crying Obsidian Pedestal",
  "block.pedestals.obsidian_pedestal": "Obsidian Pedestal",
@@ -220,6 +221,19 @@
  "block.pedestals.dragonforge_fire_brick_pedestal": "Dragonforge Fire Brick Pedestal",
  "block.pedestals.dragonforge_ice_brick_pedestal": "Dragonforge Ice Brick Pedestal",
  "block.pedestals.dragonforge_lightning_brick_pedestal": "Dragonforge Lightning Brick Pedestal",
+
+ "block.pedestals.dragonscale_white_pedestal": "Dragonscale White Pedestal",
+ "block.pedestals.dragonscale_black_pedestal": "Dragonscale Black Pedestal",
+ "block.pedestals.dragonscale_amythest_pedestal": "Dragonscale Amythest Pedestal",
+ "block.pedestals.dragonscale_blue_pedestal": "Dragonscale Blue Pedestal",
+ "block.pedestals.dragonscale_bronze_pedestal": "Dragonscale Bronze Pedestal",
+ "block.pedestals.dragonscale_copper_pedestal": "Dragonscale Copper Pedestal",
+ "block.pedestals.dragonscale_electric_pedestal": "Dragonscale Electric Pedestal",
+ "block.pedestals.dragonscale_gray_pedestal": "Dragonscale Gray Pedestal",
+ "block.pedestals.dragonscale_green_pedestal": "Dragonscale Green Pedestal",
+ "block.pedestals.dragonscale_red_pedestal": "Dragonscale Red Pedestal",
+ "block.pedestals.dragonscale_sapphire_pedestal": "Dragonscale Sapphire Pedestal",
+ "block.pedestals.dragonscale_silver_pedestal": "Dragonscale Silver Pedestal",
 
  "block.pedestals.andesite_casing_pedestal": "Andesite Casing Pedestal",
 

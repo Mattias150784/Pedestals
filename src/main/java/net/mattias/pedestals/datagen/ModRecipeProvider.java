@@ -159,6 +159,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(IceAndFireVariants.DRAGONFORGE_ICE, IafBlockRegistry.DRAGONFORGE_ICE_BRICK.get());
         MATERIAL_MAP.put(IceAndFireVariants.DRAGONFORGE_LIGHTNING, IafBlockRegistry.DRAGONFORGE_LIGHTNING_BRICK.get());
 
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_RED, IafBlockRegistry.DRAGON_SCALE_RED.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_GREEN, IafBlockRegistry.DRAGON_SCALE_GREEN.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_BRONZE, IafBlockRegistry.DRAGON_SCALE_BRONZE.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_GRAY, IafBlockRegistry.DRAGON_SCALE_GRAY.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_WHITE, IafBlockRegistry.DRAGON_SCALE_WHITE.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_BLUE, IafBlockRegistry.DRAGON_SCALE_BLUE.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_SAPPHIRE, IafBlockRegistry.DRAGON_SCALE_SAPPHIRE.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_SILVER, IafBlockRegistry.DRAGON_SCALE_SILVER.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_ELECTRIC, IafBlockRegistry.DRAGON_SCALE_ELECTRIC.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_AMETHYST, IafBlockRegistry.DRAGON_SCALE_AMYTHEST.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_COPPER, IafBlockRegistry.DRAGON_SCALE_COPPER.get());
+    MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_BLACK, IafBlockRegistry.DRAGON_SCALE_BLACK.get());
+
         // Create
         //MATERIAL_MAP.put(CreateVariants.ANDESITE_CASING, resolve(AllBlocks.ANDESITE_CASING));
 
