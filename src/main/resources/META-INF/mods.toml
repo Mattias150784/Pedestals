@@ -79,3 +79,10 @@ description='''${mod_description}'''
     versionRange="[6.0.4,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="medievalembroidery"
+mandatory=false
+versionRange="[0.7,)"
+ordering="AFTER"
+side="BOTH"

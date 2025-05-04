@@ -1,13 +1,11 @@
 package net.mattias.pedestals.datagen;
 
+import com.dragn0007_evangelix.medievalembroidery.block.MEBlocks;
 import com.github.alexthe666.iceandfire.block.IafBlockRegistry;
 import com.simibubi.create.AllBlocks;
 //import com.tterrag.registrate.util.entry.BlockEntry;
 import net.mattias.pedestals.core.Constants;
-import net.mattias.pedestals.core.optional.BasePedestalVariants;
-import net.mattias.pedestals.core.optional.CreateVariants;
-import net.mattias.pedestals.core.optional.IceAndFireVariants;
-import net.mattias.pedestals.core.optional.MystiGreciaVariants;
+import net.mattias.pedestals.core.optional.*;
 import net.mattias.pedestals.core.registry.ModBlocks;
 import net.mattias.pedestals.core.util.PedestalVariant;
 import net.mattias.pedestals.core.util.PedestalVariants;
@@ -172,7 +170,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
          //Create
        //MATERIAL_MAP.put(CreateVariants.ANDESITE_CASING, (AllBlocks.ANDESITE_CASING.get()));
 
+        // Medieval Embroidery
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.FIRESTONE_BLOCK, MEBlocks.FIRESTONE_BLOCK.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.SEASTONE_BLOCK, MEBlocks.SEASTONE_BLOCK.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.FROSTSTONE_BLOCK, MEBlocks.FROSTSTONE_BLOCK.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.MOSSSTONE_BLOCK, MEBlocks.MOSSTONE_BLOCK.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.ASTROSTONE_BLOCK, MEBlocks.ASTROSTONE_BLOCK.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.DEPTHSTONE_BLOCK, MEBlocks.DEPTHSTONE_BLOCK.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.SKYSTONE_BLOCK, MEBlocks.SKYSTONE_BLOCK.get());
 
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BEIGE_BRICKS, MEBlocks.BEIGE_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BLACK_BRICKS, MEBlocks.BLACK_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BLUE_BRICKS, MEBlocks.BLUE_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BROWN_BRICKS, MEBlocks.BROWN_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.FADED_BRICKS, MEBlocks.FADED_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.GREY_BRICKS, MEBlocks.GREY_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.GREEN_BRICKS, MEBlocks.GREEN_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.MAROON_BRICKS, MEBlocks.MAROON_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.NAVY_BRICKS, MEBlocks.NAVY_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.ORANGE_BRICKS, MEBlocks.ORANGE_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.PALE_BLUE_BRICKS, MEBlocks.PALE_BLUE_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.PINK_BRICKS, MEBlocks.PINK_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.PURPLE_BRICKS, MEBlocks.PURPLE_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.RED_BRICKS, MEBlocks.RED_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.SWAMPY_BRICKS, MEBlocks.SWAMPY_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.WHITE_BRICKS, MEBlocks.WHITE_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.YELLOW_BRICKS, MEBlocks.YELLOW_BRICKS.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BEIGE_BRICKS_MOSSY, MEBlocks.BEIGE_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BLACK_BRICKS_MOSSY, MEBlocks.BLACK_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BLUE_BRICKS_MOSSY, MEBlocks.BLUE_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.BROWN_BRICKS_MOSSY, MEBlocks.BROWN_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.FADED_BRICKS_MOSSY, MEBlocks.FADED_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.GREY_BRICKS_MOSSY, MEBlocks.GREY_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.GREEN_BRICKS_MOSSY, MEBlocks.GREEN_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.MAROON_BRICKS_MOSSY, MEBlocks.MAROON_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.NAVY_BRICKS_MOSSY, MEBlocks.NAVY_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.ORANGE_BRICKS_MOSSY, MEBlocks.ORANGE_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.PALE_BLUE_BRICKS_MOSSY, MEBlocks.PALE_BLUE_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.PINK_BRICKS_MOSSY, MEBlocks.PINK_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.PURPLE_BRICKS_MOSSY, MEBlocks.PURPLE_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.RED_BRICKS_MOSSY, MEBlocks.RED_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.SWAMPY_BRICKS_MOSSY, MEBlocks.SWAMPY_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.WHITE_BRICKS_MOSSY, MEBlocks.WHITE_BRICKS_MOSSY.get());
+        MATERIAL_MAP.put(MedievalEmbroideryVariants.YELLOW_BRICKS_MOSSY, MEBlocks.YELLOW_BRICKS_MOSSY.get());
 
 
     }

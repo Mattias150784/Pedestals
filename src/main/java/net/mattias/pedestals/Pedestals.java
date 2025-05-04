@@ -1,10 +1,7 @@
 package net.mattias.pedestals;
 
 import net.mattias.pedestals.core.Constants;
-import net.mattias.pedestals.core.optional.BasePedestalVariants;
-import net.mattias.pedestals.core.optional.CreateVariants;
-import net.mattias.pedestals.core.optional.IceAndFireVariants;
-import net.mattias.pedestals.core.optional.MystiGreciaVariants;
+import net.mattias.pedestals.core.optional.*;
 import net.mattias.pedestals.core.registry.ObjectRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +24,7 @@ public class Pedestals {
         if (ModList.get().isLoaded("mysti")) MystiGreciaVariants.define();
         if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
         if (ModList.get().isLoaded("create")) CreateVariants.define();
+        if (ModList.get().isLoaded("medievalembroidery")) MedievalEmbroideryVariants.define();
 
         ObjectRegistry.register(EVENT_BUS);
     }
