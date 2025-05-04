@@ -30,9 +30,6 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final Map<PedestalVariant, Block> MATERIAL_MAP = new HashMap<>();
 
-//    private static Block resolve(BlockEntry<?> entry) {
-//        return entry.get();
-//    }
     static {
         // Logs
         MATERIAL_MAP.put(BasePedestalVariants.OAK_LOG, Blocks.OAK_LOG);
@@ -172,8 +169,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_COPPER, IafBlockRegistry.DRAGON_SCALE_COPPER.get());
     MATERIAL_MAP.put(IceAndFireVariants.DRAGONSCALE_BLACK, IafBlockRegistry.DRAGON_SCALE_BLACK.get());
 
-        // Create
-        //MATERIAL_MAP.put(CreateVariants.ANDESITE_CASING, resolve(AllBlocks.ANDESITE_CASING));
+         //Create
+       //MATERIAL_MAP.put(CreateVariants.ANDESITE_CASING, (AllBlocks.ANDESITE_CASING.get()));
 
 
 
