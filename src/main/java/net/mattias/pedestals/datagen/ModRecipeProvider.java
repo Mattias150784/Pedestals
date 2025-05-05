@@ -1,5 +1,6 @@
 package net.mattias.pedestals.datagen;
 
+//import biomesoplenty.api.block.BOPBlocks;
 import com.dragn0007_evangelix.medievalembroidery.block.MEBlocks;
 import com.github.alexthe666.iceandfire.block.IafBlockRegistry;
 import com.simibubi.create.AllBlocks;
@@ -214,7 +215,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(MedievalEmbroideryVariants.WHITE_BRICKS_MOSSY, MEBlocks.WHITE_BRICKS_MOSSY.get());
         MATERIAL_MAP.put(MedievalEmbroideryVariants.YELLOW_BRICKS_MOSSY, MEBlocks.YELLOW_BRICKS_MOSSY.get());
 
-
+        // Biomes O Plenty
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.FIR_PLANKS, BOPBlocks.FIR_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.PINE_PLANKS, BOPBlocks.PINE_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.MAPLE_PLANKS, BOPBlocks.MAPLE_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.REDWOOD_PLANKS, BOPBlocks.REDWOOD_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.MAHOGANY_PLANKS, BOPBlocks.MAHOGANY_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.JACARANDA_PLANKS, BOPBlocks.JACARANDA_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.PALM_PLANKS, BOPBlocks.PALM_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.WILLOW_PLANKS, BOPBlocks.WILLOW_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.DEAD_PLANKS, BOPBlocks.DEAD_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.MAGIC_PLANKS, BOPBlocks.MAGIC_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.UMBRAN_PLANKS, BOPBlocks.UMBRAN_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.HELLBARK_PLANKS, BOPBlocks.HELLBARK_PLANKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.EMPYREAL_PLANKS, BOPBlocks.EMPYREAL_PLANKS);
+//
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.FIR_LOG, BOPBlocks.FIR_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.PINE_LOG, BOPBlocks.PINE_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.MAPLE_LOG, BOPBlocks.MAPLE_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.REDWOOD_LOG, BOPBlocks.REDWOOD_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.MAHOGANY_LOG, BOPBlocks.MAHOGANY_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.JACARANDA_LOG, BOPBlocks.JACARANDA_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.PALM_LOG, BOPBlocks.PALM_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.WILLOW_LOG, BOPBlocks.WILLOW_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.DEAD_LOG, BOPBlocks.DEAD_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.MAGIC_LOG, BOPBlocks.MAGIC_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.UMBRAN_LOG, BOPBlocks.UMBRAN_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.HELLBARK_LOG, BOPBlocks.HELLBARK_LOG);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.EMPYREAL_LOG, BOPBlocks.EMPYREAL_LOG);
+//
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.BRIMSTONE, BOPBlocks.BRIMSTONE);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.BRIMSTONE_BRICKS, BOPBlocks.BRIMSTONE_BRICKS);
+//        MATERIAL_MAP.put(BiomeOPlentyVariants.CHISELED_BRIMSTONE_BRICKS, BOPBlocks.CHISELED_BRIMSTONE_BRICKS);
     }
 
 

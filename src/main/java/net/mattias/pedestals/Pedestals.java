@@ -25,6 +25,7 @@ public class Pedestals {
         if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
         if (ModList.get().isLoaded("create")) CreateVariants.define();
         if (ModList.get().isLoaded("medievalembroidery")) MedievalEmbroideryVariants.define();
+        if (ModList.get().isLoaded("biomesoplenty")) BiomeOPlentyVariants.define();
 
         ObjectRegistry.register(EVENT_BUS);
     }

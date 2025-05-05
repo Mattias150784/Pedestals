@@ -103,6 +103,11 @@ dependencies {
     implementation fg.deobf("curse.maven:patchouli-306770:6164575")
     implementation fg.deobf("curse.maven:geckolib-388172:6333474")
     implementation fg.deobf("curse.maven:medieval-embroidery-986913:6428164")
+
+    //Biomes O Plenty
+    //implementation fg.deobf("curse.maven:glitchcore-955399:5770232")
+//    implementation fg.deobf("curse.maven:terrablender-563928:6290448")
+//    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:6028852")
 }
 
 tasks.named('processResources', ProcessResources).configure {

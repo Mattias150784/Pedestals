@@ -1,41 +1,69 @@
-[04May2025 11:58:11.162] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Mattias\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, pedestals, --all, --output, C:\Users\Mattias\Desktop\Mods\Pedestals\src\generated\resources, --existing, C:\Users\Mattias\Desktop\Mods\Pedestals\src\main\resources, --mixin.config, pedestals.mixins.json]
-[04May2025 11:58:11.171] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[04May2025 11:58:11.448] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[04May2025 11:58:11.517] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Mattias/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23132!/ Service=ModLauncher Env=CLIENT
-[04May2025 11:58:12.063] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.6\56551ed4a181a00930b0365996e1d9f3ca851459\javafmllanguage-1.20.1-47.2.6.jar is missing mods.toml file
-[04May2025 11:58:12.069] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.6\f27bd133cd78227e8d6def633b83c881a30cc243\lowcodelanguage-1.20.1-47.2.6.jar is missing mods.toml file
-[04May2025 11:58:12.075] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.6\6e1641ac5a046737d7c3209901ca0a829d636873\mclanguage-1.20.1-47.2.6.jar is missing mods.toml file
-[04May2025 11:58:12.080] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.6\2d5f5aff839b7d2825c6968049399633d1c4d0b8\fmlcore-1.20.1-47.2.6.jar is missing mods.toml file
-[04May2025 11:58:12.569] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 6 dependencies adding them to mods collection
-[04May2025 11:58:16.915] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[04May2025 11:58:16.970] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Mattias\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, pedestals, --all, --output, C:\Users\Mattias\Desktop\Mods\Pedestals\src\generated\resources, --existing, C:\Users\Mattias\Desktop\Mods\Pedestals\src\main\resources]
-[04May2025 11:58:17.123] [main/WARN] [mixin/]: Reference map 'pedestals.refmap.json' for pedestals.mixins.json could not be read. If this is a development environment you can ignore this message
-[04May2025 11:58:17.465] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.468] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.469] [main/INFO] [mixin/]: Remapping refMap iceandfire.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.471] [main/INFO] [mixin/]: Remapping refMap backend-flywheel.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.473] [main/INFO] [mixin/]: Remapping refMap flywheel.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.486] [main/INFO] [mixin/]: Remapping refMap create.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.488] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:17.490] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
-[04May2025 11:58:18.702] [main/WARN] [mixin/]: Error loading class: journeymap/client/ui/fullscreen/Fullscreen (java.lang.ClassNotFoundException: journeymap.client.ui.fullscreen.Fullscreen)
-[04May2025 11:58:18.703] [main/WARN] [mixin/]: @Mixin target journeymap.client.ui.fullscreen.Fullscreen was not found create.mixins.json:compat.JourneyFullscreenMapMixin
-[04May2025 11:58:19.255] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [pedestals]
-[04May2025 11:58:19.267] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[04May2025 11:58:27.488] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.4 initializing! Commit hash: 254bb816aee1c056c74b2ad4beb88222a499da78
-[04May2025 11:58:27.620] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.6, for MC 1.20.1 with MCP 20230612.114412
-[04May2025 11:58:27.623] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.6 Initialized
-[04May2025 11:58:28.180] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[04May2025 11:58:33.120] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Mattias/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.6_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[04May2025 11:58:33.121] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Mattias/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.6_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.6_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[04May2025 11:58:33.725] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: pedestals
-[04May2025 11:58:36.243] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: pedestals finished after 2518 ms
-[04May2025 11:58:36.244] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[04May2025 11:58:36.638] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 394 ms
-[04May2025 11:58:36.638] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id pedestals
-[04May2025 11:58:36.677] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id pedestals finished after 38 ms
-[04May2025 11:58:36.677] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[04May2025 11:58:36.679] [main/INFO] [net.mattias.pedestals.core.Constants/]: building recipes for Pedestals and Planks
-[04May2025 11:58:37.070] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 392 ms
-[04May2025 11:58:37.070] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 3346 ms
-[04May2025 11:58:37.165] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 1107, old count: 1027, new count: 1108, removed stale: 0, written: 82
+[04May2025 18:13:45.297] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Mattias\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, pedestals, --all, --output, C:\Users\Mattias\Desktop\Mods\Pedestals\src\generated\resources, --existing, C:\Users\Mattias\Desktop\Mods\Pedestals\src\main\resources, --mixin.config, pedestals.mixins.json]
+[04May2025 18:13:45.329] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[04May2025 18:13:45.559] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[04May2025 18:13:45.616] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Mattias/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23132!/ Service=ModLauncher Env=CLIENT
+[04May2025 18:13:46.064] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.6\56551ed4a181a00930b0365996e1d9f3ca851459\javafmllanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[04May2025 18:13:46.069] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.6\f27bd133cd78227e8d6def633b83c881a30cc243\lowcodelanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[04May2025 18:13:46.072] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.6\6e1641ac5a046737d7c3209901ca0a829d636873\mclanguage-1.20.1-47.2.6.jar is missing mods.toml file
+[04May2025 18:13:46.077] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Mattias\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.6\2d5f5aff839b7d2825c6968049399633d1c4d0b8\fmlcore-1.20.1-47.2.6.jar is missing mods.toml file
+[04May2025 18:13:46.525] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 6 dependencies adding them to mods collection
+[04May2025 18:13:46.618] [main/ERROR] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+	Mod ID: 'forge', Requested by: 'biomesoplenty', Expected range: '[47.3.0,)', Actual version: '47.2.6'
+	Mod ID: 'glitchcore', Requested by: 'biomesoplenty', Expected range: '[0.0.1.0,)', Actual version: '[MISSING]'
+[04May2025 18:13:49.985] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[04May2025 18:13:50.015] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Mattias\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, pedestals, --all, --output, C:\Users\Mattias\Desktop\Mods\Pedestals\src\generated\resources, --existing, C:\Users\Mattias\Desktop\Mods\Pedestals\src\main\resources]
+[04May2025 18:13:50.165] [main/WARN] [mixin/]: Reference map 'pedestals.refmap.json' for pedestals.mixins.json could not be read. If this is a development environment you can ignore this message
+[04May2025 18:13:50.498] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.500] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.502] [main/INFO] [mixin/]: Remapping refMap biomesoplenty.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.503] [main/INFO] [mixin/]: Remapping refMap biomesoplenty.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.504] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.505] [main/INFO] [mixin/]: Remapping refMap ponder.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.506] [main/INFO] [mixin/]: Remapping refMap iceandfire.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.507] [main/INFO] [mixin/]: Remapping refMap backend-flywheel.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.509] [main/INFO] [mixin/]: Remapping refMap flywheel.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.518] [main/INFO] [mixin/]: Remapping refMap create.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.519] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:50.522] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using C:\Users\Mattias\Desktop\Mods\Pedestals/build/createSrgToMcp/output.srg
+[04May2025 18:13:51.411] [main/WARN] [mixin/]: Error loading class: journeymap/client/ui/fullscreen/Fullscreen (java.lang.ClassNotFoundException: journeymap.client.ui.fullscreen.Fullscreen)
+[04May2025 18:13:51.411] [main/WARN] [mixin/]: @Mixin target journeymap.client.ui.fullscreen.Fullscreen was not found create.mixins.json:compat.JourneyFullscreenMapMixin
+[04May2025 18:13:52.092] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [pedestals]
+[04May2025 18:13:52.106] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[04May2025 18:13:59.017] [main/FATAL] [net.minecraftforge.fml.ModLoader/CORE]: Error during pre-loading phase
+net.minecraftforge.fml.ModLoadingException: fml.modloading.missingdependency
+	at net.minecraftforge.fml.ModLoadingException.lambda$fromEarlyException$0(ModLoadingException.java:50) ~[fmlcore-1.20.1-47.2.6.jar:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.<init>(ModLoader.java:96) ~[fmlcore-1.20.1-47.2.6.jar:?]
+	at net.minecraftforge.fml.ModLoader.get(ModLoader.java:128) ~[fmlcore-1.20.1-47.2.6.jar:?]
+	at net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:43) ~[forge-1.20.1-47.2.6_mapped_parchment_2023.09.03-1.20.1.jar:?]
+	at net.minecraft.data.Main.main(Main.java:90) ~[forge-1.20.1-47.2.6_mapped_parchment_2023.09.03-1.20.1.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.6.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:107) ~[fmlloader-1.20.1-47.2.6.jar:?]
+	at net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.devService(ForgeDataUserdevLaunchHandler.java:22) ~[fmlloader-1.20.1-47.2.6.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.2.6.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
