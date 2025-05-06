@@ -1,0 +1,15 @@
+{
+  "values": [
+    "pedestals:andesite_casing_pedestal",
+    "pedestals:brass_casing_pedestal",
+    "pedestals:copper_casing_pedestal",
+    "pedestals:train_casing_pedestal",
+    "pedestals:zinc_block_pedestal",
+    "pedestals:andesite_alloy_block_pedestal",
+    "pedestals:industrial_iron_block_pedestal",
+    "pedestals:weathered_iron_block_pedestal",
+    "pedestals:brass_block_pedestal",
+    "pedestals:cardboard_block_pedestal",
+    "pedestals:bound_cardboard_block_pedestal"
+  ]
+}

@@ -5,6 +5,8 @@ import net.mattias.pedestals.core.util.PedestalVariants;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.List;
+
 public class MystiGreciaVariants {
 
     public static void define() {}
@@ -90,4 +92,9 @@ public class MystiGreciaVariants {
     public static final PedestalVariant YELLOW_MARBLE_PILLAR = PedestalVariants.register(new PedestalVariant("yellow_marble_pillar_pedestal", "yellow_marble_pillar", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_marble_pillar"))));
     public static final PedestalVariant YELLOW_POLISHED = PedestalVariants.register(new PedestalVariant("yellow_polished_marble_pedestal", "yellow_polished_marble", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_polished_marble"))));
     public static final PedestalVariant YELLOW_RAW_MARBLE = PedestalVariants.register(new PedestalVariant("yellow_raw_marble_pedestal", "yellow_raw_marble", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("mysti", "yellow_raw_marble"))));
+
+
+    public static final List<PedestalVariant> VARIANTS = List.of(
+        BRONZE
+    );
 }

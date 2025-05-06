@@ -5,6 +5,8 @@ import net.mattias.pedestals.core.util.PedestalVariants;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.List;
+
 public class MedievalEmbroideryVariants {
 
     public static void define() {}
@@ -16,7 +18,6 @@ public class MedievalEmbroideryVariants {
     public static final PedestalVariant ASTROSTONE_BLOCK = PedestalVariants.register(new PedestalVariant("astrostone_block_pedestal", "astrostone_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "astrostone_block"))));
     public static final PedestalVariant DEPTHSTONE_BLOCK = PedestalVariants.register(new PedestalVariant("depthstone_block_pedestal", "depthstone_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "depthstone_block"))));
     public static final PedestalVariant SKYSTONE_BLOCK = PedestalVariants.register(new PedestalVariant("skystone_block_pedestal", "skystone_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "skystone_block"))));
-
     public static final PedestalVariant BEIGE_BRICKS = PedestalVariants.register(new PedestalVariant("beige_bricks_pedestal", "beige_bricks", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "beige_bricks"))));
     public static final PedestalVariant BLACK_BRICKS = PedestalVariants.register(new PedestalVariant("black_bricks_pedestal", "black_bricks", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "black_bricks"))));
     public static final PedestalVariant BLUE_BRICKS = PedestalVariants.register(new PedestalVariant("blue_bricks_pedestal", "blue_bricks", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "blue_bricks"))));
@@ -52,5 +53,49 @@ public class MedievalEmbroideryVariants {
     public static final PedestalVariant WHITE_BRICKS_MOSSY = PedestalVariants.register(new PedestalVariant("white_bricks_mossy_pedestal", "white_bricks_mossy", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "white_bricks_mossy"))));
     public static final PedestalVariant YELLOW_BRICKS_MOSSY = PedestalVariants.register(new PedestalVariant("yellow_bricks_mossy_pedestal", "yellow_bricks_mossy", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("medievalembroidery", "yellow_bricks_mossy"))));
 
-
+    public static final List<PedestalVariant> VARIANTS = List.of(
+            FIRESTONE_BLOCK,
+            SEASTONE_BLOCK,
+            FROSTSTONE_BLOCK,
+            MOSSSTONE_BLOCK,
+            ASTROSTONE_BLOCK,
+            DEPTHSTONE_BLOCK,
+            SKYSTONE_BLOCK,
+            BEIGE_BRICKS,
+            BLACK_BRICKS,
+            BLUE_BRICKS,
+            BROWN_BRICKS,
+            FADED_BRICKS,
+            GREEN_BRICKS,
+            GREEN_BRICKS,
+            MAROON_BRICKS,
+            NAVY_BRICKS,
+            ORANGE_BRICKS,
+            PALE_BLUE_BRICKS,
+            PINK_BRICKS,
+            PURPLE_BRICKS,
+            RED_BRICKS,
+            YELLOW_BRICKS,
+            SWAMPY_BRICKS,
+            WHITE_BRICKS,
+            BEIGE_BRICKS,
+            BLACK_BRICKS,
+            BLUE_BRICKS,
+            BROWN_BRICKS_MOSSY,
+            FADED_BRICKS_MOSSY,
+            GREEN_BRICKS_MOSSY,
+            GREEN_BRICKS_MOSSY,
+            MAROON_BRICKS_MOSSY,
+            NAVY_BRICKS_MOSSY,
+            ORANGE_BRICKS_MOSSY,
+            PALE_BLUE_BRICKS_MOSSY,
+            PINK_BRICKS_MOSSY,
+            PURPLE_BRICKS_MOSSY,
+            RED_BRICKS_MOSSY,
+            YELLOW_BRICKS_MOSSY,
+            SWAMPY_BRICKS_MOSSY,
+            WHITE_BRICKS_MOSSY
+            
+            
+    );
 }

@@ -6,6 +6,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.List;
+
 public class IceAndFireVariants {
 
     public static void define() {
@@ -30,4 +32,28 @@ public class IceAndFireVariants {
     public static final PedestalVariant DRAGONSCALE_AMETHYST = PedestalVariants.register(new PedestalVariant("dragonscale_amythest_pedestal", "dragonscale_amythest", () -> BuiltInRegistries.BLOCK.get(new ResourceLocation("iceandfire", "dragonscale_amythest"))));
     public static final PedestalVariant DRAGONSCALE_COPPER = PedestalVariants.register(new PedestalVariant("dragonscale_copper_pedestal", "dragonscale_copper", () -> BuiltInRegistries.BLOCK.get(new ResourceLocation("iceandfire", "dragonscale_copper"))));
     public static final PedestalVariant DRAGONSCALE_BLACK = PedestalVariants.register(new PedestalVariant("dragonscale_black_pedestal", "dragonscale_black", () -> BuiltInRegistries.BLOCK.get(new ResourceLocation("iceandfire", "dragonscale_black"))));
+
+
+
+
+    public static final List<PedestalVariant> VARIANTS = List.of(
+            SILVER,
+            SAPPHIRE,
+            DRAGONFORGE_FIRE,
+            DRAGONFORGE_ICE,
+            DRAGONFORGE_LIGHTNING,
+            DRAGONSCALE_RED,
+            DRAGONSCALE_GREEN,
+            DRAGONSCALE_BRONZE,
+            DRAGONSCALE_GRAY,
+            DRAGONSCALE_BLUE,
+            DRAGONSCALE_WHITE,
+            DRAGONSCALE_SAPPHIRE,
+            DRAGONSCALE_SILVER,
+            DRAGONSCALE_ELECTRIC,
+            DRAGONSCALE_AMETHYST,
+            DRAGONSCALE_COPPER,
+            DRAGONSCALE_BLACK
+    );
+
 }

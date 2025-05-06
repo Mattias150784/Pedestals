@@ -5,6 +5,8 @@ import net.mattias.pedestals.core.util.PedestalVariants;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.List;
+
 public class CreateVariants {
 
     public static void define() {}
@@ -20,5 +22,25 @@ public class CreateVariants {
     public static final PedestalVariant BRASS_BLOCK = PedestalVariants.register(new PedestalVariant("brass_block_pedestal", "brass_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "brass_block"))));
     public static final PedestalVariant CARDBOARD_BLOCK = PedestalVariants.register(new PedestalVariant("cardboard_block_pedestal", "cardboard_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "cardboard_block"))));
     public static final PedestalVariant BOUND_CARDBOARD_BLOCK = PedestalVariants.register(new PedestalVariant("bound_cardboard_block_pedestal", "bound_cardboard_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "bound_cardboard_block"))));
+
+
+
+
+
+
+
+    public static final List<PedestalVariant> VARIANTS = List.of(
+            ANDESITE_CASING,
+            BRASS_CASING,
+            COPPER_CASING,
+            TRAIN_CASING,
+            ZINC_BLOCK,
+            ANDESITE_ALLOY_BLOCK,
+            INDUSTRIAL_IRON_BLOCK,
+            WEATHERED_IRON_BLOCK,
+            BRASS_BLOCK,
+            CARDBOARD_BLOCK,
+            BOUND_CARDBOARD_BLOCK
+    );
 
 }
