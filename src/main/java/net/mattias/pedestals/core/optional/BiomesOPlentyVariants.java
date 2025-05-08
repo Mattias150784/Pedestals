@@ -1,11 +1,8 @@
 package net.mattias.pedestals.core.optional;
 
-import net.mattias.pedestals.core.util.PedestalVariant;
-import net.mattias.pedestals.core.util.PedestalVariants;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.registries.ForgeRegistries;
+public class BiomesOPlentyVariants {
 
-public class BiomeOPlentyVariants {
+    public static final String TEXTURE_OWNER = "biomesoplenty";
 
     public static void define() {}
 
