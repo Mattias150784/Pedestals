@@ -79,8 +79,23 @@ public class Pedestals {
 
             ForgeRegistries.BLOCKS.getEntries().forEach(entry -> {
                 Block entryBlock = entry.getValue();
-                if (entryBlock.builtInRegistryHolder().containsTag(BlockTags.MINEABLE_WITH_PICKAXE));
-                mineableWithPickaxeBlocks.add(entryBlock.builtInRegistryHolder());
+                if (entryBlock.builtInRegistryHolder().containsTag(BlockTags.MINEABLE_WITH_PICKAXE)) {
+                    mineableWithPickaxeBlocks.add(entryBlock.builtInRegistryHolder());
+                }
+            });
+
+            ForgeRegistries.BLOCKS.getEntries().forEach(entry -> {
+                Block entryBlock = entry.getValue();
+                if (entryBlock.builtInRegistryHolder().containsTag(BlockTags.MINEABLE_WITH_AXE)) {
+                    mineableWithAxeBlocks.add(entryBlock.builtInRegistryHolder());
+                }
+            });
+
+            ForgeRegistries.BLOCKS.getEntries().forEach(entry -> {
+                Block entryBlock = entry.getValue();
+                if (entryBlock.builtInRegistryHolder().containsTag(BlockTags.MINEABLE_WITH_SHOVEL)) {
+                    mineableWithShovelBlocks.add(entryBlock.builtInRegistryHolder());
+                }
             });
 
             // streams are cool sometimes, but they look clunky for simple use cases
@@ -107,7 +122,7 @@ public class Pedestals {
                 else if (name.contains("log") || name.contains("planks")) {
                     mineableWithAxeBlocks.add(blockHolder);
                 }
-                else if (name.contains("sand") || name.contains("soil")) {
+                else if (name.contains("soil")) {
                     mineableWithShovelBlocks.add(blockHolder);
                 }
             });
