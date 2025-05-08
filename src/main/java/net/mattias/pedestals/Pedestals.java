@@ -18,6 +18,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,6 +76,12 @@ public class Pedestals {
             List<Holder<Block>> mineableWithPickaxeBlocks = new ArrayList<>();
             List<Holder<Block>> mineableWithAxeBlocks = new ArrayList<>();
             List<Holder<Block>> mineableWithShovelBlocks = new ArrayList<>();
+
+            ForgeRegistries.BLOCKS.getEntries().forEach(entry -> {
+                Block entryBlock = entry.getValue();
+                if (entryBlock.builtInRegistryHolder().containsTag(BlockTags.MINEABLE_WITH_PICKAXE));
+                mineableWithPickaxeBlocks.add(entryBlock.builtInRegistryHolder());
+            });
 
             // streams are cool sometimes, but they look clunky for simple use cases
             // (this code adds all pedestals to block tags #forge:needs_wool_tool and #minecraft:mineable/pickaxe)
