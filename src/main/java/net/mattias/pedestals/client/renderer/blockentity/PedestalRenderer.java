@@ -60,20 +60,20 @@ public class PedestalRenderer implements BlockEntityRenderer<PedestalBlockEntity
     @Override
     public void render(PedestalBlockEntity pedestal, float partialTick, PoseStack poseStack, MultiBufferSource multiBufferSource, int packedLight, int packedOverlay) {
 
-        Block block = pedestal.getBlockState().getBlock();
-        if (!(block instanceof PedestalBlock pedestalBlock)) return;
-
-        // jason pedestal rendering
-        PedestalVariant variant = pedestalBlock.getVariant();
-        Pair<String, String> rendered = new Pair<>(Constants.MOD_ID, variant.registryName());
-
-        poseStack.pushPose();
-//        if (!VERTEX_CONSUMER_CACHE.containsKey(rendered)) VERTEX_CONSUMER_CACHE.put(rendered, new Material(TextureAtlas.LOCATION_BLOCKS, Pedestals.identifier("blocks/" + variant.registryName())).buffer(multiBufferSource, RenderType::entityCutout));
-//        VertexConsumer vertexConsumer = VERTEX_CONSUMER_CACHE.get(rendered);
-        // VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.cutout());
-        VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(Constants.MOD_ID, "textures/block/" + variant.registryName() + ".png")));
-        this.pedestalModel.render(poseStack, vertexConsumer, packedLight, packedOverlay);
-        poseStack.popPose();
+//        Block block = pedestal.getBlockState().getBlock();
+//        if (!(block instanceof PedestalBlock pedestalBlock)) return;
+//
+//        // jason pedestal rendering
+//        PedestalVariant variant = pedestalBlock.getVariant();
+//        Pair<String, String> rendered = new Pair<>(Constants.MOD_ID, variant.registryName());
+//
+//        poseStack.pushPose();
+////        if (!VERTEX_CONSUMER_CACHE.containsKey(rendered)) VERTEX_CONSUMER_CACHE.put(rendered, new Material(TextureAtlas.LOCATION_BLOCKS, Pedestals.identifier("blocks/" + variant.registryName())).buffer(multiBufferSource, RenderType::entityCutout));
+////        VertexConsumer vertexConsumer = VERTEX_CONSUMER_CACHE.get(rendered);
+//        // VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.cutout());
+//        VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(Constants.MOD_ID, "textures/block/" + variant.registryName() + ".png")));
+//        this.pedestalModel.render(poseStack, vertexConsumer, packedLight, packedOverlay);
+//        poseStack.popPose();
 
         // mattias item rendering
         ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
