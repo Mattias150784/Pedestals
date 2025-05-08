@@ -23,6 +23,8 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.texture.TextureAtlas;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
@@ -69,7 +71,7 @@ public class PedestalRenderer implements BlockEntityRenderer<PedestalBlockEntity
 //        if (!VERTEX_CONSUMER_CACHE.containsKey(rendered)) VERTEX_CONSUMER_CACHE.put(rendered, new Material(TextureAtlas.LOCATION_BLOCKS, Pedestals.identifier("blocks/" + variant.registryName())).buffer(multiBufferSource, RenderType::entityCutout));
 //        VertexConsumer vertexConsumer = VERTEX_CONSUMER_CACHE.get(rendered);
         // VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.cutout());
-        VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(variant.textureOwnerModID(), "textures/block/" + variant.textureName() + ".png")));
+        VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(Constants.MOD_ID, "textures/block/" + variant.registryName() + ".png")));
         this.pedestalModel.render(poseStack, vertexConsumer, packedLight, packedOverlay);
         poseStack.popPose();
 

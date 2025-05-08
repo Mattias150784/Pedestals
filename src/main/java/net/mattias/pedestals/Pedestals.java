@@ -37,11 +37,11 @@ public class Pedestals {
         EVENT_BUS = context.getModEventBus();
 
         BasePedestalVariants.define();
-        if (ModList.get().isLoaded(MystiGreciaVariants.TEXTURE_OWNER)) MystiGreciaVariants.define();
-        if (ModList.get().isLoaded(IceAndFireVariants.TEXTURE_OWNER)) IceAndFireVariants.define();
-        if (ModList.get().isLoaded(CreateVariants.TEXTURE_OWNER)) CreateVariants.define();
-        if (ModList.get().isLoaded(MedievalEmbroideryVariants.TEXTURE_OWNER)) MedievalEmbroideryVariants.define();
-        if (ModList.get().isLoaded(BiomesOPlentyVariants.TEXTURE_OWNER)) BiomesOPlentyVariants.define();
+        if (ModList.get().isLoaded("mysti")) MystiGreciaVariants.define();
+        if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
+        if (ModList.get().isLoaded("create")) CreateVariants.define();
+        if (ModList.get().isLoaded("medievalembroidery")) MedievalEmbroideryVariants.define();
+        if (ModList.get().isLoaded("biomesoplenty")) BiomeOPlentyVariants.define();
 
         ObjectRegistry.register(EVENT_BUS);
 
