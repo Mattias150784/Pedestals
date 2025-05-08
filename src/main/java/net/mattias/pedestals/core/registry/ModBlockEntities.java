@@ -47,10 +47,11 @@ public class ModBlockEntities {
 
     /// valid but loses readability
     public static final Supplier<Block[]> VALID_PEDESTAL_BLOCKS = () ->
-            Stream.concat(
-                    Stream.of(ModBlocks.PEDESTAL.get()),
-                    PedestalVariants.VARIANTS.stream().map(variant -> ModBlocks.getPedestalFromVariant(variant).get())
-            ).toArray(Block[]::new);
+//            Stream.concat(
+//                    Stream.of(ModBlocks.PEDESTAL.get()),
+//                    PedestalVariants.VARIANTS.stream().map(variant -> ModBlocks.getPedestalFromVariant(variant).get())
+//            ).toArray(Block[]::new);
+            PedestalVariants.VARIANTS.stream().map(variant -> ModBlocks.getPedestalFromVariant(variant).get()).toArray(Block[]::new);
 
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, Constants.MOD_ID);
 

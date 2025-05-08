@@ -1,5 +1,6 @@
 package net.mattias.pedestals.core.world.block;
 
+import net.mattias.pedestals.core.util.PedestalVariant;
 import net.mattias.pedestals.core.world.block.entity.PedestalBlockEntity;
 import net.mattias.pedestals.core.world.inventory.PedestalMenu;
 import net.minecraft.core.BlockPos;
@@ -19,16 +20,24 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public class PedestalBlock extends BaseEntityBlock {
 
-    public static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 13, 14);
+    public static final VoxelShape SHAPE = Shapes.or(Block.box(2, 0, 2, 14, 14, 14), Block.box(1, 14, 1, 15, 16, 15));
 
-    public PedestalBlock(Properties pProperties) {
+    private final PedestalVariant variant;
+
+    public PedestalBlock(PedestalVariant variant, Properties pProperties) {
         super(pProperties);
+        this.variant = variant;
+    }
+
+    public PedestalVariant getVariant() {
+        return variant;
     }
 
     @Override
@@ -38,7 +47,7 @@ public class PedestalBlock extends BaseEntityBlock {
 
     @Override
     public RenderShape getRenderShape(BlockState pState) {
-        return RenderShape.MODEL;
+        return RenderShape.INVISIBLE;
     }
 
     @Override

@@ -41,7 +41,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.PEDESTAL.get());
+                .add(ModBlocks.getPedestalFromVariant(ModBlocks.PEDESTAL).get());
 
         this.tag(BlockTags.WOOL);
 
@@ -91,7 +91,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
 
         this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
-                .add(ModBlocks.PEDESTAL.get());
+                .add(ModBlocks.getPedestalFromVariant(ModBlocks.PEDESTAL).get());
         for (PedestalVariant variant : PedestalVariants.VARIANTS) {
             this.tag(Tags.Blocks.NEEDS_WOOD_TOOL)
                     .add(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());

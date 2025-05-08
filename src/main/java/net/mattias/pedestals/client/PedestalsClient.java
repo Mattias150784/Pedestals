@@ -24,4 +24,9 @@ public class PedestalsClient {
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.PEDESTAL.get(), PedestalRenderer::new);
     }
+
+    @SubscribeEvent
+    public static void registerBER(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(PedestalRenderer.PEDESTAL_LAYER, PedestalRenderer::createBodyLayer);
+    }
 }

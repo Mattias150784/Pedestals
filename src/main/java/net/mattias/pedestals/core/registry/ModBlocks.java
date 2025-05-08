@@ -22,7 +22,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
-    public static final RegistryObject<Block> PEDESTAL = registerBlockWithBlockItem("pedestal", () -> new PedestalBlock(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    // public static final RegistryObject<Block> PEDESTAL = registerBlockWithBlockItem("pedestal", () -> new PedestalBlock(Block.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final PedestalVariant PEDESTAL = PedestalVariants.register(new PedestalVariant("pedestal", "pedestal", () -> Blocks.IRON_BLOCK));
 
     public static final Map<PedestalVariant, RegistryObject<Block>> REGISTERED_VARIANT_MAP = new HashMap<>();
     public static RegistryObject<Block> getPedestalFromVariant(PedestalVariant variant) {
@@ -32,7 +33,7 @@ public class ModBlocks {
     public static void register(IEventBus modEventBus) {
 
         PedestalVariants.VARIANTS.forEach(variant -> {
-            RegistryObject<Block> registeredVariant = registerBlockWithBlockItem(variant.registryName(), () -> new PedestalBlock(variant.getProperties().dynamicShape().pushReaction(PushReaction.DESTROY)));
+            RegistryObject<Block> registeredVariant = registerBlockWithBlockItem(variant.registryName(), () -> new PedestalBlock(variant, variant.getProperties().dynamicShape().pushReaction(PushReaction.DESTROY)));
             REGISTERED_VARIANT_MAP.put(variant, registeredVariant);
         });
 

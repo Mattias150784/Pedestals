@@ -21,7 +21,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.PEDESTAL.get());
+        this.dropSelf(ModBlocks.getPedestalFromVariant(ModBlocks.PEDESTAL).get());
         for (PedestalVariant variant : PedestalVariants.VARIANTS) {
             this.dropSelf(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());
         }

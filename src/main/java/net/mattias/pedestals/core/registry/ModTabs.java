@@ -1,6 +1,7 @@
 package net.mattias.pedestals.core.registry;
 
 import net.mattias.pedestals.core.Constants;
+import net.mattias.pedestals.core.util.PedestalVariant;
 import net.mattias.pedestals.core.util.PedestalVariants;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -19,10 +20,11 @@ public class ModTabs {
     public static final RegistryObject<CreativeModeTab> TAB = TABS.register("pedestals_tab", () ->
             CreativeModeTab.builder()
                     .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(() -> new ItemStack(ModBlocks.PEDESTAL.get()))
+                    // .icon(() -> new ItemStack(ModBlocks.BLOCKS.getEntries().stream().findFirst().get().get()))
+                    .icon(() -> new ItemStack(ModBlocks.getPedestalFromVariant(ModBlocks.PEDESTAL).get()))
                     .title(Component.translatable("itemGroup.pedestals"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModBlocks.PEDESTAL.get());
+                        // pOutput.accept(ModBlocks.PEDESTAL.get());
                         PedestalVariants.VARIANTS.forEach(variant -> {
                             // pOutput.accept(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());
                             if (ModBlocks.REGISTERED_VARIANT_MAP.get(variant) != null) pOutput.accept(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get());

@@ -19,7 +19,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        pedestalBlock(ModBlocks.PEDESTAL.get(), "pedestal");
         for (PedestalVariant variant : PedestalVariants.VARIANTS) {
             pedestalBlock(ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get(), variant.registryName());
         }
