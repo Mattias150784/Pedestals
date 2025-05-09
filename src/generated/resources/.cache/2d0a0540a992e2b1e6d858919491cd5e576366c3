@@ -1,10 +1,10 @@
-// 1.20.1	2025-05-06T09:27:17.4053737	Tags for minecraft:block mod id pedestals
-a6636fde38be12a2ca80548098e21a89512cd123 data/forge/tags/blocks/needs_wood_tool.json
+// 1.20.1	2025-05-08T17:17:10.2091607	Tags for minecraft:block mod id pedestals
+f32fc4983b1f09496b8ce1ccffff0edc94f70153 data/forge/tags/blocks/needs_wood_tool.json
 744d925cffbf428b7e08f77733b35039fb5b3086 data/minecraft/tags/blocks/mineable/axe.json
-0de52580949bf8a36c3500573a59e2945f6cc007 data/minecraft/tags/blocks/mineable/pickaxe.json
+bc4f5b49f195bf723e015a682cc385d84ebcaf17 data/minecraft/tags/blocks/mineable/pickaxe.json
 381682b594eaab1171f63a89edb227d239833f4d data/minecraft/tags/blocks/mineable/shovel.json
 77e6add41672447a6e827bf37ec4d7949ae94155 data/minecraft/tags/blocks/wool.json
-af7b8918a2bb75ee8e727190884655368a8c6964 data/pedestals/tags/blocks/create_blocks.json
+74d18e6dcba7d0c3d11e0311fcf2ec30e89c669f data/pedestals/tags/blocks/create_blocks.json
 c8c6746375388fc3ae0c87e59521b8f56e804201 data/pedestals/tags/blocks/ice_and_fire_blocks.json
 8c429b6494890f7683e0510506805c3c1517b656 data/pedestals/tags/blocks/medieval_embroidery_blocks.json
 124e3cbbda11f54e803ffdc20af232b4cd095c93 data/pedestals/tags/blocks/mysti_grecia_blocks.json

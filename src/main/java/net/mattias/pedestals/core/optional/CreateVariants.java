@@ -22,6 +22,18 @@ public class CreateVariants {
     public static final PedestalVariant BRASS_BLOCK = PedestalVariants.register(new PedestalVariant("brass_block_pedestal", "brass_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "brass_block"))));
     public static final PedestalVariant CARDBOARD_BLOCK = PedestalVariants.register(new PedestalVariant("cardboard_block_pedestal", "cardboard_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "cardboard_block"))));
     public static final PedestalVariant BOUND_CARDBOARD_BLOCK = PedestalVariants.register(new PedestalVariant("bound_cardboard_block_pedestal", "bound_cardboard_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "bound_cardboard_block"))));
+    public static final PedestalVariant ROSE_QUARTZ = PedestalVariants.register(new PedestalVariant("rose_quartz_block_pedestal", "rose_quartz_block", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "rose_quartz_block"))));
+    public static final PedestalVariant ROSE_QUARTZ_TILES = PedestalVariants.register(new PedestalVariant("rose_quartz_tiles_pedestal", "rose_quartz_tiles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "rose_quartz_tiles"))));
+    public static final PedestalVariant SMALL_ROSE_QUARTZ_TILES = PedestalVariants.register(new PedestalVariant("small_rose_quartz_tiles_pedestal", "small_rose_quartz_tiles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "small_rose_quartz_tiles"))));
+    public static final PedestalVariant COPPER_SHINGLES = PedestalVariants.register(new PedestalVariant("copper_shingles_pedestal", "copper_shingles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "copper_shingles"))));
+    public static final PedestalVariant EXPOSED_COPPER_SHINGLES = PedestalVariants.register(new PedestalVariant("exposed_copper_shingles_pedestal", "exposed_copper_shingles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "exposed_copper_shingles"))));
+    public static final PedestalVariant WEATHERED_COPPER_SHINGLES = PedestalVariants.register(new PedestalVariant("weathered_copper_shingles_pedestal", "weathered_copper_shingles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "weathered_copper_shingles"))));
+    public static final PedestalVariant OXIDIZED_COPPER_SHINGLES = PedestalVariants.register(new PedestalVariant("oxidized_copper_shingles_pedestal", "oxidized_copper_shingles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "oxidized_copper_shingles"))));
+    public static final PedestalVariant COPPER_TILES = PedestalVariants.register(new PedestalVariant("copper_tiles_pedestal", "copper_tiles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "copper_tiles"))));
+    public static final PedestalVariant OXIDIZED_COPPER_TILES = PedestalVariants.register(new PedestalVariant("oxidized_copper_tiles_pedestal", "oxidized_copper_tiles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "oxidized_copper_tiles"))));
+
+
+
 
 
 
@@ -40,7 +52,8 @@ public class CreateVariants {
             WEATHERED_IRON_BLOCK,
             BRASS_BLOCK,
             CARDBOARD_BLOCK,
-            BOUND_CARDBOARD_BLOCK
+            BOUND_CARDBOARD_BLOCK,
+            ROSE_QUARTZ
     );
 
 }

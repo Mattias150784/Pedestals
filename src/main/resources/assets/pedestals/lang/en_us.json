@@ -246,6 +246,21 @@
  "block.pedestals.industrial_iron_block_pedestal": "Industrial Iron Block Pedestal",
  "block.pedestals.weathered_iron_block_pedestal": "Weathered Iron Block Pedestal",
  "block.pedestals.zinc_block_pedestal": "Zinc Block Pedestal",
+ "block.pedestals.rose_quartz_block_pedestal": "Rose Quartz Block Pedestal",
+ "block.pedestals.rose_quartz_tiles_pedestal": "Rose Quartz Tiles Pedestal",
+ "block.pedestals.small_rose_quartz_tiles_pedestal": "Small Rose Quartz Tiles Pedestal",
+ "block.pedestals.copper_shingles_pedestal": "Copper Shingles Pedestal",
+ "block.pedestals.exposed_copper_shingles_pedestal": "Exposed Copper Shingles Pedestal",
+ "block.pedestals.weathered_copper_shingles_pedestal": "Weathered Copper Shingles Pedestal",
+ "block.pedestals.oxidized_copper_shingles_pedestal": "Oxidized Copper Shingles Pedestal",
+ "block.pedestals.copper_tiles_pedestal": "Copper Tiles Pedestal",
+ "block.pedestals.oxidized_copper_tiles_pedestal": "Oxidized Copper Tiles Pedestal",
+
+
+
+
+
+
 
  "block.pedestals.firestone_block_pedestal": "Firestone Block Pedestal",
  "block.pedestals.seastone_block_pedestal": "Seastone Block Pedestal",
