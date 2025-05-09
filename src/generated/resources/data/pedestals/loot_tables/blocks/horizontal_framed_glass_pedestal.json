@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pedestals:horizontal_framed_glass_pedestal"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pedestals:blocks/horizontal_framed_glass_pedestal"
+}

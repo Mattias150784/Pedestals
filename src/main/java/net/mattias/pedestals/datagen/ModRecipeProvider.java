@@ -60,9 +60,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(BasePedestalVariants.POLISHED_DIORITE, Blocks.POLISHED_DIORITE);
         MATERIAL_MAP.put(BasePedestalVariants.POLISHED_ANDESITE, Blocks.POLISHED_ANDESITE);
         MATERIAL_MAP.put(BasePedestalVariants.GRANITE, Blocks.GRANITE);
+        MATERIAL_MAP.put(BasePedestalVariants.BRICKS, Blocks.BRICKS);
         MATERIAL_MAP.put(BasePedestalVariants.DIORITE, Blocks.DIORITE);
         MATERIAL_MAP.put(BasePedestalVariants.ANDESITE, Blocks.ANDESITE);
         MATERIAL_MAP.put(BasePedestalVariants.POLISHED_DEEPSLATE, Blocks.POLISHED_DEEPSLATE);
+        MATERIAL_MAP.put(BasePedestalVariants.CHISELED_DEEPSLATE, Blocks.CHISELED_DEEPSLATE);
+        MATERIAL_MAP.put(BasePedestalVariants.DEEPSLATE, Blocks.DEEPSLATE);
+        MATERIAL_MAP.put(BasePedestalVariants.DEEPSLATE_TILES, Blocks.DEEPSLATE_TILES);
+        MATERIAL_MAP.put(BasePedestalVariants.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE);
+        MATERIAL_MAP.put(BasePedestalVariants.CRACKED_DEEPSLATE_BRICKS, Blocks.CRACKED_DEEPSLATE_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.CRACKED_DEEPSLATE_TILES, Blocks.CRACKED_DEEPSLATE_TILES);
+        MATERIAL_MAP.put(BasePedestalVariants.MOSSY_COBBLESTONE, Blocks.MOSSY_COBBLESTONE);
+        MATERIAL_MAP.put(BasePedestalVariants.MOSSY_STONE_BRICKS, Blocks.MOSSY_STONE_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.QUARTZ, Blocks.QUARTZ_BLOCK);
+        MATERIAL_MAP.put(BasePedestalVariants.QUARTZ_PILLAR, Blocks.QUARTZ_PILLAR);
+        MATERIAL_MAP.put(BasePedestalVariants.RED_SANDSTONE, Blocks.RED_SANDSTONE);
+        MATERIAL_MAP.put(BasePedestalVariants.SANDSTONE, Blocks.SANDSTONE);
+
 
         // Concrete variants
         MATERIAL_MAP.put(BasePedestalVariants.BLACK_CONCRETE, Blocks.BLACK_CONCRETE);
@@ -144,8 +159,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(BasePedestalVariants.END_STONE_BRICKS, Blocks.END_STONE_BRICKS);
         MATERIAL_MAP.put(BasePedestalVariants.END_STONE, Blocks.END_STONE);
         MATERIAL_MAP.put(BasePedestalVariants.PURPUR_BLOCK, Blocks.PURPUR_BLOCK);
+        MATERIAL_MAP.put(BasePedestalVariants.NETHERRACK, Blocks.NETHERRACK);
+        MATERIAL_MAP.put(BasePedestalVariants.SOUL_SAND, Blocks.SOUL_SAND);
+        MATERIAL_MAP.put(BasePedestalVariants.SOUL_SOIL, Blocks.SOUL_SOIL);
+        MATERIAL_MAP.put(BasePedestalVariants.RED_NETHER_BRICKS, Blocks.RED_NETHER_BRICKS);
 
-
+        // Misc
+        MATERIAL_MAP.put(BasePedestalVariants.GLASS, Blocks.GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.PACKED_MUD, Blocks.PACKED_MUD);
+        MATERIAL_MAP.put(BasePedestalVariants.MUD_BRICKS, Blocks.MUD_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.PRISMARINE, Blocks.PRISMARINE);
+        MATERIAL_MAP.put(BasePedestalVariants.PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.DARK_PRISMARINE, Blocks.DARK_PRISMARINE);
         // Ice And Fire
 
         MATERIAL_MAP.put(IceAndFireVariants.SAPPHIRE, IafBlockRegistry.SAPPHIRE_BLOCK.get());
@@ -274,7 +299,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
      */
     private boolean isPlankOrMarbleVariant(PedestalVariant variant) {
         String name = variant.registryName().toUpperCase();
-        return name.contains("PLANKS") || name.contains("MARBLE");
+        return name.contains("PLANKS") || name.contains("MARBLE") || name.contains("QUARTZ");
 
     }
 

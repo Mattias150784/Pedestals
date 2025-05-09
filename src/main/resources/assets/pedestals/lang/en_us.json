@@ -31,6 +31,14 @@
  "block.pedestals.polished_granite_pedestal": "Polished Granite Pedestal",
  "block.pedestals.polished_diorite_pedestal": "Polished Diorite Pedestal",
  "block.pedestals.polished_deepslate_pedestal": "Polished Deepslate Pedestal",
+ "block.pedestals.deepslate_pedestal": "Deepslate Pedestal",
+ "block.pedestals.cobbled_deepslate_pedestal": "Cobbled Deepslate Pedestal",
+ "block.pedestals.chiseled_deepslate_pedestal": "Chiseled Deepslate Pedestal",
+ "block.pedestals.cracked_deepslate_tiles_pedestal": "Cracked Deepslate Tiles Pedestal",
+ "block.pedestals.cracked_deepslate_bricks_pedestal": "Cracked Deepslate Bricks Pedestal",
+ "block.pedestals.deepslate_bricks_pedestal": "Deepslate Bricks Pedestal",
+ "block.pedestals.deepslate_tiles_pedestal": "Deepslate Tiles Pedestal",
+
 
  "block.pedestals.andesite_pedestal": "Andesite Pedestal",
  "block.pedestals.granite_pedestal": "Granite Pedestal",
@@ -130,6 +138,15 @@
 
  "block.pedestals.end_stone_bricks_pedestal": "End Stone Bricks Pedestal",
  "block.pedestals.purpur_pillar_pedestal": "Purpur Pillar Pedestal",
+
+ "block.pedestals.glass_pedestal": "Glass Pedestal",
+ "block.pedestals.packed_mud_pedestal": "Packed Mud Pedestal",
+ "block.pedestals.mud_bricks_pedestal": "Mud Bricks Pedestal",
+ "block.pedestals.prismarine_pedestal": "Prismarine Pedestal",
+ "block.pedestals.prismarine_bricks_pedestal": "Prismarine Bricks Pedestal",
+ "block.pedestals.dark_prismarine_pedestal": "Dark Prismarine Pedestal",
+
+
 
  "block.pedestals.bronze_block_pedestal": "Bronze Block Pedestal",
  "block.pedestals.marble_pedestal": "Marble Pedestal",
@@ -255,8 +272,10 @@
  "block.pedestals.oxidized_copper_shingles_pedestal": "Oxidized Copper Shingles Pedestal",
  "block.pedestals.copper_tiles_pedestal": "Copper Tiles Pedestal",
  "block.pedestals.oxidized_copper_tiles_pedestal": "Oxidized Copper Tiles Pedestal",
-
-
+ "block.pedestals.tiled_glass_pedestal": "Tiled Glass Pedestal",
+ "block.pedestals.framed_glass_pedestal": "Framed Glass Pedestal",
+ "block.pedestals.horizontal_framed_glass_pedestal": "Horizontal Framed Glass Pedestal",
+ "block.pedestals.vertical_framed_glass_pedestal": "Tiled Framed Glass Pedestal",
 
 
 

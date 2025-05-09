@@ -31,8 +31,10 @@ public class CreateVariants {
     public static final PedestalVariant OXIDIZED_COPPER_SHINGLES = PedestalVariants.register(new PedestalVariant("oxidized_copper_shingles_pedestal", "oxidized_copper_shingles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "oxidized_copper_shingles"))));
     public static final PedestalVariant COPPER_TILES = PedestalVariants.register(new PedestalVariant("copper_tiles_pedestal", "copper_tiles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "copper_tiles"))));
     public static final PedestalVariant OXIDIZED_COPPER_TILES = PedestalVariants.register(new PedestalVariant("oxidized_copper_tiles_pedestal", "oxidized_copper_tiles", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "oxidized_copper_tiles"))));
-
-
+    public static final PedestalVariant TILED_GLASS = PedestalVariants.register(new PedestalVariant("tiled_glass_pedestal", "tiled_glass", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "tiled_glass"))));
+    public static final PedestalVariant FRAMED_GLASS = PedestalVariants.register(new PedestalVariant("framed_glass_pedestal", "framed_glass", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "framed_glass"))));
+    public static final PedestalVariant HORIZONTAL_FRAMED_GLASS = PedestalVariants.register(new PedestalVariant("horizontal_framed_glass_pedestal", "horizontal_framed_glass", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "horizontal_framed_glass"))));
+    public static final PedestalVariant VERTICAL_FRAMED_GLASS = PedestalVariants.register(new PedestalVariant("vertical_framed_glass_pedestal", "vertical_framed_glass", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("create", "vertical_framed_glass"))));
 
 
 
