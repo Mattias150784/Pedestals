@@ -166,11 +166,39 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // Misc
         MATERIAL_MAP.put(BasePedestalVariants.GLASS, Blocks.GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.BLACK_GLASS, Blocks.BLACK_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.BLUE_GLASS, Blocks.BLUE_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.BROWN_GLASS, Blocks.BROWN_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.GREEN_GLASS, Blocks.GREEN_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.GRAY_GLASS, Blocks.GRAY_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.ORANGE_GLASS, Blocks.ORANGE_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.PURPLE_GLASS, Blocks.PURPLE_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.LIGHT_GRAY_GLASS, Blocks.LIGHT_GRAY_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.LIGHT_BLUE_GLASS, Blocks.LIGHT_BLUE_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.PINK_GLASS, Blocks.PINK_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.RED_GLASS, Blocks.RED_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.WHITE_GLASS, Blocks.WHITE_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.YELLOW_GLASS, Blocks.YELLOW_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.MAGENTA_GLASS, Blocks.MAGENTA_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.CYAN_GLASS, Blocks.CYAN_STAINED_GLASS);
+        MATERIAL_MAP.put(BasePedestalVariants.LIME_GLASS, Blocks.LIME_STAINED_GLASS);
         MATERIAL_MAP.put(BasePedestalVariants.PACKED_MUD, Blocks.PACKED_MUD);
         MATERIAL_MAP.put(BasePedestalVariants.MUD_BRICKS, Blocks.MUD_BRICKS);
         MATERIAL_MAP.put(BasePedestalVariants.PRISMARINE, Blocks.PRISMARINE);
         MATERIAL_MAP.put(BasePedestalVariants.PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICKS);
         MATERIAL_MAP.put(BasePedestalVariants.DARK_PRISMARINE, Blocks.DARK_PRISMARINE);
+        MATERIAL_MAP.put(BasePedestalVariants.AMETHYST, Blocks.AMETHYST_BLOCK);
+        MATERIAL_MAP.put(BasePedestalVariants.SMOOTH_QUARTZ, Blocks.SMOOTH_QUARTZ);
+        MATERIAL_MAP.put(BasePedestalVariants.QUARTZ_BRICKS, Blocks.QUARTZ_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.CHISELED_QUARTZ, Blocks.CHISELED_QUARTZ_BLOCK);
+        MATERIAL_MAP.put(BasePedestalVariants.CRACKED_POLISHED_BLACKSTONE_BRICK, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS);
+        MATERIAL_MAP.put(BasePedestalVariants.CHISELED_POLISHED_BLACKSTONE, Blocks.CHISELED_POLISHED_BLACKSTONE);
+        MATERIAL_MAP.put(BasePedestalVariants.POLISHED_BLACKSTONE, Blocks.POLISHED_BLACKSTONE);
+        MATERIAL_MAP.put(BasePedestalVariants.POLISHED_BLACKSTONE_BRICK, Blocks.POLISHED_BLACKSTONE_BRICKS);
+
+
+
+
         // Ice And Fire
 
         MATERIAL_MAP.put(IceAndFireVariants.SAPPHIRE, IafBlockRegistry.SAPPHIRE_BLOCK.get());

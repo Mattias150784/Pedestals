@@ -26,15 +26,17 @@ public class PedestalsClient {
         event.enqueueWork(() -> {
             for (PedestalVariant variant : ModBlocks.REGISTERED_VARIANT_MAP.keySet()) {
                 String name = variant.registryName().toLowerCase();
-                if (name.contains("glass")) {
-                    ItemBlockRenderTypes.setRenderLayer(
-                            ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get(),
-                            RenderType.cutout()
-                    );
-                }
+                RenderType renderType = name.contains("stained_glass") || name.contains("glass")
+                        ? RenderType.translucent()
+                        : RenderType.solid();
+                ItemBlockRenderTypes.setRenderLayer(
+                        ModBlocks.REGISTERED_VARIANT_MAP.get(variant).get(),
+                        renderType
+                );
             }
         });
     }
+
 
     @SubscribeEvent
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {

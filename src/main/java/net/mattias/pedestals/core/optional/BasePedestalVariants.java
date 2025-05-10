@@ -89,9 +89,9 @@ public class BasePedestalVariants {
     public static final PedestalVariant MAGENTA_WOOL = PedestalVariants.register(new PedestalVariant("magenta_wool_pedestal", "magenta_wool", () -> Blocks.MAGENTA_WOOL));
     public static final PedestalVariant CYAN_WOOL = PedestalVariants.register(new PedestalVariant("cyan_wool_pedestal", "cyan_wool", () -> Blocks.CYAN_WOOL));
     public static final PedestalVariant LIME_WOOL = PedestalVariants.register(new PedestalVariant("lime_wool_pedestal", "lime_wool", () -> Blocks.LIME_WOOL));
-    public static final PedestalVariant TERRACOTTA = PedestalVariants.register(new PedestalVariant("terracotta_pedestal", "terracotta", () -> Blocks.TERRACOTTA));
 
     // terracotta
+    public static final PedestalVariant TERRACOTTA = PedestalVariants.register(new PedestalVariant("terracotta_pedestal", "terracotta", () -> Blocks.TERRACOTTA));
     public static final PedestalVariant BLACK_TERRACOTTA = PedestalVariants.register(new PedestalVariant("black_terracotta_pedestal", "black_terracotta", () -> Blocks.BLACK_TERRACOTTA));
     public static final PedestalVariant BLUE_TERRACOTTA = PedestalVariants.register(new PedestalVariant("blue_terracotta_pedestal", "blue_terracotta", () -> Blocks.BLUE_TERRACOTTA));
     public static final PedestalVariant BROWN_TERRACOTTA = PedestalVariants.register(new PedestalVariant("brown_terracotta_pedestal", "brown_terracotta", () -> Blocks.BROWN_TERRACOTTA));
@@ -143,10 +143,38 @@ public class BasePedestalVariants {
 
    //misc
     public static final PedestalVariant GLASS = PedestalVariants.register(new PedestalVariant("glass_pedestal", "glass", () -> Blocks.GLASS));
+    public static final PedestalVariant BLACK_GLASS = PedestalVariants.register(new PedestalVariant("black_glass_pedestal", "black_glass", () -> Blocks.BLACK_STAINED_GLASS));
+    public static final PedestalVariant BLUE_GLASS = PedestalVariants.register(new PedestalVariant("blue_glass_pedestal", "blue_glass", () -> Blocks.BLUE_STAINED_GLASS));
+    public static final PedestalVariant BROWN_GLASS = PedestalVariants.register(new PedestalVariant("brown_glass_pedestal", "brown_glass", () -> Blocks.BROWN_STAINED_GLASS));
+    public static final PedestalVariant GREEN_GLASS = PedestalVariants.register(new PedestalVariant("green_glass_pedestal", "green_glass", () -> Blocks.GREEN_STAINED_GLASS));
+    public static final PedestalVariant GRAY_GLASS = PedestalVariants.register(new PedestalVariant("gray_glass_pedestal", "gray_glass", () -> Blocks.GRAY_STAINED_GLASS));
+    public static final PedestalVariant ORANGE_GLASS = PedestalVariants.register(new PedestalVariant("orange_glass_pedestal", "orange_glass", () -> Blocks.ORANGE_STAINED_GLASS));
+    public static final PedestalVariant PURPLE_GLASS = PedestalVariants.register(new PedestalVariant("purple_glass_pedestal", "purple_glass", () -> Blocks.PURPLE_STAINED_GLASS));
+    public static final PedestalVariant LIGHT_GRAY_GLASS = PedestalVariants.register(new PedestalVariant("light_gray_glass_pedestal", "light_gray_glass", () -> Blocks.LIGHT_GRAY_STAINED_GLASS));
+    public static final PedestalVariant LIGHT_BLUE_GLASS = PedestalVariants.register(new PedestalVariant("light_blue_glass_pedestal", "light_blue_glass", () -> Blocks.LIGHT_BLUE_STAINED_GLASS));
+    public static final PedestalVariant PINK_GLASS = PedestalVariants.register(new PedestalVariant("pink_glass_pedestal", "pink_glass", () -> Blocks.PINK_STAINED_GLASS));
+    public static final PedestalVariant RED_GLASS = PedestalVariants.register(new PedestalVariant("red_glass_pedestal", "red_glass", () -> Blocks.RED_STAINED_GLASS));
+    public static final PedestalVariant WHITE_GLASS = PedestalVariants.register(new PedestalVariant("white_glass_pedestal", "white_glass", () -> Blocks.WHITE_STAINED_GLASS));
+    public static final PedestalVariant YELLOW_GLASS = PedestalVariants.register(new PedestalVariant("yellow_glass_pedestal", "yellow_glass", () -> Blocks.YELLOW_STAINED_GLASS));
+    public static final PedestalVariant MAGENTA_GLASS = PedestalVariants.register(new PedestalVariant("magenta_glass_pedestal", "magenta_glass", () -> Blocks.MAGENTA_STAINED_GLASS));
+    public static final PedestalVariant CYAN_GLASS = PedestalVariants.register(new PedestalVariant("cyan_glass_pedestal", "cyan_glass", () -> Blocks.CYAN_STAINED_GLASS));
+    public static final PedestalVariant LIME_GLASS = PedestalVariants.register(new PedestalVariant("lime_glass_pedestal", "lime_glass", () -> Blocks.LIME_STAINED_GLASS));
     public static final PedestalVariant PACKED_MUD = PedestalVariants.register(new PedestalVariant("packed_mud_pedestal", "packed_mud", () -> Blocks.PACKED_MUD));
     public static final PedestalVariant MUD_BRICKS = PedestalVariants.register(new PedestalVariant("mud_bricks_pedestal", "mud_bricks", () -> Blocks.MUD_BRICKS));
     public static final PedestalVariant PRISMARINE = PedestalVariants.register(new PedestalVariant("prismarine_pedestal", "prismarine", () -> Blocks.PRISMARINE));
     public static final PedestalVariant PRISMARINE_BRICKS = PedestalVariants.register(new PedestalVariant("prismarine_bricks_pedestal", "prismarine_bricks", () -> Blocks.PRISMARINE_BRICKS));
     public static final PedestalVariant DARK_PRISMARINE = PedestalVariants.register(new PedestalVariant("dark_prismarine_pedestal", "dark_prismarine", () -> Blocks.DARK_PRISMARINE));
+    public static final PedestalVariant AMETHYST = PedestalVariants.register(new PedestalVariant("amethyst_pedestal", "amethyst", () -> Blocks.AMETHYST_BLOCK));
+    public static final PedestalVariant SMOOTH_QUARTZ = PedestalVariants.register(new PedestalVariant("smooth_quartz_pedestal", "smooth_quartz", () -> Blocks.SMOOTH_QUARTZ));
+    public static final PedestalVariant QUARTZ_BRICKS = PedestalVariants.register(new PedestalVariant("quartz_bricks_pedestal", "quartz_bricks", () -> Blocks.QUARTZ_BRICKS));
+    public static final PedestalVariant CHISELED_QUARTZ = PedestalVariants.register(new PedestalVariant("chiseled_quartz_pedestal", "chiseled_quartz", () -> Blocks.CHISELED_QUARTZ_BLOCK));
+    public static final PedestalVariant CRACKED_POLISHED_BLACKSTONE_BRICK = PedestalVariants.register(new PedestalVariant("cracked_polished_blackstone_brick_pedestal", "cracked_polished_blackstone_brick", () -> Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS));
+    public static final PedestalVariant POLISHED_BLACKSTONE_BRICK = PedestalVariants.register(new PedestalVariant("polished_blackstone_brick_pedestal", "polished_blackstone_brick", () -> Blocks.POLISHED_BLACKSTONE_BRICKS));
+    public static final PedestalVariant POLISHED_BLACKSTONE = PedestalVariants.register(new PedestalVariant("polished_blackstone_pedestal", "polished_blackstone", () -> Blocks.POLISHED_BLACKSTONE));
+    public static final PedestalVariant CHISELED_POLISHED_BLACKSTONE = PedestalVariants.register(new PedestalVariant("chiseled_polished_blackstone_pedestal", "chiseled_polished_blackstone", () -> Blocks.CHISELED_POLISHED_BLACKSTONE));
+
+
+
+
 
 }
