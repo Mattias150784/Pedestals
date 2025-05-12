@@ -43,6 +43,7 @@ public class Pedestals {
         if (ModList.get().isLoaded("create")) CreateVariants.define();
         if (ModList.get().isLoaded("medievalembroidery")) MedievalEmbroideryVariants.define();
         if (ModList.get().isLoaded("biomesoplenty")) BiomeOPlentyVariants.define();
+        if (ModList.get().isLoaded("regions_unexplored")) RegionsUnexploredVariants.define();
 
         ObjectRegistry.register(EVENT_BUS);
 

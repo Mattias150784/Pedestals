@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "biomesoplenty:block/palm_planks",
-		"particle": "biomesoplenty:block/palm_planks"
+		"0": "regions_unexplored:block/palm_planks",
+		"particle": "regions_unexplored:block/palm_planks"
 	},
 	"elements": [
 		{

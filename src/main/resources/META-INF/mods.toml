@@ -93,3 +93,10 @@ side="BOTH"
 #versionRange="[1.20.1-19.0.0.94,)"
 #ordering="AFTER"
 #side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="regions_unexplored"
+mandatory=false
+versionRange="[0.5.6,)"
+ordering="AFTER"
+side="BOTH"

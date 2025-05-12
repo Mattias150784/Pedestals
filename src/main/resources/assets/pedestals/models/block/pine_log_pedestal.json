@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "biomesoplenty:block/pine_log",
-		"particle": "biomesoplenty:block/pine_log"
+		"0": "regions_unexplored:block/pine_log",
+		"particle": "regions_unexplored:block/pine_log"
 	},
 	"elements": [
 		{

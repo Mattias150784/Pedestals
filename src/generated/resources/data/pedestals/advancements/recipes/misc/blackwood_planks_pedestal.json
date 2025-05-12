@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blackwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "regions_unexplored:blackwood_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:blackwood_planks_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_blackwood_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:blackwood_planks_pedestal"
+    ]
+  },
+  "sends_telemetry_event": false
+}

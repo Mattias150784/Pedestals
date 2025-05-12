@@ -18,7 +18,7 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-
+import net.regions_unexplored.block.RuBlocks;
 
 
 import java.util.EnumMap;
@@ -300,6 +300,47 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //        MATERIAL_MAP.put(BiomeOPlentyVariants.BRIMSTONE, BOPBlocks.BRIMSTONE);
 //        MATERIAL_MAP.put(BiomeOPlentyVariants.BRIMSTONE_BRICKS, BOPBlocks.BRIMSTONE_BRICKS);
 //        MATERIAL_MAP.put(BiomeOPlentyVariants.CHISELED_BRIMSTONE_BRICKS, BOPBlocks.CHISELED_BRIMSTONE_BRICKS);
+
+        // Regions Unexplored
+        MATERIAL_MAP.put(RegionsUnexploredVariants.ASHEN_LOG, RuBlocks.ASHEN_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.SILVER_BIRCH_LOG, RuBlocks.SILVER_BIRCH_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BAOBAB_LOG, RuBlocks.BAOBAB_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BLACKWOOD_LOG, RuBlocks.BLACKWOOD_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BRIMWOOD_LOG, RuBlocks.BRIMWOOD_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.COBALT_LOG, RuBlocks.COBALT_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.CYPRESS_LOG, RuBlocks.CYPRESS_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.DEAD_LOG, RuBlocks.DEAD_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.EUCALYPTUS_LOG, RuBlocks.EUCALYPTUS_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.JOSHUA_LOG, RuBlocks.JOSHUA_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.KAPOK_LOG, RuBlocks.KAPOK_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.LARCH_LOG, RuBlocks.LARCH_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAGNOLIA_LOG, RuBlocks.MAGNOLIA_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAPLE_LOG, RuBlocks.MAPLE_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAUVE_LOG, RuBlocks.MAUVE_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.PALM_LOG, RuBlocks.PALM_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.PINE_LOG, RuBlocks.PINE_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.REDWOOD_LOG, RuBlocks.REDWOOD_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.SOCOTRA_LOG, RuBlocks.SOCOTRA_LOG.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.WILLOW_LOG, RuBlocks.WILLOW_LOG.get());
+
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BAOBAB_PLANKS, RuBlocks.BAOBAB_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BLACKWOOD_PLANKS, RuBlocks.BLACKWOOD_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BRIMWOOD_PLANKS, RuBlocks.BRIMWOOD_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.COBALT_PLANKS, RuBlocks.COBALT_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.CYPRESS_PLANKS, RuBlocks.CYPRESS_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.DEAD_PLANKS, RuBlocks.DEAD_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.EUCALYPTUS_PLANKS, RuBlocks.EUCALYPTUS_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.JOSHUA_PLANKS, RuBlocks.JOSHUA_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.KAPOK_PLANKS, RuBlocks.KAPOK_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.LARCH_PLANKS, RuBlocks.LARCH_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAGNOLIA_PLANKS, RuBlocks.MAGNOLIA_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAPLE_PLANKS, RuBlocks.MAPLE_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAUVE_PLANKS, RuBlocks.MAUVE_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.PALM_PLANKS, RuBlocks.PALM_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.PINE_PLANKS, RuBlocks.PINE_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.REDWOOD_PLANKS, RuBlocks.REDWOOD_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.SOCOTRA_PLANKS, RuBlocks.SOCOTRA_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.WILLOW_PLANKS, RuBlocks.WILLOW_PLANKS.get());
     }
 
 

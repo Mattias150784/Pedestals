@@ -51,6 +51,7 @@ public class BasePedestalVariants {
     public static final PedestalVariant MOSSY_STONE_BRICKS = PedestalVariants.register(new PedestalVariant("mossy_stone_bricks_pedestal", "mossy_stone_bricks", () -> Blocks.MOSSY_STONE_BRICKS));
     public static final PedestalVariant QUARTZ = PedestalVariants.register(new PedestalVariant("quartz_pedestal", "quartz", () -> Blocks.QUARTZ_BLOCK));
     public static final PedestalVariant QUARTZ_PILLAR = PedestalVariants.register(new PedestalVariant("quartz_pillar_pedestal", "quartz_pillar", () -> Blocks.QUARTZ_PILLAR));
+    public static final PedestalVariant CALCITE = PedestalVariants.register(new PedestalVariant("calcite_pedestal", "calcite", () -> Blocks.CALCITE));
     public static final PedestalVariant RED_SANDSTONE = PedestalVariants.register(new PedestalVariant("red_sandstone_pedestal", "red_sandstone", () -> Blocks.RED_SANDSTONE));
     public static final PedestalVariant SANDSTONE = PedestalVariants.register(new PedestalVariant("sandstone_pedestal", "sandstone", () -> Blocks.SANDSTONE));
 

@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "biomesoplenty:block/dead_planks",
-		"particle": "biomesoplenty:block/dead_planks"
+		"0": "regions_unexplored:block/dead_planks",
+		"particle": "regions_unexplored:block/dead_planks"
 	},
 	"elements": [
 		{

@@ -105,9 +105,13 @@ dependencies {
     implementation fg.deobf("curse.maven:medieval-embroidery-986913:6428164")
 
     //Biomes O Plenty
-    //implementation fg.deobf("curse.maven:glitchcore-955399:5770232")
-//    implementation fg.deobf("curse.maven:terrablender-563928:6290448")
+//    implementation fg.deobf("curse.maven:glitchcore-955399:5770232")
 //    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:6028852")
+
+   //Regions Unexplored
+    implementation fg.deobf("curse.maven:regions-unexplored-659110:5558225")
+    implementation fg.deobf("curse.maven:terrablender-563928:6290448")
+    //Oh The Biomes We've Gone
 }
 
 tasks.named('processResources', ProcessResources).configure {
