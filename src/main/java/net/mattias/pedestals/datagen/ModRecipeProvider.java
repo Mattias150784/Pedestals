@@ -341,6 +341,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(RegionsUnexploredVariants.REDWOOD_PLANKS, RuBlocks.REDWOOD_PLANKS.get());
         MATERIAL_MAP.put(RegionsUnexploredVariants.SOCOTRA_PLANKS, RuBlocks.SOCOTRA_PLANKS.get());
         MATERIAL_MAP.put(RegionsUnexploredVariants.WILLOW_PLANKS, RuBlocks.WILLOW_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BLACK_PLANKS, RuBlocks.BLACK_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BLUE_PLANKS, RuBlocks.BLUE_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.BROWN_PLANKS, RuBlocks.BROWN_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.GREEN_PLANKS, RuBlocks.GREEN_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.GRAY_PLANKS, RuBlocks.GRAY_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.ORANGE_PLANKS, RuBlocks.ORANGE_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.PURPLE_PLANKS, RuBlocks.PURPLE_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.LIGHT_GRAY_PLANKS, RuBlocks.LIGHT_GRAY_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.LIGHT_BLUE_PLANKS, RuBlocks.LIGHT_BLUE_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.PINK_PLANKS, RuBlocks.PINK_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.RED_PLANKS, RuBlocks.RED_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.WHITE_PLANKS, RuBlocks.WHITE_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.YELLOW_PLANKS, RuBlocks.YELLOW_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.MAGENTA_PLANKS, RuBlocks.MAGENTA_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.CYAN_PLANKS, RuBlocks.CYAN_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.LIME_PLANKS, RuBlocks.LIME_PAINTED_PLANKS.get());
     }
 
 

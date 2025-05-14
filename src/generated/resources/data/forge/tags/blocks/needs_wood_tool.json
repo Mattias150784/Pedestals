@@ -375,6 +375,22 @@
     "pedestals:redwood_planks_pedestal",
     "pedestals:socotra_planks_pedestal",
     "pedestals:willow_planks_pedestal",
+    "pedestals:brown_planks_pedestal",
+    "pedestals:blue_planks_pedestal",
+    "pedestals:black_planks_pedestal",
+    "pedestals:cyan_planks_pedestal",
+    "pedestals:green_planks_pedestal",
+    "pedestals:gray_planks_pedestal",
+    "pedestals:light_gray_planks_pedestal",
+    "pedestals:light_blue_planks_pedestal",
+    "pedestals:lime_planks_pedestal",
+    "pedestals:magenta_planks_pedestal",
+    "pedestals:orange_planks_pedestal",
+    "pedestals:pink_planks_pedestal",
+    "pedestals:purple_planks_pedestal",
+    "pedestals:red_planks_pedestal",
+    "pedestals:white_planks_pedestal",
+    "pedestals:yellow_planks_pedestal",
     "pedestals:pedestal"
   ]
 }

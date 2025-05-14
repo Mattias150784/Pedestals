@@ -1,6 +1,6 @@
-// 1.20.1	2025-05-13T20:58:46.5632158	Tags for minecraft:block mod id pedestals
-2b7fa7180d4bf082042e0b81762414f02c9bf62b data/forge/tags/blocks/needs_wood_tool.json
-b5b9caecbe05f44603241761d672aafa026f9688 data/minecraft/tags/blocks/mineable/axe.json
+// 1.20.1	2025-05-14T10:33:54.9570864	Tags for minecraft:block mod id pedestals
+eb5dd577a9b3140c044966b72f880c0154f9535c data/forge/tags/blocks/needs_wood_tool.json
+f432da4da38f80304717f4aad67ed796793fdee4 data/minecraft/tags/blocks/mineable/axe.json
 dc2d0e6f5502968ab82c431eb45aca9aa46f5963 data/minecraft/tags/blocks/mineable/pickaxe.json
 381682b594eaab1171f63a89edb227d239833f4d data/minecraft/tags/blocks/mineable/shovel.json
 77e6add41672447a6e827bf37ec4d7949ae94155 data/minecraft/tags/blocks/wool.json
