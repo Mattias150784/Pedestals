@@ -301,11 +301,32 @@
  "block.pedestals.framed_glass_pedestal": "Framed Glass Pedestal",
  "block.pedestals.horizontal_framed_glass_pedestal": "Horizontal Framed Glass Pedestal",
  "block.pedestals.vertical_framed_glass_pedestal": "Tiled Framed Glass Pedestal",
-
-
-
-
-
+ "block.pedestals.cut_granite_pedestal": "Cut Granite Pedestal",
+ "block.pedestals.polished_cut_granite_pedestal": "Polished Cut Granite Pedestal",
+ "block.pedestals.cut_granite_bricks_pedestal": "Cut Granite Bricks Pedestal",
+ "block.pedestals.small_granite_bricks_pedestal": "Small Granite Bricks Pedestal",
+ "block.pedestals.layered_granite_pedestal": "Layered Granite Pedestal",
+ "block.pedestals.granite_pillar_pedestal": "Granite Pillar Pedestal",
+ "block.pedestals.polished_cut_diorite_pedestal": "Polished Cut Diorite Pedestal",
+ "block.pedestals.cut_diorite_pedestal": "Cut Diorite Pedestal",
+ "block.pedestals.cut_diorite_bricks_pedestal": "Cut Diorite Bricks Pedestal",
+ "block.pedestals.small_diorite_bricks_pedestal": "Small Diorite Bricks Pedestal",
+ "block.pedestals.layered_diorite_pedestal": "Layered Diorite Pedestal",
+ "block.pedestals.diorite_pillar_pedestal": "Diorite Pillar Pedestal",
+ "block.pedestals.polished_cut_andesite_pedestal": "Polished Cut Andesite Pedestal",
+ "block.pedestals.cut_andesite_pedestal": "Cut Andesite Pedestal",
+ "block.pedestals.cut_andesite_bricks_pedestal": "Cut Andesite Bricks Pedestal",
+ "block.pedestals.small_andesite_bricks_pedestal": "Small Andesite Bricks Pedestal",
+ "block.pedestals.layered_andesite_pedestal": "Layered Andesite Pedestal",
+ "block.pedestals.andesite_pillar_pedestal": "Andesite Pillar Pedestal",
+ "block.pedestals.polished_cut_calcite_pedestal": "Polished Cut Calcite Pedestal",
+ "block.pedestals.cut_calcite_pedestal": "Cut Calcite Pedestal",
+ "block.pedestals.cut_calcite_bricks_pedestal": "Cut Calcite Bricks Pedestal",
+ "block.pedestals.small_calcite_bricks_pedestal": "Small Calcite Bricks Pedestal",
+ "block.pedestals.layered_calcite_pedestal": "Layered Calcite Pedestal",
+ "block.pedestals.calcite_pillar_pedestal": "Calcite Pillar Pedestal",
+ 
+ 
  "block.pedestals.firestone_block_pedestal": "Firestone Block Pedestal",
  "block.pedestals.seastone_block_pedestal": "Seastone Block Pedestal",
  "block.pedestals.froststone_block_pedestal": "Frosstone Block Pedestal",

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pedestals:small_diorite_bricks_pedestal"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pedestals:blocks/small_diorite_bricks_pedestal"
+}
