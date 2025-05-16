@@ -357,6 +357,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(RegionsUnexploredVariants.MAGENTA_PLANKS, RuBlocks.MAGENTA_PAINTED_PLANKS.get());
         MATERIAL_MAP.put(RegionsUnexploredVariants.CYAN_PLANKS, RuBlocks.CYAN_PAINTED_PLANKS.get());
         MATERIAL_MAP.put(RegionsUnexploredVariants.LIME_PLANKS, RuBlocks.LIME_PAINTED_PLANKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.CHALK, RuBlocks.CHALK.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.CHALK_BRICKS, RuBlocks.CHALK_BRICKS.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.CHALK_PILLAR, RuBlocks.CHALK_PILLAR.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.POLISHED_CHALK, RuBlocks.POLISHED_CHALK.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.ARGILLITE, RuBlocks.ARGILLITE.get());
+        MATERIAL_MAP.put(RegionsUnexploredVariants.COBALT_OBSIDIAN, RuBlocks.COBALT_OBSIDIAN.get());
+
+
+
+
+
+
+
+
+
     }
 
 

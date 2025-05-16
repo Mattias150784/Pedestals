@@ -69,6 +69,10 @@ public class RegionsUnexploredVariants {
     public static final PedestalVariant WHITE_PLANKS = PedestalVariants.register(new PedestalVariant("white_planks_pedestal", "white_planks", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "white_painted_planks"))));
     public static final PedestalVariant YELLOW_PLANKS = PedestalVariants.register(new PedestalVariant("yellow_planks_pedestal", "yellow_planks", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "yellow_painted_planks"))));
 
-
-
+    public static final PedestalVariant CHALK = PedestalVariants.register(new PedestalVariant("chalk_pedestal", "chalk", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "chalk"))));
+    public static final PedestalVariant CHALK_BRICKS = PedestalVariants.register(new PedestalVariant("chalk_bricks_pedestal", "chalk", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "chalk_bricks"))));
+    public static final PedestalVariant POLISHED_CHALK = PedestalVariants.register(new PedestalVariant("polished_chalk_pedestal", "chalk", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "polished_chalk"))));
+    public static final PedestalVariant CHALK_PILLAR = PedestalVariants.register(new PedestalVariant("chalk_pillar_pedestal", "chalk", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "chalk_pillar"))));
+    public static final PedestalVariant ARGILLITE = PedestalVariants.register(new PedestalVariant("argillite_pedestal", "argillite", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "argillite"))));
+    public static final PedestalVariant COBALT_OBSIDIAN = PedestalVariants.register(new PedestalVariant("cobalt_obsidian_pedestal", "cobalt_obsidian", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "cobalt_obsidian"))));
 }

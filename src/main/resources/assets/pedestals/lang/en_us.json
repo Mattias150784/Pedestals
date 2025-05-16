@@ -325,8 +325,29 @@
  "block.pedestals.small_calcite_bricks_pedestal": "Small Calcite Bricks Pedestal",
  "block.pedestals.layered_calcite_pedestal": "Layered Calcite Pedestal",
  "block.pedestals.calcite_pillar_pedestal": "Calcite Pillar Pedestal",
- 
- 
+ "block.pedestals.polished_cut_dripstone_pedestal": "Polished Cut Dripstone Pedestal",
+ "block.pedestals.cut_dripstone_pedestal": "Cut Dripstone Pedestal",
+ "block.pedestals.cut_dripstone_bricks_pedestal": "Cut Dripstone Bricks Pedestal",
+ "block.pedestals.small_dripstone_bricks_pedestal": "Small Dripstone Bricks Pedestal",
+ "block.pedestals.layered_dripstone_pedestal": "Layered Dripstone Pedestal",
+ "block.pedestals.dripstone_pillar_pedestal": "Dripstone Pillar Pedestal",
+ "block.pedestals.polished_cut_deepslate_pedestal": "Polished Cut Deepslate Pedestal",
+ "block.pedestals.cut_deepslate_pedestal": "Cut Deepslate Pedestal",
+ "block.pedestals.cut_deepslate_bricks_pedestal": "Cut Deepslate Bricks Pedestal",
+ "block.pedestals.small_deepslate_bricks_pedestal": "Small Deepslate Bricks Pedestal",
+ "block.pedestals.layered_deepslate_pedestal": "Layered Deepslate Pedestal",
+ "block.pedestals.deepslate_pillar_pedestal": "Deepslate Pillar Pedestal",
+ "block.pedestals.polished_cut_tuff_pedestal": "Polished Cut Tuff Pedestal",
+ "block.pedestals.cut_tuff_pedestal": "Cut Tuff Pedestal",
+ "block.pedestals.cut_tuff_bricks_pedestal": "Cut Tuff Bricks Pedestal",
+ "block.pedestals.small_tuff_bricks_pedestal": "Small Tuff Bricks Pedestal",
+ "block.pedestals.layered_tuff_pedestal": "Layered Tuff Pedestal",
+ "block.pedestals.tuff_pillar_pedestal": "Tuff Pillar Pedestal",
+
+
+
+
+
  "block.pedestals.firestone_block_pedestal": "Firestone Block Pedestal",
  "block.pedestals.seastone_block_pedestal": "Seastone Block Pedestal",
  "block.pedestals.froststone_block_pedestal": "Frosstone Block Pedestal",
@@ -445,6 +466,22 @@
  "block.pedestals.red_planks_pedestal": "Red Painted Planks Pedestal",
  "block.pedestals.white_planks_pedestal": "White Painted Planks Pedestal",
  "block.pedestals.yellow_planks_pedestal": "Yellow Painted Planks Pedestal",
+ "block.pedestals.chalk_pedestal": "Chalk Pedestal",
+ "block.pedestals.chalk_pillar_pedestal": "Chalk Pillar Pedestal",
+ "block.pedestals.chalk_bricks_pedestal": "Chalk Bricks Pedestal",
+ "block.pedestals.polished_chalk_pedestal": "Polished Chalk Pedestal",
+ "block.pedestals.cobalt_obsidian_pedestal": "Cobalt Obsidian Pedestal",
+ "block.pedestals.argillite_pedestal": "Argillite Pedestal",
+
+
+
+
+
+
+
+
+
+
 
  "item.pedestals.pedestal_lock": "Pedestal Lock",
  "item.pedestals.pedestal_key": "Pedestal Key",
