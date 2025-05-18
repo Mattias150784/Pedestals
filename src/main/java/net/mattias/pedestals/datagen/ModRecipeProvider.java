@@ -78,6 +78,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         MATERIAL_MAP.put(BasePedestalVariants.RED_SANDSTONE, Blocks.RED_SANDSTONE);
         MATERIAL_MAP.put(BasePedestalVariants.SANDSTONE, Blocks.SANDSTONE);
 
+       // MATERIAL_MAP.put(BasePedestalVariants.GRASS_BLOCK, Blocks.GRASS_BLOCK);
 
         // Concrete variants
         MATERIAL_MAP.put(BasePedestalVariants.BLACK_CONCRETE, Blocks.BLACK_CONCRETE);

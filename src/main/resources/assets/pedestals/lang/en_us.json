@@ -171,6 +171,7 @@
  "block.pedestals.polished_blackstone_brick_pedestal": "Polished Blackstone Brick Pedestal",
  "block.pedestals.calcite_pedestal": "Calcite Pedestal",
 
+ "block.pedestals.grass_block_pedestal": "Grass Block Pedestal",
 
 
  "block.pedestals.bronze_block_pedestal": "Bronze Block Pedestal",
@@ -343,10 +344,27 @@
  "block.pedestals.small_tuff_bricks_pedestal": "Small Tuff Bricks Pedestal",
  "block.pedestals.layered_tuff_pedestal": "Layered Tuff Pedestal",
  "block.pedestals.tuff_pillar_pedestal": "Tuff Pillar Pedestal",
-
-
-
-
+ "block.pedestals.polished_cut_limestone_pedestal": "Polished Cut Limestone Pedestal",
+ "block.pedestals.cut_limestone_pedestal": "Cut Limestone Pedestal",
+ "block.pedestals.cut_limestone_bricks_pedestal": "Cut Limestone Bricks Pedestal",
+ "block.pedestals.small_limestone_bricks_pedestal": "Small Limestone Bricks Pedestal",
+ "block.pedestals.layered_limestone_pedestal": "Layered Limestone Pedestal",
+ "block.pedestals.limestone_pillar_pedestal": "Limestone Pillar Pedestal",
+ "block.pedestals.limestone_pedestal": "Limestone Pedestal",
+ "block.pedestals.polished_cut_asurine_pedestal": "Polished Cut Asurine Pedestal",
+ "block.pedestals.cut_asurine_pedestal": "Cut Asurine Pedestal",
+ "block.pedestals.cut_asurine_bricks_pedestal": "Cut Asurine Bricks Pedestal",
+ "block.pedestals.small_asurine_bricks_pedestal": "Small Asurine Bricks Pedestal",
+ "block.pedestals.layered_asurine_pedestal": "Layered Asurine Pedestal",
+ "block.pedestals.asurine_pillar_pedestal": "Asurine Pillar Pedestal",
+ "block.pedestals.asurine_pedestal": "Asurine Pedestal",
+ "block.pedestals.polished_cut_crimsite_pedestal": "Polished Cut Crimsite Pedestal",
+ "block.pedestals.cut_crimsite_pedestal": "Cut Crimsite Pedestal",
+ "block.pedestals.cut_crimsite_bricks_pedestal": "Cut Crimsite Bricks Pedestal",
+ "block.pedestals.small_crimsite_bricks_pedestal": "Small Crimsite Bricks Pedestal",
+ "block.pedestals.layered_crimsite_pedestal": "Layered Crimsite Pedestal",
+ "block.pedestals.crimsite_pillar_pedestal": "Crimsite Pillar Pedestal",
+ "block.pedestals.crimsite_pedestal": "Crimsite Pedestal",
 
  "block.pedestals.firestone_block_pedestal": "Firestone Block Pedestal",
  "block.pedestals.seastone_block_pedestal": "Seastone Block Pedestal",

@@ -13,8 +13,8 @@ public class RegionsUnexploredVariants {
     public static void define() {
     }
 
-    public static final PedestalVariant ASHEN_LOG = PedestalVariants.register(new PedestalVariant("ashen_log_pedestal", "ashen_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "ashen_planks"))));
-    public static final PedestalVariant SILVER_BIRCH_LOG = PedestalVariants.register(new PedestalVariant("silver_birch_log_pedestal", "silver_birch_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "silver_birch_planks"))));
+    public static final PedestalVariant ASHEN_LOG = PedestalVariants.register(new PedestalVariant("ashen_log_pedestal", "ashen_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "baobab_planks"))));
+    public static final PedestalVariant SILVER_BIRCH_LOG = PedestalVariants.register(new PedestalVariant("silver_birch_log_pedestal", "silver_birch_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "baobab_planks"))));
     public static final PedestalVariant BAOBAB_LOG = PedestalVariants.register(new PedestalVariant("baobab_log_pedestal", "baobab_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "baobab_planks"))));
     public static final PedestalVariant BLACKWOOD_LOG = PedestalVariants.register(new PedestalVariant("blackwood_log_pedestal", "blackwood_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "blackwood_planks"))));
     public static final PedestalVariant BRIMWOOD_LOG = PedestalVariants.register(new PedestalVariant("brimwood_log_pedestal", "brimwood_log", () -> ForgeRegistries.BLOCKS.getValue(new ResourceLocation("regions_unexplored", "brimwood_planks"))));

@@ -175,6 +175,7 @@ public class BasePedestalVariants {
     public static final PedestalVariant CHISELED_POLISHED_BLACKSTONE = PedestalVariants.register(new PedestalVariant("chiseled_polished_blackstone_pedestal", "chiseled_polished_blackstone", () -> Blocks.CHISELED_POLISHED_BLACKSTONE));
 
 
+  //  public static final PedestalVariant GRASS_BLOCK = PedestalVariants.register(new PedestalVariant("grass_block_pedestal", "grass_block", () -> Blocks.GRASS_BLOCK));
 
 
 

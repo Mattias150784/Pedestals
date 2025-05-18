@@ -3,13 +3,17 @@ package net.mattias.pedestals.client;
 import net.mattias.pedestals.client.gui.screens.inventory.PedestalScreen;
 import net.mattias.pedestals.client.renderer.blockentity.PedestalRenderer;
 import net.mattias.pedestals.core.Constants;
+import net.mattias.pedestals.core.optional.BasePedestalVariants;
 import net.mattias.pedestals.core.registry.ModBlockEntities;
 import net.mattias.pedestals.core.registry.ModBlocks;
 import net.mattias.pedestals.core.registry.ModMenus;
 import net.mattias.pedestals.core.util.PedestalVariant;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.GrassColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -34,9 +38,15 @@ public class PedestalsClient {
                         renderType
                 );
             }
+
+//            BlockColors blockColors = Minecraft.getInstance().getBlockColors();
+//            blockColors.register((state, reader, pos, tintIndex) -> {
+//
+//                return tintIndex == 0 ? GrassColor.getDefaultColor() : -1;
+//            }, ModBlocks.REGISTERED_VARIANT_MAP.get(BasePedestalVariants.GRASS_BLOCK).get());
+
         });
     }
-
 
     @SubscribeEvent
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
