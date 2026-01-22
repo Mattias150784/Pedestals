@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "medievalembroidery:white_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:white_bricks_pedestal"
+  },
+  "show_notification": true
+}

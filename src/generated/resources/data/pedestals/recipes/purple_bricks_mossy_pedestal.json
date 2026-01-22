@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "medievalembroidery:purple_bricks_mossy"
+    }
+  },
+  "pattern": [
+    "   ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:purple_bricks_mossy_pedestal"
+  },
+  "show_notification": true
+}

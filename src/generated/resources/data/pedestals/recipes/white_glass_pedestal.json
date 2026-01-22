@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:white_stained_glass"
+    }
+  },
+  "pattern": [
+    "   ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:white_glass_pedestal"
+  },
+  "show_notification": true
+}

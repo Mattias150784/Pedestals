@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:quartz_bricks"
+    }
+  },
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "pedestals:quartz_bricks_pedestal"
+  },
+  "show_notification": true
+}

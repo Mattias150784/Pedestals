@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dragonforge_lightning_brick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "iceandfire:dragonforge_lightning_brick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pedestals:dragonforge_lightning_brick_pedestal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dragonforge_lightning_brick",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pedestals:dragonforge_lightning_brick_pedestal"
+    ]
+  },
+  "sends_telemetry_event": false
+}
