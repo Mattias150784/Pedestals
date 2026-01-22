@@ -80,11 +80,6 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
 
-    // Mysti Grecia
-    // compileOnly fg.deobf("curse.maven:mysti-grecia-969505:6120676")
-    // runtimeOnly fg.deobf("curse.maven:mysti-grecia-969505:6120676")
-    implementation fg.deobf("curse.maven:mysti-grecia-969505:6120676")
-
     // Ice and Fire
     // compileOnly fg.deobf("curse.maven:citadel-331936:6002521") // dependency
     // runtimeOnly fg.deobf("curse.maven:citadel-331936:6002521") // dependency

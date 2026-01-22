@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Supplier;
 
-public record PedestalVariant(String registryName, String textureName, Supplier<Block> baseBlock) {
+public record PedestalVariant(String registryName, String textureName, Supplier<Block> baseBlock, boolean isOptional) {
 
     public BlockBehaviour.Properties getProperties() {
         return BlockBehaviour.Properties.copy(baseBlock.get());

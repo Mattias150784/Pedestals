@@ -38,7 +38,6 @@ public class Pedestals {
         EVENT_BUS = context.getModEventBus();
 
         BasePedestalVariants.define();
-        if (ModList.get().isLoaded("mysti")) MystiGreciaVariants.define();
         if (ModList.get().isLoaded("iceandfire")) IceAndFireVariants.define();
         if (ModList.get().isLoaded("create")) CreateVariants.define();
         if (ModList.get().isLoaded("medievalembroidery")) MedievalEmbroideryVariants.define();

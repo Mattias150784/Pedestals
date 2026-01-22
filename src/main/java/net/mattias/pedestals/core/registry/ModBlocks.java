@@ -23,7 +23,7 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
     // public static final RegistryObject<Block> PEDESTAL = registerBlockWithBlockItem("pedestal", () -> new PedestalBlock(Block.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final PedestalVariant PEDESTAL = PedestalVariants.register(new PedestalVariant("pedestal", "pedestal", () -> Blocks.IRON_BLOCK));
+    public static final PedestalVariant PEDESTAL = PedestalVariants.register(new PedestalVariant("pedestal", "pedestal", () -> Blocks.IRON_BLOCK, false));
 
     public static final Map<PedestalVariant, RegistryObject<Block>> REGISTERED_VARIANT_MAP = new HashMap<>();
     public static RegistryObject<Block> getPedestalFromVariant(PedestalVariant variant) {
